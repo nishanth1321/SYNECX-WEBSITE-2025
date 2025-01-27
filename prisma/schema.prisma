@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL") // Set this in your .env file
+}
+
+model Subscribe {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  email String @unique
+}
+model Quotation {
+  quotation_id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  name           String
+  emailId        String   @unique
+  phoneNumber    String
+  product        Product
+  requirement    String
+  description String
+  createdAt      DateTime @default(now())
+}
+model Demo{
+  demo_id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  name           String
+  emailId        String   @unique
+  phoneNumber    String
+  product        Product
+  requirement    String
+  description String
+  createdAt      DateTime @default(now())
+}
+
+enum Product {
+  RETAIL_SOLUTION
+  MANUFACTURING_SOLUTION
+  LOGISTICS_SOLUTION
+}
