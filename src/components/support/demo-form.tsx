@@ -1,20 +1,32 @@
 "use client";
 
 import React, { useState } from "react";
+import { FaChartBar } from "react-icons/fa";
 
 const DemoForm: React.FC = () => {
   const [formData, setFormData] = useState({
-    fullName: "",
+    firstName: "",
+    lastName: "",
     email: "",
     phoneNumber: "",
     company: "",
-    demoInterest: "",
-    additionalDetails: "",
+    businessType: "",
+    branchesCount: "",
+    location: "",
+    product: "",
+    requirement: "",
+    description: "",
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState("");
+  const [messageColor, setMessageColor] = useState(""); // State for message color
 
   // Handle input changes
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -24,143 +36,361 @@ const DemoForm: React.FC = () => {
   };
 
   // Handle form submission
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Demo Form Data Submitted:", formData);
+    setIsSubmitting(true);
+    setMessage("");
+    setMessageColor("");
+
+    try {
+      const response = await fetch("/api/demo", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phoneNumber: formData.phoneNumber,
+          companyName: formData.company,
+          businessType: formData.businessType,
+          branchesCount: formData.branchesCount,
+          location: formData.location,
+          product: formData.product,
+          requirement: formData.requirement,
+          description: formData.description,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage("Demo request submitted successfully!");
+        setMessageColor("text-green-600"); // Success message color
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phoneNumber: "",
+          company: "",
+          businessType: "",
+          branchesCount: "",
+          location: "",
+          product: "",
+          requirement: "",
+          description: "",
+        });
+      } else {
+        setMessage(data.message || "Failed to submit demo request.");
+        setMessageColor("text-red-600"); // Error message color
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setMessage("An error occurred. Please try again.");
+      setMessageColor("text-red-600"); // Error message color
+    } finally {
+      setIsSubmitting(false); // Re-enable submit button
+    }
   };
 
   return (
-    <div className="h-auto  flex justify-center items-center p-6">
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 w-full max-w-lg"
-      >
-        <h2 className="text-2xl font-bold mb-6 text-center text-gray-700">
-          Request a Demo
-        </h2>
-
-        {/* Full Name */}
-        <div className="mb-4">
-          <label
-            htmlFor="fullName"
-            className="block text-gray-700 text-sm font-bold mb-2"
+    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-12 ">
+      {/* Left Section - Form */}
+      <div className="lg:w-1/2 order-2 lg:order-1 ">
+        <div className="h-auto flex justify-center items-center p-6 ml-4 sm:ml-2">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-white shadow-lg rounded px-8 pt-6 pb-8 w-full max-w-full shadow-blue-200 "
           >
-            Full Name
-          </label>
-          <input
-            type="text"
-            id="fullName"
-            name="fullName"
-            value={formData.fullName}
-            onChange={handleChange}
-            required
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
-          />
-        </div>
+            <h2 className="text-2xl font-bold mb-6 text-center text-gray-700">
+              Request a Demo
+            </h2>
 
-        {/* Email */}
-        <div className="mb-4">
-          <label
-            htmlFor="email"
-            className="block text-gray-700 text-sm font-bold mb-2"
-          >
-            Email Address
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
-          />
-        </div>
+            {/* First Name and Last Name (same row) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div className="flex-1">
+                <label
+                  htmlFor="firstName"
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                >
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  required
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                />
+              </div>
+              <div className="flex-1">
+                <label
+                  htmlFor="lastName"
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                >
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  required
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                />
+              </div>
+            </div>
 
-        {/* Phone Number */}
-        <div className="mb-4">
-          <label
-            htmlFor="phoneNumber"
-            className="block text-gray-700 text-sm font-bold mb-2"
-          >
-            Phone Number
-          </label>
-          <input
-            type="tel"
-            id="phoneNumber"
-            name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-            required
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
-          />
-        </div>
+            {/* Email and Phone Number (same row) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div className="flex-1">
+                <label
+                  htmlFor="email"
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                >
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                />
+              </div>
+              <div className="flex-1">
+                <label
+                  htmlFor="phoneNumber"
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                >
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
+                  required
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                />
+              </div>
+            </div>
 
-        {/* Company Name */}
-        <div className="mb-4">
-          <label
-            htmlFor="company"
-            className="block text-gray-700 text-sm font-bold mb-2"
-          >
-            Company Name
-          </label>
-          <input
-            type="text"
-            id="company"
-            name="company"
-            value={formData.company}
-            onChange={handleChange}
-            required
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
-          />
-        </div>
+            {/* Company Name and Business Type (same row) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div className="flex-1">
+                <label
+                  htmlFor="company"
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                >
+                  Company Name
+                </label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  required
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                />
+              </div>
+              <div className="flex-1">
+                <label
+                  htmlFor="businessType"
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                >
+                  Business Type
+                </label>
+                <select
+                  id="businessType"
+                  name="businessType"
+                  value={formData.businessType}
+                  onChange={handleChange}
+                  required
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                >
+                  <option value="">Select Business Type</option>
+                  <option value="QUICK_SERVICE_RESTAURANTS">
+                    Quick Service Restaurants
+                  </option>
+                  <option value="UNIVERSITIES_CAFE">Universities Cafe</option>
+                  <option value="CINEMA_THEATERS">Cinema Theaters</option>
+                  <option value="CONVENIENCE_STORES">Convenience Stores</option>
+                  <option value="SHOPPING_MALLS">Shopping Malls</option>
+                  <option value="SPORT_STADIUM">Sport Stadium</option>
+                </select>
+              </div>
+            </div>
 
-        {/* Demo Interest */}
-        <div className="mb-4">
-          <label
-            htmlFor="demoInterest"
-            className="block text-gray-700 text-sm font-bold mb-2"
-          >
-            What are you interested in learning from the demo?
-          </label>
-          <textarea
-            id="demoInterest"
-            name="demoInterest"
-            value={formData.demoInterest}
-            onChange={handleChange}
-            rows={4}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
-          ></textarea>
-        </div>
+            {/* Branches Count and Location (same row) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div className="flex-1">
+                <label
+                  htmlFor="branchesCount"
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                >
+                  Number of Branches
+                </label>
+                <input
+                  type="text"
+                  id="branchesCount"
+                  name="branchesCount"
+                  value={formData.branchesCount}
+                  onChange={handleChange}
+                  required
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                />
+              </div>
+              <div className="flex-1">
+                <label
+                  htmlFor="location"
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                >
+                  Location
+                </label>
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  value={formData.location}
+                  onChange={handleChange}
+                  required
+                  className="shadow appearance-none border rounded w-full sm:w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                />
+              </div>
+            </div>
 
-        {/* Additional Details */}
-        <div className="mb-6">
-          <label
-            htmlFor="additionalDetails"
-            className="block text-gray-700 text-sm font-bold mb-2"
-          >
-            Additional Details
-          </label>
-          <textarea
-            id="additionalDetails"
-            name="additionalDetails"
-            value={formData.additionalDetails}
-            onChange={handleChange}
-            rows={4}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
-          ></textarea>
-        </div>
+            {/* Product */}
+            <div className="mb-4">
+              <label
+                htmlFor="product"
+                className="block text-gray-700 text-sm font-bold mb-2"
+              >
+                Product
+              </label>
+              <select
+                id="product"
+                name="product"
+                value={formData.product}
+                onChange={handleChange}
+                required
+                className="shadow appearance-none border rounded  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+              >
+                <option value="">Select Product</option>
+                <option value="RETAIL_SOLUTION">Retail Solution</option>
+                <option value="MANUFACTURING_SOLUTION">
+                  Manufacturing Solution
+                </option>
+                <option value="LOGISTICS_SOLUTION">Logistics Solution</option>
+              </select>
+            </div>
 
-        {/* Submit Button */}
-        <div className="flex items-center justify-center">
-          <button
-            type="submit"
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-blue-300"
-          >
-            Submit
-          </button>
+            {/* Requirement */}
+            <div className="mb-4">
+              <label
+                htmlFor="requirement"
+                className="block text-gray-700 text-sm font-bold mb-2"
+              >
+                Requirement
+              </label>
+              <textarea
+                id="requirement"
+                name="requirement"
+                value={formData.requirement}
+                onChange={handleChange}
+                rows={1}
+                required
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+              ></textarea>
+            </div>
+
+            {/* Description */}
+            <div className="mb-4">
+              <label
+                htmlFor="description"
+                className="block text-gray-700 text-sm font-bold mb-2"
+              >
+                Description
+              </label>
+              <textarea
+                id="description"
+                name="description"
+                value={formData.description}
+                onChange={handleChange}
+                rows={1}
+                required
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+              ></textarea>
+            </div>
+
+            {/* Submit Button */}
+            <div className="flex items-center justify-center">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className={`bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-blue-300 ${
+                  isSubmitting ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+              >
+                {isSubmitting ? (
+                  <div className="flex items-center space-x-2">
+                    <span className="animate-spin rounded-full h-4 w-4 border-t-2 border-b-2 border-white"></span>
+                    <span>Submitting...</span>
+                  </div>
+                ) : (
+                  "Submit"
+                )}
+              </button>
+            </div>
+
+            {/* Message */}
+            {message && (
+              <p className={`text-center text-sm mt-4 ${messageColor}`}>
+                {message}
+              </p>
+            )}
+          </form>
         </div>
-      </form>
+      </div>
+
+      {/* Right Section - Text */}
+      <div className="lg:w-1/2 order-1 lg:order-2">
+        <div className="text-left sm:mx-0 mx-6 ">
+          <h1 className="text-blue-600 font-medium">Demo</h1>
+          <h2 className="text-3xl font-semibold text-gray-900">
+            Book your Demo Here
+          </h2>
+          <p className="mt-4 text-gray-600">
+            Our Demo section offers quick answers to common questions about
+            Sycnex AI Labs&apos; services and processes, providing the essential
+            information you need for a seamless experience.
+          </p>
+          <div className="flex items-start mt-10">
+            <div className="flex-shrink-0 h-8 w-8 flex items-center justify-center rounded-full bg-indigo-500 text-white font-bold mr-4">
+              <FaChartBar />
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900">
+                Demo header
+              </h3>
+              <p className="text-gray-600">
+                Say goodbye to manual data entry! Our demo for solution
+                automatically scans barcodes and QR codes, extracts key details
+                like to/from addresses seamlessly. Speed up logistics, reduce
+                errors, and improve efficiency.{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -7,31 +7,21 @@ const prisma = new PrismaClient();
 export async function POST(req: Request) {
   try {
     const {
-      firstName,
-      lastName,
-      email,
+      fullName,
+      emailId,
       phoneNumber,
       companyName,
-      businessType,
-      branchesCount,
-      location,
       product,
-      requirement,
       description,
     } = await req.json();
 
     // Validate required fields
     if (
-      !firstName ||
-      !lastName ||
-      !email ||
+      !fullName ||
+      !emailId ||
       !phoneNumber ||
       !companyName ||
-      !businessType ||
-      !branchesCount ||
-      !location ||
       !product ||
-      !requirement ||
       !description
     ) {
       return NextResponse.json(
@@ -48,14 +38,6 @@ export async function POST(req: Request) {
       "MANUFACTURING_SOLUTION",
       "LOGISTICS_SOLUTION",
     ];
-    const validBusinessTypes = [
-      "QUICK_SERVICE_RESTAURANTS",
-      "UNIVERSITIES_CAFE",
-      "CINEMA_THEATERS",
-      "CONVENIENCE_STORES",
-      "SHOPPING_MALLS",
-      "SPORT_STADIUM",
-    ];
 
     if (!validProducts.includes(product)) {
       return NextResponse.json(
@@ -64,41 +46,29 @@ export async function POST(req: Request) {
       );
     }
 
-    if (!validBusinessTypes.includes(businessType)) {
-      return NextResponse.json(
-        { message: "Invalid business type" },
-        { status: 400 }
-      );
-    }
-
     // Check if the email already exists
-    const existingDemo = await prisma.demo.findUnique({
-      where: { emailId: email },
+    const existingQuery = await prisma.query.findFirst({
+      where: { emailId },
     });
 
-    if (existingDemo) {
+    if (existingQuery) {
       return NextResponse.json(
         {
           message: "Email already exists",
-          existingDemo,
+          existingQuery,
         },
         { status: 400 }
       );
     }
 
     // Save to the database
-    const newQuotation = await prisma.quotation.create({
+    const newQuery = await prisma.query.create({
       data: {
-        firstName,
-        lastName,
-        emailId: email,
+        fullName,
+        emailId,
         phoneNumber,
         companyName,
-        businessType: businessType as any,
-        branchesCount,
-        location,
         product: product as any,
-        requirement,
         description,
       },
     });
@@ -118,21 +88,17 @@ export async function POST(req: Request) {
     await transporter.sendMail({
       from: `"YourCompany" <${process.env.SMTP_USER}>`,
       to: process.env.SMTP_USER,
-      subject: `New Demo Request - ${newQuotation.quotation_id}`,
+      subject: `New Query Request - ${newQuery.query_id}`,
       html: `
         <div>
-          <h2>New Demo Request</h2>
-          <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-          <p><strong>Email:</strong> ${email}</p>
+          <h2>New Query Request</h2>
+          <p><strong>Name:</strong> ${fullName}</p>
+          <p><strong>Email:</strong> ${emailId}</p>
           <p><strong>Phone:</strong> ${phoneNumber}</p>
           <p><strong>Company:</strong> ${companyName}</p>
-          <p><strong>Business Type:</strong> ${businessType}</p>
-          <p><strong>Branches:</strong> ${branchesCount}</p>
-          <p><strong>Location:</strong> ${location}</p>
           <p><strong>Product:</strong> ${product}</p>
-          <p><strong>Requirement:</strong> ${requirement}</p>
           <p><strong>Description:</strong> ${description}</p>
-          <p>Demo ID: ${newQuotation.quotation_id}</p>
+          <p>Query ID: ${newQuery.query_id}</p>
         </div>
       `,
     });
@@ -140,13 +106,13 @@ export async function POST(req: Request) {
     // Email to user
     await transporter.sendMail({
       from: `"YourCompany" <${process.env.SMTP_USER}>`,
-      to: email,
-      subject: "Demo Request Received",
+      to: emailId,
+      subject: "Query Request Received",
       html: `
         <div>
-          <h2>Thank you for your demo request, ${firstName} ${lastName}!</h2>
-          <p>We have received your request and will contact you soon.</p>
-          <p><strong>Demo ID:</strong> ${newQuotation.quotation_id}</p>
+          <h2>Thank you for your query, ${fullName}!</h2>
+          <p>We have received your query and will contact you soon.</p>
+          <p><strong>Query ID:</strong> ${newQuery.query_id}</p>
           <p><strong>Product:</strong> ${product}</p>
           <p><strong>Description:</strong> ${description}</p>
         </div>
@@ -155,13 +121,13 @@ export async function POST(req: Request) {
 
     // Success response
     return NextResponse.json(
-      { message: "Demo request submitted successfully!" },
+      { message: "Query request submitted successfully!" },
       { status: 200 }
     );
   } catch (error) {
-    console.error("Error processing demo request:", error);
+    console.error("Error processing query request:", error);
     return NextResponse.json(
-      { message: "Failed to submit demo request. Please try again." },
+      { message: "Failed to submit query request. Please try again." },
       { status: 500 }
     );
   }

@@ -6,68 +6,129 @@ const prisma = new PrismaClient();
 
 export async function POST(req: Request) {
   try {
-    // Extracting the incoming data from the request body
-    const { name, email, description, phone_number, product, requirement } = await req.json();
+    const {
+      firstName,
+      lastName,
+      email,
+      phoneNumber,
+      companyName,
+      businessType,
+      branchesCount,
+      location,
+      product,
+      requirement,
+      description,
+    } = await req.json();
 
-    // Validation of required fields
-    if (!name || !email || !description || !product || !requirement) {
+    // Validate required fields
+    if (
+      !firstName ||
+      !lastName ||
+      !email ||
+      !phoneNumber ||
+      !companyName ||
+      !businessType ||
+      !branchesCount ||
+      !location ||
+      !product ||
+      !requirement ||
+      !description
+    ) {
       return NextResponse.json(
         {
-          message:
-            "Name, email, description, product, and requirement are required",
+          message: "All fields are required",
         },
         { status: 400 }
       );
     }
 
-    // Validating product type based on your enum
-    if (
-      ![
-        "RETAIL_SOLUTION",
-        "MANUFACTURING_SOLUTION",
-        "LOGISTICS_SOLUTION",
-      ].includes(product)
-    ) {
+    // Validate enums
+    const validProducts = [
+      "RETAIL_SOLUTION",
+      "MANUFACTURING_SOLUTION",
+      "LOGISTICS_SOLUTION",
+    ];
+    const validBusinessTypes = [
+      "QUICK_SERVICE_RESTAURANTS",
+      "UNIVERSITIES_CAFE",
+      "CINEMA_THEATERS",
+      "CONVENIENCE_STORES",
+      "SHOPPING_MALLS",
+      "SPORT_STADIUM",
+    ];
+
+    if (!validProducts.includes(product)) {
       return NextResponse.json(
         { message: "Invalid product type" },
         { status: 400 }
       );
     }
 
-    // Creating a new demo entry in the database
+    if (!validBusinessTypes.includes(businessType)) {
+      return NextResponse.json(
+        { message: "Invalid business type" },
+        { status: 400 }
+      );
+    }
+
+    // Check if the email already exists
+    const existingDemo = await prisma.demo.findUnique({
+      where: { emailId: email },
+    });
+
+    if (existingDemo) {
+      return NextResponse.json(
+        {
+          message: "Email already exists",
+          existingDemo,
+        },
+        { status: 400 }
+      );
+    }
+
+    // Save to the database
     const newDemo = await prisma.demo.create({
       data: {
-        name,
+        firstName,
+        lastName,
         emailId: email,
-        phoneNumber: phone_number || "N/A", // Default if not provided
-        product: product as any, // Enum value
+        phoneNumber,
+        companyName,
+        businessType: businessType as any,
+        branchesCount,
+        location,
+        product: product as any,
         requirement,
         description,
       },
     });
 
-    // Configuring the transporter for nodemailer (sending email notifications)
+    // Configure email transporter
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT),
-      secure: false, // true for 465, false for other ports
+      secure: false,
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
     });
 
-    // Email notification to the admin
+    // Email to admin
     await transporter.sendMail({
       from: `"YourCompany" <${process.env.SMTP_USER}>`,
-      to: process.env.SMTP_USER, // Admin email
+      to: process.env.SMTP_USER,
       subject: `New Demo Request - ${newDemo.demo_id}`,
       html: `
-        <div style="font-family: Arial, sans-serif; color: #333;">
+        <div>
           <h2>New Demo Request</h2>
-          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Name:</strong> ${firstName} ${lastName}</p>
           <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Phone:</strong> ${phone_number || "N/A"}</p>
+          <p><strong>Phone:</strong> ${phoneNumber}</p>
+          <p><strong>Company:</strong> ${companyName}</p>
+          <p><strong>Business Type:</strong> ${businessType}</p>
+          <p><strong>Branches:</strong> ${branchesCount}</p>
+          <p><strong>Location:</strong> ${location}</p>
           <p><strong>Product:</strong> ${product}</p>
           <p><strong>Requirement:</strong> ${requirement}</p>
           <p><strong>Description:</strong> ${description}</p>
@@ -76,26 +137,18 @@ export async function POST(req: Request) {
       `,
     });
 
-    // Email notification to the user
+    // Email to user
     await transporter.sendMail({
       from: `"YourCompany" <${process.env.SMTP_USER}>`,
       to: email,
       subject: "Demo Request Received",
       html: `
-        <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;">
-          <h2 style="color: #0066cc; font-size: 18px; margin-bottom: 10px;">Thank you for your demo request, ${name}!</h2>
-          <p style="color: #333; font-size: 12px; line-height: 1.5;">We have received your request and will get back to you soon.</p>
-          <p style="color: #333; font-size: 12px; margin-top: 20px;">
-            <strong>Demo ID:</strong> ${newDemo.demo_id}
-          </p>
-          <p style="color: #333; font-size: 12px;">
-            <strong>Description:</strong> ${description}
-          </p>
-          <p style="color: #333; font-size: 12px;">
-            <strong>Product:</strong> ${product}
-          </p>
-          <p style="color: #333; font-size: 16px; margin-top: 30px;">Best regards,</p>
-          <p style="color: #0066cc; font-size: 16px; font-weight: bold;">YourCompany</p>
+        <div>
+          <h2>Thank you for your demo request, ${firstName} ${lastName}!</h2>
+          <p>We have received your request and will contact you soon.</p>
+          <p><strong>Demo ID:</strong> ${newDemo.demo_id}</p>
+          <p><strong>Product:</strong> ${product}</p>
+          <p><strong>Description:</strong> ${description}</p>
         </div>
       `,
     });

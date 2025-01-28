@@ -11,25 +11,47 @@ model Subscribe {
   id    String @id @default(auto()) @map("_id") @db.ObjectId
   email String @unique
 }
+
 model Quotation {
-  quotation_id             String   @id @default(auto()) @map("_id") @db.ObjectId
-  name           String
-  emailId        String   @unique
-  phoneNumber    String
-  product        Product
-  requirement    String
-  description String
-  createdAt      DateTime @default(now())
+  quotation_id  String       @id @default(auto()) @map("_id") @db.ObjectId
+  firstName     String
+  lastName      String
+  emailId       String       @unique
+  phoneNumber   String
+  companyName   String
+  businessType  BusinessType
+  branchesCount String
+  location      String
+  product       Product
+  requirement   String
+  description   String
+  createdAt     DateTime     @default(now())
 }
-model Demo{
-  demo_id             String   @id @default(auto()) @map("_id") @db.ObjectId
-  name           String
-  emailId        String   @unique
-  phoneNumber    String
-  product        Product
-  requirement    String
+
+model Demo {
+  demo_id       String       @id @default(auto()) @map("_id") @db.ObjectId
+  firstName     String
+  lastName      String
+  emailId       String       @unique
+  phoneNumber   String
+  companyName   String
+  businessType  BusinessType
+  branchesCount String
+  location      String
+  product       Product
+  requirement   String
+  description   String
+  createdAt     DateTime     @default(now())
+}
+
+model query {
+  query_id    String  @id @default(auto()) @map("_id") @db.ObjectId
+  fullName    String
+  emailId     String
+  phoneNumber String
+  companyName String
+  product     Product
   description String
-  createdAt      DateTime @default(now())
 }
 
 enum Product {
@@ -37,3 +59,13 @@ enum Product {
   MANUFACTURING_SOLUTION
   LOGISTICS_SOLUTION
 }
+
+enum BusinessType {
+  QUICK_SERVICE_RESTAURANTS
+  UNIVERSITIES_CAFE
+  CINEMA_THEATERS
+  CONVENIENCE_STORES
+  SHOPPING_MALLS
+  SPORT_STADIUM
+}
+ 
