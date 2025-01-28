@@ -112,7 +112,7 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="/"
+              href="/event"
               className="text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
             >
               Events

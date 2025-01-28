@@ -3,8 +3,9 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
 
-const ParticlesComponent = (props) => {
+const SnowParticles = (props) => {
   const [init, setInit] = useState(false);
+
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
@@ -21,10 +22,50 @@ const ParticlesComponent = (props) => {
     () => ({
       background: {
         color: {
-          value: "#FFFFFF",
+          value: "#ffffff", // Set background color to black
         },
       },
-      fpsLimit: 130,
+      particles: {
+        number: {
+          value: 100,
+          density: {
+            enable: true,
+            value_area: 600,
+          },
+        },
+        color: {
+          value: "#7c009f", // White particles for snow
+        },
+        shape: {
+          type: "circle",
+        },
+        opacity: {
+          value: 0.6,
+          random: true,
+          anim: {
+            enable: false,
+          },
+        },
+        size: {
+          value: 3,
+          random: true,
+        },
+        move: {
+          enable: true,
+          
+          outModes: {
+            default: "bounce",
+          },
+          speed: 6,
+          direction: "bottom", // Falling snow
+          outModes: {
+            default: "out",
+          },
+        },
+        lineLinked: {
+          enable: false, // No linking for snow
+        },
+      },
       interactivity: {
         events: {
           onClick: {
@@ -38,7 +79,7 @@ const ParticlesComponent = (props) => {
         },
         modes: {
           repulse: {
-            distance: 150,
+            distance: 100,
             duration: 1,
           },
           push: {
@@ -50,46 +91,7 @@ const ParticlesComponent = (props) => {
           },
         },
       },
-      particles: {
-        color: {
-          value: "#550794", // Dark blue for particles #550794
-        },
-        links: {
-          color: "#8d26e0", // Blue for links #550794
-          distance: 150,
-          enable: true,
-          opacity: 0.55,
-          width: 0.35,
-        },
-
-        move: {
-          direction: "none",
-          enable: true,
-          outModes: {
-            default: "bounce",
-          },
-          random: true,
-          speed: 4,
-          straight: false,
-        },
-        number: {
-          density: {
-            enable: true,
-            area: 900,
-          },
-          value: 300,
-        },
-        opacity: {
-          value: 1.0,
-        },
-        shape: {
-          type: "circle",
-        },
-        size: {
-          value: { min: 1, max: 2 },
-        },
-      },
-      detectRetina: true,
+      retina_detect: true,
     }),
     []
   );
@@ -97,4 +99,4 @@ const ParticlesComponent = (props) => {
   return <Particles id={props.id} init={particlesLoaded} options={options} />;
 };
 
-export default ParticlesComponent;
+export default SnowParticles;

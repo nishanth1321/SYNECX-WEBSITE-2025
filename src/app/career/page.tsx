@@ -1,21 +1,23 @@
-import Whysycenx from '@/components/careers/why-synecx'
-import InnovationSection from '@/components/careers/innovation-section'
-import React from 'react'
-import SynecxDifference from '@/components/careers/synecx-diff'
-import { Metadata } from 'next'
+import Whysycenx from "@/components/careers/why-synecx";
+import React from "react";
+import { Metadata } from "next";
+import Navbar from "@/layouts/navbar";
+import Openings from "@/components/careers/innovation-section";
+import ApplyJob from "@/components/careers/apply-job";
 
-export const metadata = ({ title : "Career | SYCNEX"}) as Metadata
-
-
+export const metadata = { title: "Career | SYCNEX" } as Metadata;
 
 const page = () => {
   return (
-    <div  className='pt-20'>
-    <Whysycenx />
-    <SynecxDifference />
-    <InnovationSection />
+    <div >
+      <Navbar />
+      <div >
+        <Whysycenx />
+        <Openings />
+    <ApplyJob />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

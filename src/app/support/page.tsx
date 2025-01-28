@@ -5,9 +5,9 @@ import QuotationForm from '@/components/support/quotation'
 import SupportHeader from '@/components/support/support-header'
 import SupportSection from '@/components/support/support-provided'
 import Navbar from '@/layouts/navbar'
-import { Metadata } from 'next'
-import React from 'react'
 
+import React from 'react'
+import { Metadata } from 'next'
 
 export const metadata = ({ title : "Support | SYCNEX"}) as Metadata
 

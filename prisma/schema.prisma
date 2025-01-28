@@ -54,6 +54,17 @@ model query {
   description String
 }
 
+model Recruitment {
+  req_id      String @id @default(auto()) @map("_id") @db.ObjectId
+  fullName    String
+  emailId     String @unique
+  phoneNumber String
+  experience  String
+  collegeName String
+  Role        Role
+  cv          String
+}
+
 enum Product {
   RETAIL_SOLUTION
   MANUFACTURING_SOLUTION
@@ -68,4 +79,10 @@ enum BusinessType {
   SHOPPING_MALLS
   SPORT_STADIUM
 }
- 
+
+enum Role {
+  FULLSTACK_WEB_DEVELOPER
+  SALES_EXECUTIVE
+  COMPUTER_VISION_ENGINEER
+  DEEP_LEARNING
+}
