@@ -41,7 +41,7 @@ export default function LatestBlog() {
           {blogs.map((blog, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs mx-auto transform transition-transform duration-300 hover:scale-95 hover:shadow-md"
+              className="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs mx-auto transform transition-transform duration-300 hover:scale-105 hover:shadow-md"
             >
               <div className="relative h-36">
                 <Image
@@ -49,24 +49,13 @@ export default function LatestBlog() {
                   alt={blog.title}
                   layout="fill"
                   objectFit="cover"
-                  className="transition-transform duration-300 ease-in-out hover:scale-95"
+                  className="p-4"
                 />
               </div>
               <div className="p-4">
                 <div className="flex items-center text-gray-500 text-sm mb-2">
+                 
                   <div className="flex items-center">
-                    <svg
-                      className="w-4 h-4 mr-2"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.866 0-7 3.134-7 7h14c0-3.866-3.134-7-7-7z"
-                      />
-                    </svg>
-                    <span>{blog.author}</span>
-                  </div>
-                  <div className="ml-4 flex items-center">
                     <svg
                       className="w-4 h-4 mr-2"
                       fill="currentColor"

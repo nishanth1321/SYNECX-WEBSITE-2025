@@ -1,3 +1,4 @@
+import ContactInfo from '@/components/support/contact'
 import DemoForm from '@/components/support/demo-form'
 import QueryForm from '@/components/support/query-form'
 import QuotationForm from '@/components/support/quotation'
@@ -21,6 +22,7 @@ const page = () => {
     <DemoForm />
     <QuotationForm />
     <QueryForm />
+    <ContactInfo />
     </div>
    </div>
   )

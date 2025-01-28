@@ -7,7 +7,7 @@ export default function ClientSection() {
       role: "Software Development",
       rating: 5,
       image: "/client-img1.png",
-      text: "Sycnex AI Labs completed the project on time. The vendor took their time to understand the client's business requirements, which the fintech company appreciated. Moreover, Sycnex AI Labs communicated through email, messaging apps, and virtual meetings.",
+      text: "Sycnex AI Labs completed the project on time. The vendor took their time to understand the client's business requirements, which the fintech company appreciated.",
     },
     {
       name: "Client 2",
@@ -35,23 +35,21 @@ export default function ClientSection() {
   return (
     <div className="py-16 bg-gradient-to-r">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-gray-900 text-center">
+        <h2 className="text-4xl font-semibold text-gray-900 text-center">
           What Client&apos;s Say
         </h2>
-        <p className="mt-4 text-center text-gray-600 text-[15px] px-4 sm:px-16 lg:px-64"> 
-        Hear from our satisfied clients about how Sycnex AI Labs tailored solutions and service have driven their success.
+        <p className="mt-4 text-center text-gray-600 text-[16px] font-semibold px-4 sm:px-16 lg:px-64">
+          Hear from our satisfied clients about how Sycnex AI Labs tailored
+          solutions and service have driven their success.
         </p>
         <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-indigo-300 p-8 rounded-xl shadow-lg flex flex-col justify-between text-white"
+              className="bg-white/50 backdrop-blur-sm p-8 rounded-xl shadow-lg flex flex-col justify-between text-black"
             >
-              <p className="text-white mb-6 text-[15px]">
-                {testimonial.text}
-              </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-r from-indigo-700 to-indigo-900">
+                <div className="w-12 h-12 rounded-full overflow-hidden ">
                   <Image
                     src={testimonial.image}
                     alt={testimonial.name}
@@ -61,15 +59,13 @@ export default function ClientSection() {
                   />
                 </div>
                 <div className="ml-4">
-                  <p className="text-white font-semibold">
-                    {testimonial.name}
-                  </p>
-                  <p className="text-indigo-200">{testimonial.role}</p>
+                  <p className="text-black font-semibold">{testimonial.name}</p>
+                  <p className="text-black">{testimonial.role}</p>
                   <div className="flex mt-2">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <svg
                         key={i}
-                        className="w-5 h-5 text-yellow-400"
+                        className="w-5 h-5 text-orange-400"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -80,6 +76,7 @@ export default function ClientSection() {
                   </div>
                 </div>
               </div>
+              <div className="h-auto w-full bg-gray-100/70 rounded-md mt-6"><p className="text-black my-4 mx-6 text-[15px]">{testimonial.text}</p></div>
             </div>
           ))}
         </div>
@@ -87,3 +84,6 @@ export default function ClientSection() {
     </div>
   );
 }
+
+
+
