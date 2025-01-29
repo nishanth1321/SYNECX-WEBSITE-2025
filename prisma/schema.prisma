@@ -62,7 +62,7 @@ model Recruitment {
   experience  String
   collegeName String
   Role        Role
-  cv          String
+
 }
 
 enum Product {
@@ -85,4 +85,6 @@ enum Role {
   SALES_EXECUTIVE
   COMPUTER_VISION_ENGINEER
   DEEP_LEARNING
+  DIGITAL_MARKETING
+  BUSINESS_DEVELOPMENT
 }

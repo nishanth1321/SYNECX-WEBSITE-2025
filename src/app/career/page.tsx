@@ -14,7 +14,7 @@ const page = () => {
       <div >
         <Whysycenx />
         <Openings />
-    <ApplyJob />
+        <ApplyJob />
       </div>
     </div>
   );

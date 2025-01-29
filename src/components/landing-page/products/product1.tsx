@@ -31,7 +31,7 @@ export default function Selfcheckout() {
           Transform Retail with Smart Self-Checkout!
         </h2>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">
-          Revolutionozing self-checkout
+          Revolutionizing self-checkout
         </h1>
         <p className="text-gray-800 text-base lg:text-lg">
           Fast, accurate, and AI-driven item scanning for seamless payments.

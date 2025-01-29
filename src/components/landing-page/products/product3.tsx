@@ -24,7 +24,7 @@ export default function Logistics() {
 
       <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6">
         <h2 className="text-indigo-900 text-lg font-medium mb-2">
-          AI OCR Solutions by Sycenx AI Labs
+          AI OCR Solutions by SynecX AI Labs
         </h2>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">
           AI-OCR

@@ -6,52 +6,25 @@ const prisma = new PrismaClient();
 
 export async function POST(req: Request) {
   try {
-    const {
-      fullName,
-      emailId,
-      phoneNumber,
-      experience,
-      collegeName,
-      role,
-      cv,
-    } = await req.json();
+    const { fullName, emailId, phoneNumber, experience, collegeName, Role } = await req.json();
 
-    // Validate required fields (excluding collegeName)
-    if (!fullName || !emailId || !phoneNumber || !experience || !role ) {
-      return NextResponse.json(
-        { message: "All mandatory fields are required" },
-        { status: 400 }
-      );
-    }
+   
 
-    // Validate `role` enum
+    // Validate Role enum
     const validRoles = [
       "FULLSTACK_WEB_DEVELOPER",
       "SALES_EXECUTIVE",
       "COMPUTER_VISION_ENGINEER",
       "DEEP_LEARNING",
+      "DIGITAL_MARKETING",
+      "BUSINESS_DEVELOPMENT",
     ];
-    if (!validRoles.includes(role)) {
-      return NextResponse.json(
-        { message: "Invalid role type" },
-        { status: 400 }
-      );
+
+    if (!validRoles.includes(Role)) {
+      return NextResponse.json({ message: "Invalid role type" }, { status: 400 });
     }
 
-    // Check if email already exists
-    const existingRecruitment = await prisma.recruitment.findUnique({
-      where: { emailId },
-    });
-    if (existingRecruitment) {
-      return NextResponse.json(
-        {
-          message: "Email already exists",
-          existingRecruitment,
-        },
-        { status: 400 }
-      );
-    }
-
+   
     // Save to the database
     const newRecruitment = await prisma.recruitment.create({
       data: {
@@ -59,9 +32,8 @@ export async function POST(req: Request) {
         emailId,
         phoneNumber,
         experience,
-        collegeName: collegeName || null, // Save null if collegeName is not provided
-        Role: role as any,
-        cv,
+        collegeName,
+        Role: Role as any,
       },
     });
 
@@ -80,47 +52,39 @@ export async function POST(req: Request) {
     await transporter.sendMail({
       from: `"YourCompany" <${process.env.SMTP_USER}>`,
       to: process.env.SMTP_USER,
-      subject: `New Recruitment Submission - ${newRecruitment.req_id}`,
+      subject: `New Recruitment Request - ${newRecruitment.req_id}`,
       html: `
         <div>
-          <h2>New Recruitment Submission</h2>
-          <p><strong>Full Name:</strong> ${fullName}</p>
+          <h2>New Recruitment Request</h2>
+          <p><strong>Name:</strong> ${fullName}</p>
           <p><strong>Email:</strong> ${emailId}</p>
           <p><strong>Phone:</strong> ${phoneNumber}</p>
           <p><strong>Experience:</strong> ${experience}</p>
-          <p><strong>College:</strong> ${collegeName || "N/A"}</p>
-          <p><strong>Role:</strong> ${role}</p>
-          <p><strong>CV File:</strong> ${cv}</p>
-          <p>Recruitment ID: ${newRecruitment.req_id}</p>
+          <p><strong>College:</strong> ${collegeName}</p>
+          <p><strong>Role:</strong> ${Role}</p>
         </div>
       `,
     });
 
-    // Email to applicant
+    // Email to user
     await transporter.sendMail({
       from: `"YourCompany" <${process.env.SMTP_USER}>`,
       to: emailId,
-      subject: "Recruitment Submission Received",
+      subject: "Recruitment Request Received",
       html: `
         <div>
-          <h2>Thank you for your submission, ${fullName}!</h2>
-          <p>We have received your recruitment details and will review them shortly.</p>
-          <p><strong>Recruitment ID:</strong> ${newRecruitment.req_id}</p>
-          <p><strong>Role:</strong> ${role}</p>
+          <h2>Thank you for your recruitment request, ${fullName}!</h2>
+          <p>We have received your application and will contact you soon.</p>
+          <p><strong>Request ID:</strong> ${newRecruitment.req_id}</p>
+          <p><strong>Role:</strong> ${Role}</p>
         </div>
       `,
     });
 
     // Success response
-    return NextResponse.json(
-      { message: "Recruitment submission successfully processed!" },
-      { status: 200 }
-    );
+    return NextResponse.json({ message: "Recruitment request submitted successfully!" }, { status: 200 });
   } catch (error) {
-    console.error("Error processing recruitment submission:", error);
-    return NextResponse.json(
-      { message: "Failed to process recruitment submission. Please try again." },
-      { status: 500 }
-    );
+    console.error("Error processing recruitment request:", error);
+    return NextResponse.json({ message: "Failed to submit recruitment request. Please try again." }, { status: 500 });
   }
 }

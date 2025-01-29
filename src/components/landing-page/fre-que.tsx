@@ -29,7 +29,7 @@ export default function FAQSection() {
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-semibold text-gray-900">Frequently Asked Questions</h2>
         <p className="mt-4 text-gray-600">
-        Our FAQ section offers quick answers to common questions about Sycnex AI Labs&aposs services and processes, providing the essential information you need for a seamless experience.
+        Our FAQ section offers quick answers to common questions about Sycnex AI Labs&a services and processes, providing the essential information you need for a seamless experience.
         </p>
       </div>
 

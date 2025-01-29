@@ -27,9 +27,8 @@ const Whysycenx = () => {
       <div className="relative z-0 flex flex-col md:flex-row items-center md:items-start">
         <div className="md:w-1/2 mb-6 md:mb-0 ml-0 sm:ml-28 mt-0 sm:mt-8">
           <img
-            src={"/API-mgnt.png"}
-            alt="image"
-            className="w-full h-[200px] md:h-[300px] object-cover rounded-lg shadow-lg"
+            src={"/5.png"}
+            className="w-full h-[200px] md:h-[300px] object-cover "
           />
         </div>
         <div className="md:w-1/2 md:ml-8">

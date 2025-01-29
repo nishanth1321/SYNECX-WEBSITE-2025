@@ -28,7 +28,7 @@ export default function HowItWorksSection() {
   return (
     <div className="bg-white py-16 flex flex-col items-center justify-center px-4 lg:px-60">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
-        How We Works?
+        How We Work?
       </h2>
       <p className="text-gray-600 text-center max-w-2xl mb-12">
       At Sycnex AI Labs, we collaborate closely to understand your needs, craft tailored solutions, and implement them with precision and ongoing support.
