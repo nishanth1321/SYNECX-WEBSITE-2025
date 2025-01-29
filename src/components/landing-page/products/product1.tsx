@@ -44,9 +44,9 @@ export default function Selfcheckout() {
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-900">
-                Smart Automation
+                Smart Self-Checkout
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify mt-4">
                 Elevate the way customers shop with our advanced self-checkout
                 solution. Using deep learning and computer vision, it scans
                 items instantly, adds them to the cart, and enables quick

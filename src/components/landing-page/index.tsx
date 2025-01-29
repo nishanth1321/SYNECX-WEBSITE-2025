@@ -17,7 +17,7 @@ export default function Home() {
         </div>
 
         {/* Main Content */}
-        <div className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-start bg-white/0 backdrop-blur-sm px-6 lg:px-28 ml-12">
+        <div className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-start bg-white/40 backdrop-blur-sm px-6 lg:px-28 ml-12">
           {/* Text Section */}
           <div className="text-center lg:text-left max-w-xl mb-12 lg:mb-0 lg:mr-8 md:mb-5 mt-6 sm:mt-0">
             <h2 className="text-lg lg:text-lg font-medium text-gray-600 mb-4 lg:mb-2 py-4">

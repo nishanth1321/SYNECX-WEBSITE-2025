@@ -1,7 +1,7 @@
 import ContactInfo from '@/components/support/contact'
 import DemoForm from '@/components/support/demo-form'
 import QueryForm from '@/components/support/query-form'
-import QuotationForm from '@/components/support/quotation'
+// import QuotationForm from '@/components/support/quotation'
 import SupportHeader from '@/components/support/support-header'
 import SupportSection from '@/components/support/support-provided'
 import Navbar from '@/layouts/navbar'
@@ -9,7 +9,7 @@ import Navbar from '@/layouts/navbar'
 import React from 'react'
 import { Metadata } from 'next'
 
-export const metadata = ({ title : "Support | SynecX"}) as Metadata
+export const metadata = ({ title : "SYNECX | SUPPORT "}) as Metadata
 
 
 const page = () => {
@@ -20,7 +20,7 @@ const page = () => {
     <SupportHeader />
     <SupportSection />
     <DemoForm />
-    <QuotationForm />
+    {/* <QuotationForm /> */}
     <QueryForm />
     <ContactInfo />
     </div>
