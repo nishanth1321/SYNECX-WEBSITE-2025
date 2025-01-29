@@ -7,28 +7,28 @@ export default function ClientSection() {
       role: "Software Development",
       rating: 5,
       image: "/client-img1.png",
-      text: "Sycnex AI Labs completed the project on time. The vendor took their time to understand the client's business requirements, which the fintech company appreciated.",
+      text: "SynecX AI Labs completed the project on time. The vendor took their time to understand the client's business requirements, which the fintech company appreciated.",
     },
     {
       name: "Client 2",
       role: "Product Designer",
       rating: 4,
       image: "/client-img2.jpg",
-      text: "Sycnex AI Labs delivered ahead of schedule, diving deep into our needs and providing valuable insights. Communication was smooth via virtual meetings, messaging apps, and email, ensuring alignment throughout.",
+      text: "SynecX AI Labs delivered ahead of schedule, diving deep into our needs and providing valuable insights. Communication was smooth via virtual meetings, messaging apps, and email, ensuring alignment throughout.",
     },
     {
       name: "Client 3",
       role: "App Developer",
       rating: 5,
       image: "/client-img3.jpg",
-      text: "Sycnex AI Labs delivered on time and solved issues proactively. Their deep understanding of our industry and clear communication kept the project on track and exceeded expectations.",
+      text: "SynecX AI Labs delivered on time and solved issues proactively. Their deep understanding of our industry and clear communication kept the project on track and exceeded expectations.",
     },
     {
       name: "Client 4",
       role: "SEO Expert",
       rating: 4,
       image: "/client-img4.avif",
-      text: "Sycnex AI Labs quickly understood our objectives and adapted to changes effortlessly. Regular updates and their strong support made for a smooth and successful project delivery.",
+      text: "SynecX AI Labs quickly understood our objectives and adapted to changes effortlessly. Regular updates and their strong support made for a smooth and successful project delivery.",
     },
   ];
 
@@ -39,7 +39,7 @@ export default function ClientSection() {
           What Client&apos;s Say
         </h2>
         <p className="mt-4 text-center text-gray-600 text-[16px] font-semibold px-4 sm:px-16 lg:px-64">
-          Hear from our satisfied clients about how Sycnex AI Labs tailored
+          Hear from our satisfied clients about how SynecX AI Labs tailored
           solutions and service have driven their success.
         </p>
         <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2">

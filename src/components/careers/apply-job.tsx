@@ -231,7 +231,7 @@
 //           </h2>
 //           <p className="mt-4 text-gray-600">
 //             Our demo section offers quick answers to common questions about
-//             Sycnex AI Labs&apos; services and processes, providing the essential
+//             SynecX AI Labs&apos; services and processes, providing the essential
 //             information you need for a seamless experience.
 //           </p>
 //         </div>
@@ -473,7 +473,7 @@ const ApplyJob: React.FC = () => {
           </h2>
           <p className="mt-4 text-gray-600">
             Our demo section offers quick answers to common questions about
-            Sycnex AI Labs&apos; services and processes, providing the essential
+            SynecX AI Labs&apos; services and processes, providing the essential
             information you need for a seamless experience.
           </p>
         </div>

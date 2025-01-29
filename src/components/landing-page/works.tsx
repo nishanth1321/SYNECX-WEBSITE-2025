@@ -9,7 +9,7 @@ export default function HowItWorksSection() {
       icon: <FaDownload className="text-indigo-500 text-4xl" />, 
       title: "Discover Your Solution",
       description:
-        "Find the perfect Sycnex AI Labs solution to meet your business challenges, from advanced ERP to seamless integrations.",
+        "Find the perfect SynecX AI Labs solution to meet your business challenges, from advanced ERP to seamless integrations.",
     },
     {
       icon: <FaUserCircle className="text-indigo-500 text-4xl" />, 
@@ -21,7 +21,7 @@ export default function HowItWorksSection() {
       icon: <FaHeart className="text-indigo-500 text-4xl" />, 
       title: "Launch and Grow",
       description:
-        "Implement with ease and watch your business thrive with Sycnex AI Labs innovative, growth-focused solutions.",
+        "Implement with ease and watch your business thrive with SynecX AI Labs innovative, growth-focused solutions.",
     },
   ];
 
@@ -31,7 +31,7 @@ export default function HowItWorksSection() {
         How We Work?
       </h2>
       <p className="text-gray-600 text-center max-w-2xl mb-12">
-      At Sycnex AI Labs, we collaborate closely to understand your needs, craft tailored solutions, and implement them with precision and ongoing support.
+      At SynecX AI Labs, we collaborate closely to understand your needs, craft tailored solutions, and implement them with precision and ongoing support.
       </p>
       {/* Wrapper for all steps in a single background card */}
       <div className="bg-indigo-100 shadow-lg rounded-lg p-8 w-full sm:w-[1200px] lg:h-96">

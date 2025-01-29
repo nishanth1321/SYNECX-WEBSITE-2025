@@ -370,7 +370,7 @@ const DemoForm: React.FC = () => {
           </h2>
           <p className="mt-4 text-gray-600">
             Our Demo section offers quick answers to common questions about
-            Sycnex AI Labs&apos; services and processes, providing the essential
+            SynecX AI Labs&apos; services and processes, providing the essential
             information you need for a seamless experience.
           </p>
           <div className="flex items-start mt-10">

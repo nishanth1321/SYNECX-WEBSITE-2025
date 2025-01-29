@@ -15,12 +15,12 @@ export default function FAQSection() {
       answer: "This is the answer to the question. It will be revealed when the question is clicked.",
     },
     {
-      question: "Why Sycnex AI Labs is the best?",
+      question: "Why SynecX AI Labs is the best?",
       answer: "Its excels with innovative solutions, expert service, and a commitment to your business success.",
     },
     {
       question: "Do we get the best support?",
-      answer: "Yes, Sycnex AI Labs offers top-tier support from consultation to post-implementation, ensuring your success.",
+      answer: "Yes, SynecX AI Labs offers top-tier support from consultation to post-implementation, ensuring your success.",
     },
   ];
 
@@ -29,7 +29,7 @@ export default function FAQSection() {
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-semibold text-gray-900">Frequently Asked Questions</h2>
         <p className="mt-4 text-gray-600">
-        Our FAQ section offers quick answers to common questions about Sycnex AI Labs&a services and processes, providing the essential information you need for a seamless experience.
+        Our FAQ section offers quick answers to common questions about SynecX AI Labs&a services and processes, providing the essential information you need for a seamless experience.
         </p>
       </div>
 

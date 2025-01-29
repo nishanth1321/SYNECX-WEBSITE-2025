@@ -3,7 +3,7 @@ import Navbar from "@/layouts/navbar";
 import React from "react";
 import { Metadata } from "next";
 
-export const metadata = { title: "Events | SYCNEX" } as Metadata;
+export const metadata = { title: "Events | SynecX" } as Metadata;
 const page = () => {
   return (
     <div>

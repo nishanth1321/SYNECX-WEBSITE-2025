@@ -10,7 +10,7 @@ import Selfcheckout from "@/components/landing-page/products/product1";
 import Manufacturing from "@/components/landing-page/products/product2";
 import Logistics from "@/components/landing-page/products/product3";
 
-export const metadata = { title: "Home | SYCNEX" } as Metadata;
+export const metadata = { title: "Home | SynecX" } as Metadata;
 
 const page = () => {
   return (

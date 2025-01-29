@@ -34,7 +34,7 @@ export default function LatestBlog() {
           Latest News & Blogs
         </h2>
         <p className="mt-4 text-center text-gray-600 max-w-xl mx-auto text-sm">
-        Stay informed with Sycnex AI Labs latest news and insightful blogs, covering industry trends, expert tips, and updates on our innovative solutions.
+        Stay informed with SynecX AI Labs latest news and insightful blogs, covering industry trends, expert tips, and updates on our innovative solutions.
         </p>
 
         <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">

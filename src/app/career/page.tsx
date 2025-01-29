@@ -5,7 +5,7 @@ import Navbar from "@/layouts/navbar";
 import Openings from "@/components/careers/innovation-section";
 import ApplyJob from "@/components/careers/apply-job";
 
-export const metadata = { title: "Career | SYCNEX" } as Metadata;
+export const metadata = { title: "Career | SynecX" } as Metadata;
 
 const page = () => {
   return (
