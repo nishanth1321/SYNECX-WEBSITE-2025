@@ -26,7 +26,7 @@ export default function Manufacturing() {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">
           AI-Manufacture Suite
         </h1>
-        <p className="text-gray-600 text-base lg:text-lg">
+        <p className="text-gray-600 text-base lg:text-lg text-justify">
           Imagine a production line where every product meets the highest
           quality standards. Our technology makes this a reality by identifying
           and removing defective items in real-time. Say goodbye to

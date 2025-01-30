@@ -4,6 +4,7 @@ import Image from "next/image";
 import {
   FaArrowRight,
   FaChartBar,
+  FaFileInvoice,
   FaHeadphonesAlt,
   FaRegMap,
   FaStethoscope,
@@ -14,18 +15,34 @@ export default function Logistics() {
     <div className="bg-white py-16 flex flex-col lg:flex-row items-center justify-center px-4 lg:px-24">
       <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6 ml-24">
         <h2 className="text-indigo-900 text-lg font-medium mb-2">
-          AI OCR Solutions by SynecX AI Labs
+        Seamless Data Capture with AI OCR!
         </h2>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">
           AI-OCR
         </h1>
-        <p className="text-gray-600 text-base lg:text-lg">
-          Smart-Logix redefines logistics with AI-driven automation, optimizing
-          supply chains, enhancing route planning, and ensuring real-time
-          shipment tracking for unparalleled efficiency.
+        <p className="text-gray-600 text-base lg:text-lg text-justify ">
+        Our AI-powered OCR automatically scans barcodes, 
+        QR codes, invoices, prescriptions, and shipping labels, extracting key details and 
+        seamlessly storing them in your system. Accelerate logistics, enhance healthcare operations, 
+        and streamline enterprise workflows with greater accuracy and efficiency.
         </p>
 
         <div className="space-y-6">
+        <div className="flex items-start">
+            <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-indigo-500 text-white font-bold mr-4">
+              <FaFileInvoice />
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900">
+                Invoice Sap & ERP
+              </h3>
+              <p className="text-gray-600 text-justify">
+              Managing tax invoices and ERP/SAP data is time-consuming and error-prone. 
+              Our Gen AI-powered intelligent agent automates invoice extraction, ensuring seamless, 
+              error-free integration—boosting efficiency without vendor lock-in.
+              </p>
+            </div>
+          </div>
           <div className="flex items-start">
             <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-indigo-500 text-white font-bold mr-4">
               <FaChartBar />
@@ -34,9 +51,9 @@ export default function Logistics() {
               <h3 className="text-lg font-semibold text-gray-900">
                 Smart Logix
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Say goodbye to manual data entry! Our OCR solution automatically
-                scans barcodes and QR codes, extracts key details like to/from
+                scans barcodes and shipping labels, extracts key details like to/from
                 addresses seamlessly. Speed up logistics, reduce errors, and
                 improve efficiency.{" "}
               </p>
@@ -51,10 +68,11 @@ export default function Logistics() {
               <h3 className="text-lg font-semibold text-gray-900">
                 Health Care
               </h3>
-              <p className="text-gray-600">
-                Seamlessly integrate Smart-Logix with existing systems,
-                leveraging AI to enhance data flow, predictive analytics, and
-                operational efficiency.
+              <p className="text-gray-600 text-justify">
+              Manual prescription and billing entry causes delays and errors in healthcare workflows. 
+              Our smart AI agent scans prescriptions, extracts key data and automates billing, 
+              ensuring real-time processing so healthcare staff can focus on patient, not 
+              paperwork.
               </p>
             </div>
           </div>
