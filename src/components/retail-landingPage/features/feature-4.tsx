@@ -33,15 +33,16 @@ export default function FeatureFour() {
           </div>
           {/* Content */}
           <h6 className="text-blue-600 text-2xl font-medium mb-2">
-            Checkout Monitoring Hub
+            Hassle Free Checkout
           </h6>
           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
             Stay in Control
           </h5>
           <p className="text-gray-600 text-center">
-            Stay in control with machine status updates! Our cockpit feature
-            provides real-time monitoring of all checkout machines. Get instant
-            alerts and ensure smooth operations with timely resolutions.
+          Our hassle-free self-checkout combines speed, accuracy, and an interactive,
+          user-friendly UI, making it effortless. Customers can scan, pay, 
+          and go seamlessly, while businesses enjoy efficience 
+          with an intuitive experience.
           </p>
         </div>
       </div>

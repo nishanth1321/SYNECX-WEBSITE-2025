@@ -48,9 +48,8 @@ export default function FAQFeatures() {
               Frequently Asked Questions
             </h2>
             <p className="mt-4 text-gray-600">
-              Our FAQ section offers quick answers to common questions about
-              SynecX AI Labs&apos; services and processes, providing the
-              essential information you need for a seamless experience.
+              Our FAQ section offers quick answers to questions about
+              the features of the AI Powered Self-Checkout .
             </p>
           </div>
         </div>

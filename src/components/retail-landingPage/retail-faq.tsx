@@ -25,11 +25,7 @@ export default function RetailLandingPageFAQ() {
       answer:
         "Our deep learning models analyze shape, size, color, and packaging details to detect and classify items with high accuracy.",
     },
-    {
-      question: "What makes AI-powered self-checkout better than traditional systems?",
-      answer:
-        "Unlike traditional barcode-based checkouts, our AI instantly identifies items, reduces errors, speeds up transactions, and eliminates long queues.",
-    },
+    
     {
       question: "Is the self-checkout system secure?",
       answer:

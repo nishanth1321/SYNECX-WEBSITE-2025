@@ -16,7 +16,6 @@ const Features = () => {
         <FeatureOne />
         <FeatureTweo />
         <FeatureThree />
-        <FeatureFour />
         <FAQFeatures />
       </div>
     </div>

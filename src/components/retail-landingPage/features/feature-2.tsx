@@ -5,6 +5,7 @@ export default function FeatureTwo() {
     <div className="bg-white py-16 px-4 lg:px-24" style={{ height: "80%" }}>
       <div className="flex flex-wrap justify-center gap-4">
         {/* Left Card */}
+        {/* Left Card */}
         <div className="bg-white shadow-lg rounded-lg w-full md:w-5/12 h-[50vh] flex flex-col p-6 items-center">
           {/* Image Placeholder */}
           <div className="w-full h-1/3 border-2 border-dashed border-gray-300 mb-4 flex justify-center items-center">
@@ -12,20 +13,19 @@ export default function FeatureTwo() {
           </div>
           {/* Content */}
           <h6 className="text-blue-600 text-2xl font-medium mb-2">
-            Paper-Free Billing
+            Real-Time Inventory Management
           </h6>
           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
-            For a Greener Tomorrow
+            Smarter Decisions
           </h5>
           <p className="text-gray-600 text-center">
-            Make sustainability a priority with eco-friendly e-receipts.
-            Instantly send digital bills to customers’ phones, ensuring a
-            smooth and paperless checkout process. Reduce waste and embrace a
-            smarter way to bill.
+            Empower your business with actionable analytics. Monitor sales
+            trends, track inventory, and understand customer preferences with
+            our live dashboard. Stay ahead by making informed, data-driven
+            decisions.
           </p>
         </div>
-
-        {/* Right Card */}
+        {/*Ad Screen */}
         <div className="bg-white shadow-lg rounded-lg w-full md:w-5/12 h-[50vh] flex flex-col p-6 items-center">
           {/* Image Placeholder */}
           <div className="w-full h-1/3 border-2 border-dashed border-gray-300 mb-4 flex justify-center items-center">
@@ -33,17 +33,19 @@ export default function FeatureTwo() {
           </div>
           {/* Content */}
           <h6 className="text-blue-600 text-2xl font-medium mb-2">
-            Smart Suggestions
+            Interactive Ad Space
           </h6>
           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
-            For Better Shopping
+            For Enhanced Engagement
           </h5>
           <p className="text-gray-600 text-center">
-            Enhance the shopping journey with personalized recommendations. Our
-            system highlights complementary products and alerts customers to
-            soon-to-expire items, helping them save money and shop smarter.
+            Turn every second into a sales opportunity! Capture customer
+            attention during checkout with rotating, dynamic ads that showcase
+            the latest deals, trending products, or special promotions right on
+            the payment screen.
           </p>
         </div>
+        
       </div>
     </div>
   );
