@@ -26,22 +26,23 @@ export default function RetailIndex() {
           </h2>
           <h1 className="text-3xl lg:text-5xl font-semibold text-gray-900 mb-6">
             Empowering <span className="text-indigo-300">Retailers</span> with{" "}
-            <span className="text-indigo-400">Intelligent</span>{" "}
+            {/* <span className="text-indigo-400">Intelligent</span>{" "} */}
             <span className="text-indigo-500">AI</span>{" "}
-            <span className="text-indigo-600">Solutions</span>.
+            <span className="text-indigo-600">Self-Checkout</span>.
           </h1>
 
           <p className="text-gray-500 text-base lg:text-lg mb-6">
-            Synex AI Labs offers cutting-edge AI solutions tailored for the
-            retail industry. From smart self-checkout systems to AI-powered
-            defect detection and customer analytics, we enable seamless
-            operations and enhanced customer experiences.
+            Skip the lines and reclaim your time with our AI-powered self-checkout. 
+            Designed for speed and convenience, it ensures a <b>seamless shopping powered by AI</b> with
+            instant item recognition, quick payments, and minimal effort. 
+            Just place, pay, and go—no waiting, no hassle. Revolutionize your retail journey with fast, accurate, 
+            and intuitive checkout technology built for modern shoppers.
           </p>
 
           <div className="flex justify-center lg:justify-start">
             <Link href="#" legacyBehavior>
               <a className="bg-black text-white px-6 py-3 rounded-lg flex items-center">
-                <span className="mr-2">Start Your Retail Revolution</span>
+                <span className="mr-2">Faster. Smarter. Easier. </span>
                 <FaRocket />
               </a>
             </Link>

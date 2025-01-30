@@ -9,33 +9,33 @@ export default function RetailPageServices() {
       {
         icon: <FaPizzaSlice className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
         title: "Quick Service Restaurants",
-        description: "Enable faster order processing and payment handling with AI-driven self-checkout solutions.",
+        description: "Say goodbye to long lines & hello to effortless dining! Self-checkout lets customers savour meals faster than ever.",
       },
       {
         icon: <FaShoppingCart className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
         title: "Retail Stores",
-        description: "Enhance customer experiences with AI-powered self-checkout systems in retail environments.",
+        description: "Self-checkout are the heartbeat of modern supermarkets. Skip the lines and bag them your way—shopping made simple.",
       },
       {
         icon: <FaTicketAlt className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
         title: "Entertainment Venues",
-        description: "Simplify ticket purchases and concessions with seamless self-checkout systems powered by AI.",
+        description: "Enhance the cinema food court experience! Self-checkout kiosks enable quick snack orders and payments, reducing wait times.",
       },
       {
         icon: <FaTshirt className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
         title: "Sports Stadiums",
-        description: "Reduce wait times and improve fan experiences with efficient self-checkout kiosks.",
+        description: "Streamline stadium dining! Self-checkout let fans order food and drinks quickly, reducing lines and keeping them in the action.",
       },
       
       {
         icon: <FaStore className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
         title: "Convenience Stores",
-        description: "Streamline convenience store purchases with integrated AI-powered self-checkouts.",
+        description: "Perfect for on-the-go shoppers, self-checkout ensure what you need, with zero hassle and maximum efficiency",
       },
       {
         icon: <FaHospital className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
         title: "Healthcare",
-        description: "Optimize patient and visitor experiences with intuitive self-checkout systems for payments and services.",
+        description: "Fueling healthcare professionals on the go! Self-checkout in healthcare cafeterias let medical staff and visitors order quickly.",
       },
     ];
     
@@ -71,7 +71,7 @@ export default function RetailPageServices() {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
             {/* Last three features */}
             {features.slice(3).map((feature, index) => (
               <div
