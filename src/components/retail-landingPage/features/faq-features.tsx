@@ -13,22 +13,27 @@ export default function FAQFeatures() {
     {
       question: "What makes SynecX AI Labs' features unique?",
       answer:
-        "Our features are designed with cutting-edge AI to streamline retail operations, enhance customer experiences, and drive business growth through data-driven insights.",
+        "Our AI-powered self-checkout combines deep learning, computer vision, and real-time analytics to deliver precise weighing, seamless payments, smart product recommendations, and interactive engagement, making transactions faster, smarter, and more efficient.",
     },
     {
-      question: "How does SynecX AI Labs improve retail efficiency?",
+      question: "How does the self-checkout ensure accurate weighing?",
       answer:
-        "We leverage AI automation to optimize processes like inventory management, checkout experiences, and customer analytics, saving time and reducing errors.",
+        "Our Self-Checkout Weighing Precision feature seamlessly integrates with advanced weighing scales, ensuring precise weight measurements without slowing down the checkout process.",
     },
     {
-      question: "Can SynecX AI Labs solutions scale with my business?",
+      question: "Can the system suggest additional products during checkout?",
       answer:
-        "Absolutely! Our solutions are built to adapt and scale seamlessly as your business grows, ensuring consistent performance and reliability at any size.",
+        "Yes! Our Smart Product Pairings & Expiry Alerts feature automatically recommends complementary products and expiring items, enhancing customer experience and boosting sales.",
     },
     {
-      question: "How quickly can I implement SynecX AI Labs features?",
+      question: "Does the self-checkout provide real-time business insights?",
       answer:
-        "Our implementation process is designed to be quick and efficient, with most features ready to use in days, not weeks, depending on your business needs.",
+        "Absolutely! The Real-Time Retail Analytics Dashboard allows retailers to track inventory, monitor sales, and analyse customer behaviour for smarter decision-making.",
+    },
+    {
+      question: "Can businesses use self-checkout screens for advertising?",
+      answer:
+        "Yes! The Interactive Ad Space feature enables retailers to display dynamic ads, promotions, and trending products on the checkout screen to engage customers and drive sales when on sleep screen.",
     },
   ];
 
