@@ -18,7 +18,7 @@ export default function Navbar() {
     services: false,
   });
 
-  const [isSubscribed, setIsSubscribed] = useState<boolean>(false); // State to handle subscribe button click
+  const [isContact, setisContact] = useState<boolean>(false); // State to handle subscribe button click
 
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
@@ -58,7 +58,7 @@ export default function Navbar() {
         component: (
           <div
             ref={dropdownRef}
-            className="absolute left-0 md:left-40 transform md:-translate-x-1/2  w-full md:w-[80rem] h-auto md:h-[35rem] bg-white shadow-lg rounded-lg p-6 z-50 flex flex-col md:flex-row mt-10"
+            className="absolute left-0 md:left-40 transform md:-translate-x-1/2  w-full md:w-[80rem] h-auto md:h-[30rem] bg-white shadow-lg rounded-lg p-6 z-50 flex flex-col md:flex-row mt-10"
           >
             <ServiceSubpage
               setDropdownOpen={() => setDropdownOpen({ services: false })}
@@ -71,7 +71,7 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="bg-white/30 backdrop-blur-md fixed max-w-screen w-screen z-10 shadow-lg h-20 flex items-center gap-10">
+    <nav className="bg-white/30  backdrop-blur-md fixed max-w-screen w-screen z-10 shadow-lg h-20 flex items-center gap-10">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 mx-10">
           <Link href="/" className="flex items-center">
@@ -134,7 +134,7 @@ export default function Navbar() {
           <Link href="/contact">
             <button
               className={`hidden md:flex px-4 py-2 border border-black rounded-lg shadow-lg transition duration-200 ${
-                isSubscribed ? "bg-white text-black" : "bg-black text-white"
+                isContact ? "bg-white text-black" : "bg-black text-white"
               }`}
             >
               <span className="mr-2">Contact Us</span>
@@ -235,7 +235,7 @@ export default function Navbar() {
           <Link href="/contact">
             <button
               className={`block w-full px-4 py-2 border border-black rounded-lg shadow-lg transition duration-200 mt-2 ${
-                isSubscribed ? "bg-white text-black" : "bg-black text-white"
+                isContact ? "bg-white text-black" : "bg-black text-white"
               }`}
               onClick={() => setIsOpen(false)} // Close mobile menu on contact button click
             >
