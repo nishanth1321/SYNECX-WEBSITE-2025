@@ -29,7 +29,7 @@ export default function Home() {
               <span className="text-indigo-600">Excellence</span>.
             </h1>
 
-            <p className="text-black font-medium lg:text-lg mb-6 lg:mb-8 lg:mt-4 pl-6 text-justify pr-6">
+            <p className="text-gray-700 font-medium lg:text-lg mb-6 lg:mb-8 lg:mt-4 pl-6 text-justify pr-6">
               At SynecX AI Labs, we are revolutionizing industries with
               cutting-edge AI solutions with the potential of computer vision
               and deep learning. We deliver AI-driven solutions like Defect
