@@ -9,7 +9,7 @@ export default function HowItWorksSection() {
       icon: <FaDownload className="text-indigo-500 text-4xl" />, 
       title: "Discover Your Solution",
       description:
-        "Find the perfect SynecX AI Labs solution to meet your business challenges, from advanced ERP to seamless integrations.",
+        "Find the perfect SynecX AI Labs solution with advanced AI to transform your business operations seamlessly.",
     },
     {
       icon: <FaUserCircle className="text-indigo-500 text-4xl" />, 

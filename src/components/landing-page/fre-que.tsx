@@ -11,8 +11,8 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "How do we work together?.",
-      answer: "This is the answer to the question. It will be revealed when the question is clicked.",
+      question: "What is SynecX AI Labs?",
+      answer: "SynecX AI Labs is a leading AI-driven technology company specializing in computer vision and deep learning solutions. We provide AI-powered automation for various industries, including retail, manufacturing, and logistics, to enhance efficiency, accuracy, and productivity.",
     },
     {
       question: "Why SynecX AI Labs is the best?",
