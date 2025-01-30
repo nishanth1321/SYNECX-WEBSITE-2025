@@ -105,7 +105,7 @@ export default function RetailNavbar() {
             </Link>
           </div>
 
-          <Link href="#">
+          <Link href="/support">
             <button className="bg-black text-white h-10 w-28 rounded-md p-1"
               
             >
@@ -169,7 +169,7 @@ export default function RetailNavbar() {
           >
             Support
           </Link>
-          <Link href="#">
+          <Link href="/support">
             <button className="bg-black text-white"
               onClick={() => setIsOpen(false)} // Close mobile menu on contact button click
             >

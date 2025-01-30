@@ -36,11 +36,6 @@ export default function RetailLandingPageFAQ() {
       answer:
         "Absolutely! Our self-checkout system is customizable and designed for supermarkets, QSRs, stadiums, convenience stores, and entertainment venues, ensuring faster, more efficient, and seamless transactions tailored to any business need.",
     },
-    {
-      question: "How does the system handle newly added items?",
-      answer:
-        "Customers can easily scan the barcode manually if an item isn’t recognized, ensuring a smooth and hassle-free checkout experience.",
-    },
     
   ];
   

@@ -3,9 +3,9 @@ import React from "react";
 export default function FeaturesHeader() {
   return (
     <div>
-      <div className="h-96 flex flex-col items-center justify-center bg-white px-6 lg:px-28 pt-20 sm:pt-24 text-center">
+      <div className="h-[40rem] flex flex-col items-center justify-center bg-white px-6 lg:px-28 pt-20 sm:pt-0 text-center  ">
         {/* Centered Title */}
-        <p className="text-5xl font-bold mb-4">
+        <p className="text-5xl font-bold mb-4 mt-0 sm:mt-0">
           Explore Features Designed <br /> to Empower{" "}
           <span className="text-blue-600">Retail Checkout</span>
         </p>
