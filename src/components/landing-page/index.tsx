@@ -17,19 +17,19 @@ export default function Home() {
         </div>
 
         {/* Main Content */}
-        <div className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-start bg-white/40 backdrop-blur-sm px-6 lg:px-28 ml-12">
+        <div className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-start bg-white/40 backdrop-blur-sm px-6 lg:px-28">
           {/* Text Section */}
-          <div className="text-center lg:text-left max-w-xl mb-12 lg:mb-0 lg:mr-8 md:mb-5 mt-6 sm:mt-0">
-            <h2 className="text-lg lg:text-lg font-medium text-gray-600 mb-4 lg:mb-2 py-4">
+          <div className="text-center  bg-white/60 lg:text-left max-w-xl mb-12 lg:mb-0 lg:mr-8 md:mb-5 mt-6 sm:mt-0 rounded-xl">
+            <h2 className="text-lg lg:text-lg font-medium text-gray-600 mb-4 lg:mb-2 py-4 pl-6">
               Revolutionizing Industries with AI-Powered Solutions
             </h2>
-            <h1 className="text-3xl lg:text-5xl font-semibold text-gray-900 mb-6 lg:mb-10">
+            <h1 className="text-3xl lg:text-5xl font-semibold text-gray-900 mb-6 lg:mb-10 pl-6">
               Built for <span className="text-indigo-300">Innovation</span>,{" "}
               <span className="text-indigo-400">Efficiency</span>, and{" "}
               <span className="text-indigo-600">Excellence</span>.
             </h1>
 
-            <p className="text-black font-medium lg:text-lg mb-6 lg:mb-8 lg:mt-4">
+            <p className="text-black font-medium lg:text-lg mb-6 lg:mb-8 lg:mt-4 pl-6 text-justify pr-6">
               At SynecX AI Labs, we are revolutionizing industries with
               cutting-edge AI solutions with the potential of computer vision
               and deep learning. We deliver AI-driven solutions like Defect
@@ -37,7 +37,7 @@ export default function Home() {
               leveraging deep learning and computer vision to solve real-world
               challenges with precision and innovation.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 pl-6 pb-4">
               <Link href="/" legacyBehavior>
                 <a className="bg-black text-white px-6 py-3 rounded-lg flex items-center justify-center">
                   <span className="mr-2">Start Your Transformation</span>
