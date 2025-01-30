@@ -15,12 +15,24 @@ export default function FAQSection() {
       answer: "SynecX AI Labs is a leading AI-driven technology company specializing in computer vision and deep learning solutions. We provide AI-powered automation for various industries, including retail, manufacturing, and logistics, to enhance efficiency, accuracy, and productivity.",
     },
     {
-      question: "Why SynecX AI Labs is the best?",
-      answer: "Its excels with innovative solutions, expert service, and a commitment to your business success.",
+      question: "What makes SynecX AI Labs a great place to work?",
+      answer: "At SynecX AI Labs, we combine cutting-edge AI innovation with a collaborative, growth-driven culture. Our team enjoys flexibility, continuous learning, and impactful projects. With supportive leadership, a passion for technology, and a shared vision, we empower every individual to make a difference..",
     },
     {
-      question: "Do we get the best support?",
-      answer: "Yes, SynecX AI Labs offers top-tier support from consultation to post-implementation, ensuring your success.",
+      question: "How accurate are your AI-powered solutions?",
+      answer: "Our AI models are trained using high-quality datasets to ensure high accuracy. They continuously improve through deep learning to adapt to evolving business needs.",
+    },
+    {
+      question: "What kind of support do you offer?",
+      answer: "We provide 24/7 customer support, technical assistance, and regular updates to ensure smooth operations.",
+    },
+    {
+      question: "What are your pricing plans?",
+      answer: "We offer flexible pricing plans based on credits and usage, ensuring businesses of all sizes can leverage AI automation affordably.",
+    },
+    {
+      question: "How do I request a demo?",
+      answer: "To request a demo, fill out the demo request form on our support page. Once submitted, our support team will review your request and reach out to schedule a personalized walkthrough tailored to your business needs.",
     },
   ];
 
