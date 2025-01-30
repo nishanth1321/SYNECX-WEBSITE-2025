@@ -30,7 +30,6 @@ export default function FeatureOne() {
             goodbye to errors and hello to effortless transactions.
           </p>
         </div>
-
         {/* Right Card */}
         <div className="bg-white shadow-lg rounded-lg w-full md:w-5/12 h-[50vh] flex flex-col p-6 items-center">
           {/* Image Placeholder */}
@@ -39,18 +38,18 @@ export default function FeatureOne() {
           </div>
           {/* Content */}
           <h6 className="text-blue-600 text-2xl font-medium mb-2">
-            Unified Payments
+            Smart Recomendations
           </h6>
           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
-            For Everyone
+            For Better Shopping
           </h5>
           <p className="text-gray-600 text-center">
-            Offer customers the freedom to pay their way! With integrated
-            support for cards, mobile wallets, and QR codes, our system makes
-            every payment secure, swift, and stress-free. Convenience is just a
-            tap away.
+            Enhance the shopping journey with personalized recommendations. Our
+            system highlights complementary products and alerts customers to
+            soon-to-expire items, helping them save money and shop smarter.
           </p>
         </div>
+        
       </div>
     </div>
   );
