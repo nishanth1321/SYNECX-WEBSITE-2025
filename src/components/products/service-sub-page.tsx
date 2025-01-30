@@ -33,9 +33,9 @@
     };
   
     return (
-      <div className="flex flex-col lg:flex-row w-full h-auto md:h-[30rem] overflow-hidden">
+      <div className="flex flex-col lg:flex-row w-full h-auto md:h-[27rem] overflow-hidden rounded-lg">
         {/* Sidebar */}
-        <div className="lg:w-64 w-full lg:p-4 p-2 bg-white border-r shadow-lg">
+        <div className="lg:w-64 w-full lg:p-4 p-2 bg-white border-r h-[30rem] shadow-lg">
           <ul className="space-y-2 lg:space-y-4">
             {sidebarItems.map((item, index) => (
               <li
@@ -52,11 +52,11 @@
         </div>
   
         {/* Main Content */}
-        <div className="flex-1 p-4 sm:p-6 lg:p-8 bg-white overflow-y-auto h-full">
+        <div className="flex-1 p-4 sm:p-6 lg:p-8 bg-white h-[30rem]">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center lg:text-left">
             {contentTitle}
           </h1>
-          <div className="h-full">{renderComponent()}</div>
+          <div className="h-[30rem]">{renderComponent()}</div>
         </div>
       </div>
     );
