@@ -32,8 +32,7 @@ export default function Home() {
             <p className="text-gray-700 font-medium lg:text-lg mb-6 lg:mb-8 lg:mt-4 pl-6 text-justify pr-6">
               At SynecX AI Labs, we are revolutionizing industries with
               cutting-edge AI solutions with the potential of computer vision
-              and deep learning. We deliver AI-driven solutions like Defect
-              Detection, AI Self-Checkout, and Smart Logistic Scanners,
+              and deep learning. We empower industries with AI-driven automation, Self-Checkout, Smart Logistic Scanners, and Defect Detection enabling defect detection.
               leveraging deep learning and computer vision to solve real-world
               challenges with precision and innovation.
             </p>
