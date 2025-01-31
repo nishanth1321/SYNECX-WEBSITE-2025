@@ -56,7 +56,7 @@ export default function FAQSection() {
               onClick={() => toggleFAQ(index)}
             >
               <span>{faq.question}</span>
-              <div className="ml-4 bg-indigo-400 text-white rounded-full w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center">
+              <div className="ml-4 bg-red-400 text-white rounded-full w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center">
                 <span className="text-xl sm:text-2xl">{activeIndex === index ? "-" : "+"}</span>
               </div>
             </button>

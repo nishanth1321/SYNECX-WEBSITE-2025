@@ -34,7 +34,7 @@ export default function RetailPageServices() {
       },
       {
         icon: <FaHospital className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
-        title: "Healthcare",
+        title: "Hospitality and Healthcare",
         description: "Fueling healthcare professionals on the go! Self-checkout in healthcare cafeterias let medical staff and visitors order quickly.",
       },
     ];
@@ -44,9 +44,9 @@ export default function RetailPageServices() {
     <div>
       <div className="w-full bg-white py-6 flex flex-col items-center text-center" id='services'>
         <h1 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-gray-900 mb-2">
-          Elevate our Digital Presence with Expert Services
+          Elevate our Digital Presence with Expertise in Industries
         </h1>
-        <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mb-4">
+        <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl ">
           Elevate our brand with Synecx AI Labs innovative services, crafting standout digital experiences that captivate and convert in a competitive market.
         </p>
       </div>

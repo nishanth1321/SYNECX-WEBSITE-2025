@@ -1,6 +1,6 @@
 export default function FeatureOne() {
   return (
-    <div className="bg-white py-16 px-4 lg:px-24 " style={{ height: "80%" }}>
+    <div className="bg-white py-16 px-4 lg:px-24 -mt-10 " style={{ height: "80%" }}>
       <h1 className="flex justify-center items-center text-4xl text-blue-600 font-bold mb-4">
         Features
       </h1>
@@ -38,7 +38,7 @@ export default function FeatureOne() {
           </div>
           {/* Content */}
           <h6 className="text-blue-600 text-2xl font-medium mb-2">
-            Smart Recomendations
+            Smart Recommendations
           </h6>
           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
             For Better Shopping

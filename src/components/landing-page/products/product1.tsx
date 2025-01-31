@@ -27,24 +27,24 @@ export default function Selfcheckout() {
 
       {/* Right side with the text content */}
       <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6 mt-6">
-        <h2 className="text-blue-500 text-lg font-medium mb-2">
+        <h2 className="text-red-500 text-lg font-semibold mb-2">
           Transform Retail with Smart Self-Checkout!
         </h2>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">
-          Revolutionizing self-checkout
+          AI-Powered self-checkout
         </h1>
         <p className="text-gray-800 text-base lg:text-lg">
-          Fast, accurate, and AI-driven item scanning for seamless payments.
+          Faster, Smarter, Easier and AI-driven item scanning for seamless Shopping.
         </p>
 
         <div className="space-y-6 ">
           <div className="flex items-start">
-            <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-indigo-500 text-white font-bold mr-4">
+            <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-red-500 text-white font-bold mr-4">
               <FaRocket />
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-900">
-                Smart Self-Checkout
+                SynecX - Cart
               </h3>
               <p className="text-gray-600 text-justify mt-4">
                 Elevate the way customers shop with our advanced self-checkout
@@ -60,7 +60,7 @@ export default function Selfcheckout() {
             <span className="text-gray-600 font-semibold mt-0 sm:mt-2">
               Step into the Future of Shopping
             </span>
-            <Link className="bg-indigo-500 text-white py-2 px-4 w-32 rounded-md hover:bg-indigo-600 transition flex items-center justify-center space-x-2" href={"/retail"}>
+            <Link className="bg-red-500 text-white py-2 px-4 w-32 rounded-md hover:bg-indigo-600 transition flex items-center justify-center space-x-2" href={"/retail"}>
               
               <span>Dive In</span>
               <FaArrowRight />

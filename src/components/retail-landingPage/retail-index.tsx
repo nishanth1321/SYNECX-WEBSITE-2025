@@ -27,11 +27,11 @@ export default function RetailIndex() {
           <h1 className="text-3xl lg:text-5xl font-semibold text-gray-900 mb-6">
             Empowering <span className="text-indigo-300">Retailers</span> with{" "}
             {/* <span className="text-indigo-400">Intelligent</span>{" "} */}
-            <span className="text-indigo-500">AI</span>{" "}
+            <span className="text-indigo-500">AI Powered</span>{" "}
             <span className="text-indigo-600">Self-Checkout</span>.
           </h1>
 
-          <p className="text-gray-500 text-base lg:text-lg mb-6">
+          <p className="text-gray-500 text-base lg:text-lg mb-6 text-justify">
             Skip the lines and reclaim your time with our AI-powered self-checkout. 
             Designed for speed and convenience, it ensures a <b>seamless shopping powered by AI</b> with
             instant item recognition, quick payments, and minimal effort. 

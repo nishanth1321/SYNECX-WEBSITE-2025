@@ -71,7 +71,7 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="bg-white/30  backdrop-blur-md fixed max-w-screen w-screen z-10 shadow-lg h-20 flex items-center gap-10">
+    <nav className="bg-white/30 backdrop-blur-md fixed max-w-screen w-screen z-10 shadow-lg h-20 flex items-center gap-10">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 mx-10">
           <Link href="/" className="flex items-center">

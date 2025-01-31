@@ -7,9 +7,9 @@ export default function HowItWorksSection() {
   const steps = [
     {
       icon: <FaDownload className="text-indigo-500 text-4xl" />, 
-      title: "Discover Your Solution",
+      title: "Discover Your Solutions",
       description:
-        "Find the perfect SynecX AI Labs solution with advanced AI to transform your business operations seamlessly.",
+        "Find the perfect SynecX AI Labs solutions with advanced AI to transform your business operations seamlessly.",
     },
     {
       icon: <FaUserCircle className="text-indigo-500 text-4xl" />, 
@@ -34,7 +34,7 @@ export default function HowItWorksSection() {
       At SynecX AI Labs, we collaborate closely to understand your needs, craft tailored solutions, and implement them with precision and ongoing support.
       </p>
       {/* Wrapper for all steps in a single background card */}
-      <div className="bg-indigo-100 shadow-lg rounded-lg p-8 w-full sm:w-[1200px] lg:h-96">
+      <div className="bg-white shadow-xl shadow-red-100/30 p-8 w-full sm:w-[1200px] lg:h-96">
         <div className="w-full flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-6 py-10">
           {steps.map((step, index) => (
             <div
@@ -42,9 +42,9 @@ export default function HowItWorksSection() {
               className="text-center max-w-xs transition-transform transform hover:-translate-y-1 hover:scale-105"
             >
               <div className="flex justify-center items-center mb-4">
-                <div className="bg-slate-100 rounded-2xl w-20 h-20 flex items-center justify-center transition-colors duration-300 ">
+                <div className=" rounded-2xl w-20 h-20 flex items-center justify-center transition-colors duration-300 ">
                   {React.cloneElement(step.icon, {
-                    className: "text-indigo-500 ",
+                    className: "text-red-500 ",
                   })}
                 </div>
               </div>

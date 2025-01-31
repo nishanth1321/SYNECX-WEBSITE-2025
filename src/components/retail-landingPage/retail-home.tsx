@@ -13,8 +13,8 @@ const RetailHome = () => {
       <RetailIndex />
       <RetailPageServices />
       <HowRetailWorks />
-      <CaseStudy />
       <RetailTestimonial />
+      <CaseStudy />
       <RetailLandingPageFAQ />
     </div>
   );
