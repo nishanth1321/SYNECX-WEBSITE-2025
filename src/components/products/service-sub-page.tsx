@@ -17,8 +17,8 @@
   
     const sidebarItems = [
       { title: "Retail Solutions", component: Retail },
+      { title: "OCR Solutions", component: Logostics },
       { title: "Manufacturing Solutions", component: Manufacturing },
-      { title: "Logistics Solutions", component: Logostics },
     ];
   
     const handleItemClick = (index: number, item: any) => {
@@ -41,7 +41,7 @@
               <li
                 key={index}
                 className={`flex items-center justify-between p-3 md:p-4 font-medium text-gray-900 rounded-md cursor-pointer transition-all duration-300 ${
-                  activeIndex === index ? "bg-blue-100 text-blue-800" : "hover:bg-gray-100"
+                  activeIndex === index ? "bg-gray-200 text-black" : "hover:bg-gray-100"
                 }`}
                 onClick={() => handleItemClick(index, item)}
               >

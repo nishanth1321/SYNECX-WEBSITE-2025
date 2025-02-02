@@ -34,7 +34,7 @@ const SnowParticles = (props) => {
           },
         },
         color: {
-          value: "#7c009f", // White particles for snow
+          value: "#f71b1e", // White particles for snow
         },
         shape: {
           type: "circle",

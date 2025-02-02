@@ -46,16 +46,16 @@ const ParticlesComponent = (props) => {
             duration: 15,
           },
           grab: {
-            distance: 100,
+            distance: 20,
           },
         },
       },
       particles: {
         color: {
-          value: "#550794", // Dark blue for particles #550794
+          value: "#f71b1e", // Dark blue for particles #550794
         },
         links: {
-          color: "#8d26e0", // Blue for links #550794
+          color: "#ff4c4f", // Blue for links #550794
           distance: 150,
           enable: true,
           opacity: 0.55,

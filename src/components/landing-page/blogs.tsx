@@ -1,40 +1,46 @@
-"use client"; 
+"use client";
 
-import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import { Pagination, Autoplay } from "swiper/modules";
+import React from "react";
 
 export default function LatestBlog() {
   const blogs = [
     {
       title: "Laboris nisi aliquip dium exiuliyim commodo...",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nun",
-      image: "/news-img1.jpeg", // Replace with actual image path
+      images: ["/news-img1.jpeg", "/news-img2.jpeg", "/news-img3.webp"],
       author: "Juhan",
       date: "Apr 28 2024",
     },
     {
       title: "Quis nostrud exercitati ullamc laboris n...",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nun",
-      image: "/news-img2.jpeg", // Replace with actual image path
+      images: ["/news-img2.jpeg", "/news-img3.webp", "/news-img1.jpeg"],
       author: "Juhan",
       date: "Apr 28 2024",
     },
     {
       title: "Expenses as material bre mate insisted b...",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nun",
-      image: "/news-img3.webp", // Replace with actual image path
+      images: ["/news-img3.webp", "/news-img1.jpeg", "/news-img2.jpeg"],
       author: "Juhan",
       date: "Apr 28 2024",
     },
+    
   ];
 
   return (
-    <div className="py-16 bg-gray-50">
+    <div className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-semibold text-gray-900 text-center">
           Latest News & Blogs
         </h2>
         <p className="mt-4 text-center text-gray-600 max-w-xl mx-auto text-sm">
-        Stay informed with SynecX AI Labs latest news and insightful blogs, covering industry trends, expert tips, and updates on our innovative solutions.
+          Stay informed with SynecX AI Labs latest news and insightful blogs, covering industry trends, expert tips, and updates on our innovative solutions.
         </p>
 
         <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
@@ -43,18 +49,27 @@ export default function LatestBlog() {
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs mx-auto transform transition-transform duration-300 hover:scale-105 hover:shadow-md"
             >
-              <div className="relative h-36">
-                <Image
-                  src={blog.image}
-                  alt={blog.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="p-4"
-                />
-              </div>
+              {/* Swiper Carousel for Blog Images */}
+              <Swiper
+                spaceBetween={10}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 3000, disableOnInteraction: false }} // Auto slide every 3 seconds
+                modules={[Pagination, Autoplay]}
+                className="h-40"
+              >
+                {blog.images.map((image, imgIndex) => (
+                  <SwiperSlide key={imgIndex}>
+                    <img
+                      src={image}
+                      alt={`Slide ${imgIndex}`}
+                      className="w-full h-40 object-cover"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
               <div className="p-4">
                 <div className="flex items-center text-gray-500 text-sm mb-2">
-                 
                   <div className="flex items-center">
                     <svg
                       className="w-4 h-4 mr-2"
@@ -74,7 +89,7 @@ export default function LatestBlog() {
                 <p className="text-gray-600 mt-2 mb-4 text-sm">{blog.description}</p>
                 <a
                   href="#"
-                  className="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-500 transition-colors text-sm"
+                  className="inline-block bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-300 transition-colors text-sm"
                 >
                   Read More
                 </a>

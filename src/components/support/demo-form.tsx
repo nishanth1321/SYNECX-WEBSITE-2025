@@ -101,7 +101,7 @@ const DemoForm: React.FC = () => {
         <div className="h-auto flex justify-center items-center p-6 ml-4 sm:ml-2">
           <form
             onSubmit={handleSubmit}
-            className="bg-white shadow-lg rounded px-8 pt-6 pb-8 w-full max-w-full shadow-blue-200 "
+            className="bg-white shadow-lg rounded px-8 pt-6 pb-8 w-full max-w-full shadow-indigo-200 "
           >
             <h2 className="text-2xl font-bold mb-6 text-center text-gray-700">
               Request a Demo
@@ -336,7 +336,7 @@ const DemoForm: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-blue-300 ${
+                className={`bg-indigo-400 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-blue-300 ${
                   isSubmitting ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >
@@ -364,7 +364,7 @@ const DemoForm: React.FC = () => {
       {/* Right Section - Text */}
       <div className="lg:w-1/2 order-1 lg:order-2">
         <div className="text-left sm:mx-0 mx-6 ">
-          <h1 className="text-blue-600 font-medium">Demo</h1>
+          <h1 className="text-red-500 font-semibold">Demo</h1>
           <h2 className="text-3xl font-semibold text-gray-900">
             Book your Demo Here
           </h2>

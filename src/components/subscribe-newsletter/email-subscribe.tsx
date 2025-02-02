@@ -61,15 +61,15 @@ const EmailSubscribe = () => {
           placeholder="Your Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="p-3 w-full md:w-96 rounded-full text-gray-800 outline-none border-2 border-blue-200"
+          className="p-3 w-full md:w-96 rounded-full text-gray-800 outline-none border-2 border-gray-200"
         />
 
         <button
           type="submit"
           disabled={loading}
           className={`${
-            loading ? "bg-gray-300" : "bg-blue-200"
-          } text-gray-600 px-5 py-3 rounded-full  hover:text-blue-500 transition-colors duration-300 font-semibold`}
+            loading ? "bg-gray-300" : "bg-gray-200"
+          } text-gray-600 px-5 py-3 rounded-full   font-semibold`}
         >
           {loading ? "Subscribing..." : "Subscribe"}
         </button>

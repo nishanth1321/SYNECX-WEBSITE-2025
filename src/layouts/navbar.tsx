@@ -88,7 +88,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-6">
             <Link
               href="/about-us"
-              className="block text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+              className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
               onClick={() => setIsOpen(false)}
             >
               About Us
@@ -101,7 +101,7 @@ export default function Navbar() {
                       item.label.toLowerCase() as keyof DropdownState
                     )
                   }
-                  className="text-blue-900 text-sm font-bold hover:text-blue-300 transition duration-200 flex items-center"
+                  className="text-gray-600 text-sm font-bold hover:text-black transition duration-200 flex items-center"
                 >
                   {item.label} <FaChevronDown className="ml-1" />
                 </button>
@@ -113,19 +113,25 @@ export default function Navbar() {
 
             <Link
               href="/event"
-              className="text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+              className="text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             >
               Events
             </Link>
             <Link
+              href="/blog"
+              className="text-gray-600 font-bold hover:text-black text-sm transition duration-200"
+            >
+              Blogs
+            </Link>
+            <Link
               href="/career"
-              className="text-blue-900 font-bold hover:text-blue-300 transition text-sm duration-200"
+              className="text-gray-600 font-bold hover:text-black transition text-sm duration-200"
             >
               Career
             </Link>
             <Link
               href="/support"
-              className="text-blue-900 font-bold hover:text-blue-300 transition text-sm duration-200"
+              className="text-gray-600 font-bold hover:text-black transition text-sm duration-200"
             >
               Support
             </Link>
@@ -145,7 +151,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="text-blue-900 font-bold focus:outline-none hover:text-blue-300 transition duration-200"
+              className="text-gray-600 font-bold focus:outline-none hover:text-black transition duration-200"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -169,14 +175,14 @@ export default function Navbar() {
           <div className="block">
           <Link
             href="/about-us"
-            className="block mb-2  text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+            className="block mb-2  text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
            About Us
           </Link>
             <button
               onClick={() => toggleDropdown("services")}
-              className="text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200 flex justify-between w-full"
+              className="text-gray-600 font-bold hover:text-black text-sm transition duration-200 flex justify-between w-full"
             >
               Products
               <FaChevronDown
@@ -189,20 +195,20 @@ export default function Navbar() {
               <div className="mt-2 space-y-2 pl-4">
                 <Link
                   href="/"
-                  className="block text-blue-500 font-bold hover:text-blue-300 text-sm transition duration-200"
+                  className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
                   onClick={() => setIsOpen(false)}
                 >
                   Retail
                 </Link>
                 <Link
                   href="/"
-                  className="block text-blue-500 font-bold hover:text-blue-300 text-sm transition duration-200"
+                  className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
                   onClick={() => setIsOpen(false)}
                 >
                   Manufacturing
                 </Link> <Link
                   href="/"
-                  className="block text-blue-500 font-bold hover:text-blue-300 text-sm transition duration-200"
+                  className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
                   onClick={() => setIsOpen(false)}
                 >
                   Logistics
@@ -213,21 +219,21 @@ export default function Navbar() {
 
           <Link
             href="/"
-            className="block text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+            className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
            Events
           </Link>
           <Link
             href="/career"
-            className="block text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+            className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
             Career
           </Link>
           <Link
             href="/support"
-            className="block text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+            className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
             Support

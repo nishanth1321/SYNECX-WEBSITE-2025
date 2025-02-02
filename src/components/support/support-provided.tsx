@@ -6,20 +6,20 @@ import { FaQuestionCircle, FaPlayCircle, FaFileAlt } from "react-icons/fa";
 export default function SupportSection() {
   const steps = [
     {
-      icon: <FaQuestionCircle className="text-blue-600 text-4xl" />,
+      icon: <FaQuestionCircle className="text-red-500 text-4xl" />,
       title: "Query Support",
       description:
         "Get answers to your questions quickly with our expert query support team available to assist you.",
     },
     {
-      icon: <FaPlayCircle className="text-blue-600 text-4xl" />,
+      icon: <FaPlayCircle className="text-red-500 text-4xl" />,
       title: "Schedule a Demo",
       description:
         "Experience our solutions in action by scheduling a personalized demo tailored to your business needs.",
     },
     {
-      icon: <FaFileAlt className="text-blue-600 text-4xl" />,
-      title: "Request a Quotation",
+      icon: <FaFileAlt className="text-red-500 text-4xl" />,
+      title: "24/7 help Desk",
       description:
         "Receive a detailed quotation for your desired solutions, crafted to match your business requirements.",
     },
@@ -39,14 +39,14 @@ export default function SupportSection() {
               className="text-center max-w-xs transition-transform transform hover:-translate-y-1 hover:scale-105 group"
             >
               <div className="flex justify-center items-center mb-4">
-                <div className="bg-slate-100 rounded-2xl w-20 h-20 flex items-center justify-center transition-colors duration-300 ">
+                <div className="bg-slate-50 rounded-2xl w-20 h-20 flex items-center justify-center transition-colors duration-300 ">
                   {React.cloneElement(step.icon, {
-                    className: "text-blue-500 ",
+                    className: "text-red-500 ",
                   })}
                 </div>
               </div>
               {/* Heading changes color on card hover */}
-              <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-red-500 transition-colors duration-300">
                 {step.title}
               </h3>
               <p className="text-gray-600">{step.description}</p>

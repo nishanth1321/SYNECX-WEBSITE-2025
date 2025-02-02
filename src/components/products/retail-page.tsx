@@ -34,7 +34,7 @@ const Retail: React.FC<Producyone> = ({ setDropdownOpen }) => {
               onClick={() => {
                 if (setDropdownOpen) setDropdownOpen(false);
               }}
-              className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300  transform hover:scale-105 hover:bg-blue-50 hover:shadow-lg  h-[18rem]"
+              className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300  transform hover:scale-105  h-[18rem]"
             >
               {service.icon}
               <h2 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 mb-2 sm:mb-3">

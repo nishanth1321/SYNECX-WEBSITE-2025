@@ -51,7 +51,7 @@ export default function HowItWorksSection() {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {step.title}
               </h3>
-              <p className="text-gray-600 hover:text-blue-500">{step.description}</p>
+              <p className="text-gray-600 hover:text-red-500">{step.description}</p>
             </div>
           ))}
         </div>

@@ -437,7 +437,7 @@ const ApplyJob: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="bg-indigo-400 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-indigo-100"
+                <button className="bg-red-300 hover:bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-indigo-100"
                 type="button"
                 >
                   Upload CV
@@ -467,7 +467,7 @@ const ApplyJob: React.FC = () => {
       </div>
       <div className="lg:w-1/2 order-2 lg:order-2 hidden lg:block">
         <div className="text-left">
-          <h1 className="text-blue-600 font-medium">Career UpSkilling</h1>
+          <h1 className="text-red-500 font-semibold">Career UpSkilling</h1>
           <h2 className="text-3xl font-semibold text-gray-900">
             Your Career Starts Here
           </h2>

@@ -21,13 +21,13 @@ export default function ContactInfo() {
             <hr className="mb-6" />
 
             <div className="mb-5">
-              <FaPhoneAlt className="inline-block text-blue-500 mr-2" />
+              <FaPhoneAlt className="inline-block text-red-500 mr-2" />
               <span className="font-semibold">Mobile</span>
               <p className="text-gray-400">+43456734567</p>
             </div>
 
             <div className="mb-4">
-              <FaEnvelope className="inline-block text-blue-500 mr-2" />
+              <FaEnvelope className="inline-block text-red-500 mr-2" />
               <span className="font-semibold">Email</span>
               <p className="text-gray-400">
                 <a href="mailto:info@agico.com" className="hover:underline">
@@ -37,7 +37,7 @@ export default function ContactInfo() {
             </div>
 
             <div>
-              <FaMapMarkerAlt className="inline-block text-blue-500 mr-2" />
+              <FaMapMarkerAlt className="inline-block text-red-500 mr-2" />
               <span className="font-semibold">Address</span>
               <p className="text-gray-400">
               inttha street that intha orru tha intha state tha 

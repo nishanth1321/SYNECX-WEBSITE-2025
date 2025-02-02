@@ -77,7 +77,7 @@ const QueryForm: React.FC = () => {
       {/* Left Section - Form */}
       <div className="lg:w-1/2 order-1 lg:order-1">
       <div className="text-left pl-12">
-          <h1 className="text-blue-600 font-medium">Query</h1>
+          <h1 className="text-red-500 font-semibold">Query</h1>
           <h2 className="text-3xl font-semibold text-gray-900">
             Your Query Here
           </h2>

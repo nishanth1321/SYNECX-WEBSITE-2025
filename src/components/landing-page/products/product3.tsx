@@ -20,7 +20,7 @@ export default function Manufacturing() {
         </div>
       </div>
       <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6 mb-12 lg:mb-0 mt-20">
-        <h2 className="text-red-500 text-lg font-medium mt-2">
+        <h2 className="text-red-500 text-lg font-semibold mt-2">
           Seamless Quality - Zero Defects with AI
         </h2>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">

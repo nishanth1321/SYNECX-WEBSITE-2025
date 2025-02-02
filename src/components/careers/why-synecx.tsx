@@ -12,13 +12,13 @@ const Whysycenx = () => {
       </div>
       <section className="text-gray-800 py-12 relative overflow-hidden bg-white">
       
-    <div className="container mx-auto py-12">
+    <div className="container mx-auto py-12 mt-20">
       {/* Background Accent */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-200 opacity-40 rounded-full blur-3xl z-0 mt-10"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-200 opacity-40 rounded-full blur-3xl z-0 mt-10"></div>
 
-      <h1 className="text-3xl md:text-6xl font-bold mb-12 relative text-center z-0">
+      <h1 className="text-3xl md:text-6xl font-bold mb-12 relative text-center z-0 -mt-12">
         <span className="text-[55px]">Why</span>{" "}
-        <span className="bg-clip-text text-5xl text-blue-700">
+        <span className="bg-clip-text text-5xl text-red-500">
           SYNECX AI LABS
         </span>
       </h1>
@@ -31,7 +31,7 @@ const Whysycenx = () => {
             className="w-full h-[200px] md:h-[300px] object-cover "
           />
         </div>
-        <div className="md:w-1/2 md:ml-8">
+        <div className="md:w-1/2 md:ml-8 sm:mx-0 mx-4">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Opportunities at Synecx AI
           </h2>
@@ -89,7 +89,7 @@ const Whysycenx = () => {
       </div>
 
       {/* Decorative Background Elements */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-blue-300 opacity-30 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-64 h-64 bg-red-300 opacity-30 rounded-full blur-3xl"></div>
     </section>
     </div>
   );
