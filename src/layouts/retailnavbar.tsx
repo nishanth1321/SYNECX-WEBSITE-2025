@@ -72,13 +72,13 @@ export default function RetailNavbar() {
           <div className="hidden md:flex items-center space-x-6">
           <Link
               href="/retail"
-              className="text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+              className="text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             >
               Home
             </Link>
             <Link
               href="/retail/features"
-              className="block text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+              className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
               onClick={() => setIsOpen(false)}
             >
               Features
@@ -87,19 +87,19 @@ export default function RetailNavbar() {
             <Link
         href="#"
         onClick={handleScrollToServices}
-        className="text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+        className="text-gray-600 font-bold hover:text-black text-sm transition duration-200"
       >
         Industries
       </Link>
             <Link
               href="/retail/case-study"
-              className="text-blue-900 font-bold hover:text-blue-300 transition text-sm duration-200"
+              className="text-gray-600 font-bold hover:text-black transition text-sm duration-200"
             >
               Case Studies
             </Link>
             <Link
               href="/support"
-              className="text-blue-900 font-bold hover:text-blue-300 transition text-sm duration-200"
+              className="text-gray-600 font-bold hover:text-black transition text-sm duration-200"
             >
               Support
             </Link>
@@ -117,7 +117,7 @@ export default function RetailNavbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="text-blue-900 font-bold focus:outline-none hover:text-blue-300 transition duration-200"
+              className="text-gray-600 font-bold focus:outline-none hover:text-black transition duration-200"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -141,7 +141,7 @@ export default function RetailNavbar() {
           <div className="block">
             <Link
               href="/about-us"
-              className="block mb-2  text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+              className="block mb-2  text-gray-600 font-bold hover:text-black text-sm transition duration-200"
               onClick={() => setIsOpen(false)}
             >
               Features
@@ -150,21 +150,21 @@ export default function RetailNavbar() {
 
           <Link
             href="/"
-            className="block text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+            className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
             Events
           </Link>
           <Link
             href="/"
-            className="block text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+            className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
             Career
           </Link>
           <Link
             href="/support"
-            className="block text-blue-900 font-bold hover:text-blue-300 text-sm transition duration-200"
+            className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
             Support

@@ -4,8 +4,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import {  Autoplay } from "swiper/modules";
 import RetailNavbar from "@/layouts/retailnavbar";
 import { FaChartLine, FaIndustry, FaLightbulb, FaTools } from "react-icons/fa";
 
@@ -25,8 +24,7 @@ const CaseStudy = () => {
         <div className="w-full lg:w-1/2 flex justify-center items-center h-[25rem] sm:h-[30rem] lg:h-[35rem]">
           <div className="w-full max-w-xl sm:max-w-md md:max-w-lg lg:w-[900px] lg:h-[450px] ml-0 sm:-ml-20"> 
             <Swiper
-              modules={[Navigation,  Autoplay]}
-              navigation
+              modules={[  Autoplay]}
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               className="rounded-lg sm:h-[25rem] h-full w-full sm:w-[40rem]"
             >

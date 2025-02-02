@@ -87,7 +87,9 @@ const RetailTestimonial = () => {
         <h1 className="text-4xl font-bold text-black">
           Stories of <span className="text-indigo-500">AI Impact</span>
         </h1>
-        <p className="text-lg text-gray-500 mt-2">See what people are saying.</p>
+        <p className="text-lg text-gray-500 mt-2">
+          See what people are saying.
+        </p>
       </div>
 
       {/* Testimonial Slider */}
@@ -138,40 +140,6 @@ const RetailTestimonial = () => {
             </div>
           ))}
         </div>
-
-        {/* Left Arrow */}
-        <button
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-indigo-200 text-white p-2 rounded-full shadow-lg z-20"
-          onClick={prevSlide}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-
-        {/* Right Arrow */}
-        <button
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-indigo-200 text-white p-2 rounded-full shadow-lg z-20"
-          onClick={nextSlide}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
       </div>
 
       {/* Optional Dots */}
