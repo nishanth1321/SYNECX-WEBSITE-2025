@@ -13,7 +13,7 @@ import {
 export default function Logistics() {
   return (
     <div className="bg-white py-16 flex flex-col lg:flex-row items-center justify-center px-4 lg:px-24">
-      <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6 ml-24">
+      <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6 sm:ml-24 ml-0">
         <h2 className="text-red-500 text-lg font-semibold mb-2">
         Seamless Data Capture with AI OCR!
         </h2>
@@ -35,7 +35,7 @@ export default function Logistics() {
               <h3 className="text-lg font-semibold text-gray-900">
                 Invoice SAP & ERP
               </h3>
-              <p className="text-gray-600 text-justify pt-2">
+              <p className="text-gray-600 text-justify mt-8 sm:mt-4 -ml-12 sm:-ml-0">
               Our Gen AI-powered intelligent agent automates invoice extraction, ensuring seamless, 
               error-free integration—boosting efficiency without vendor lock-in.
               </p>
@@ -49,7 +49,7 @@ export default function Logistics() {
               <h3 className="text-lg font-semibold text-gray-900">
                 Smart LogiX
               </h3>
-              <p className="text-gray-600 text-justify pt-2">
+              <p className="text-gray-600 text-justify mt-8 sm:mt-4 -ml-12 sm:-ml-0">
               Our Gen AI-powered OCR solution extracts the shipping carrier lables key feilds like to/from
                 addresses ,services, tracking numbers seamlessly. Speeding up your logistics, reducing errors, and
                 improving efficiency.{" "}
@@ -65,7 +65,7 @@ export default function Logistics() {
               <h3 className="text-lg font-semibold text-gray-900">
                 Health Care
               </h3>
-              <p className="text-gray-600 text-justify pt-2">
+              <p className="text-gray-600 text-justify mt-8 sm:mt-4 -ml-12 sm:-ml-0">
               Manual prescription and billing entry causes delays and errors in healthcare workflows. 
               Our smart AI agent scans prescriptions, extracts key data and automates billing, 
               ensuring real-time processing so healthcare staff can focus on patient, not 
@@ -93,10 +93,7 @@ export default function Logistics() {
             objectFit="contain"
             className="absolute z-10 rounded-xl right-56"
           />
-          <div className="absolute -left-10 -bottom-6 w-[400px] h-[300px] bg-indigo-200 rounded-3xl"></div>
-
-          <div className="absolute -top-10 right-10 w-[50px] h-[50px] rounded-full bg-indigo-200"></div>
-          <div className="absolute -bottom-0 -right-10 w-[80px] h-[80px] rounded-full bg-gradient-to-r from-pink-500 to-orange-300"></div>
+          
         </div>
       </div>
 

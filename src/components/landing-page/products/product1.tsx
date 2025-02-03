@@ -16,12 +16,6 @@ export default function Selfcheckout() {
             objectFit="contain"
             className="absolute z-10 rounded-xl right-56"
           />
-
-          {/* Background shapes */}
-          <div className="absolute -left-10 -bottom-6 w-[400px] h-[300px] bg-indigo-200 rounded-3xl"></div>
-
-          <div className="absolute -top-10 right-10 w-[50px] h-[50px] rounded-full bg-indigo-200"></div>
-          <div className="absolute -bottom-0 -right-10 w-[80px] h-[80px] rounded-full bg-gradient-to-r from-pink-500 to-orange-300"></div>
         </div>
       </div>
 
@@ -34,7 +28,8 @@ export default function Selfcheckout() {
           AI-Powered self-checkout
         </h1>
         <p className="text-gray-800 text-base lg:text-lg">
-          Faster, Smarter, Easier and AI-driven item scanning for seamless Shopping.
+          Faster, Smarter, Easier and AI-driven item scanning for seamless
+          Shopping.
         </p>
 
         <div className="space-y-6 ">
@@ -46,7 +41,7 @@ export default function Selfcheckout() {
               <h3 className="text-lg font-semibold text-gray-900">
                 SynecX - Cart
               </h3>
-              <p className="text-gray-600 text-justify mt-4">
+              <p className="text-gray-600 text-justify mt-8 sm:mt-4 -ml-12 sm:-ml-0 ">
                 Elevate the way customers shop with our advanced self-checkout
                 solution. Using deep learning and computer vision, it scans
                 items instantly, adds them to the cart, and enables quick
@@ -60,8 +55,10 @@ export default function Selfcheckout() {
             <span className="text-gray-600 font-semibold mt-0 sm:mt-2">
               Step into the Future of Shopping
             </span>
-            <Link className="bg-red-500 text-white py-2 px-4 w-32 rounded-md hover:bg-indigo-600 transition flex items-center justify-center space-x-2" href={"/retail"}>
-              
+            <Link
+              className="bg-red-500 text-white py-2 px-4 w-32 rounded-md hover:bg-indigo-600 transition flex items-center justify-center space-x-2"
+              href={"/retail"}
+            >
               <span>Dive In</span>
               <FaArrowRight />
             </Link>
