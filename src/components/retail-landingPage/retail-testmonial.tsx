@@ -85,7 +85,7 @@ const RetailTestimonial = () => {
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-black">
-          Stories of <span className="text-indigo-700">AI Impact</span>
+          Stories of <span className="text-red-500">AI Impact</span>
         </h1>
         <p className="text-lg text-gray-500 mt-2">
           See what people are saying.
@@ -115,7 +115,7 @@ const RetailTestimonial = () => {
               >
                 {/* Testimonial Text */}
                 <div className="text-center mb-4">
-                  <p className="text-lg font-medium text-indigo-800 mb-4">
+                  <p className="text-lg font-medium text-black mb-4">
                     &quot;{testimonial.quote}&quot;
                   </p>
                 </div>
@@ -131,10 +131,10 @@ const RetailTestimonial = () => {
 
                 {/* Name and Title Below Image */}
                 <div>
-                  <h3 className="text-xl font-semibold text-indigo-800">
+                  <h3 className="text-xl font-semibold text-black">
                     {testimonial.name}
                   </h3>
-                  <p className="text-indigo-800">{testimonial.title}</p>
+                  <p className="text-gray-800">{testimonial.title}</p>
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@ const RetailTestimonial = () => {
           <button
             key={index}
             className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? "bg-blue-500" : "bg-gray-300"
+              currentIndex === index ? "bg-red-500" : "bg-gray-300"
             }`}
             onClick={() => setCurrentIndex(index)}
           ></button>

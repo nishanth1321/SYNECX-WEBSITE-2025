@@ -3,9 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaRocket } from "react-icons/fa"; // Importing FaRocket icon
+import SnowParticles from "../ParticlsJs/snowparticles";
 
 export default function RetailIndex() {
   return (
+    <>
+    <div>
+    <div className="absolute inset-0 -z-10">
+        <SnowParticles id="particles-js" />
+      </div>
     <div className="min-h-screen bg-white px-6 lg:px-28 flex items-center justify-center">
       <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl">
         {/* Image Section */}
@@ -25,10 +31,10 @@ export default function RetailIndex() {
             Transforming Retail with AI-Driven Innovation
           </h2>
           <h1 className="text-3xl lg:text-5xl font-semibold text-gray-900 mb-6">
-            Empowering <span className="text-indigo-300">Retailers</span> with{" "}
+            Empowering <span className="text-red-300">Retailers</span> with{" "}
             {/* <span className="text-indigo-400">Intelligent</span>{" "} */}
-            <span className="text-indigo-500">AI Powered</span>{" "}
-            <span className="text-indigo-700">Self-Checkout</span>.
+            <span className="text-red-400">AI Powered</span>{" "}
+            <span className="text-red-600">Self-Checkout</span>.
           </h1>
 
           <p className="text-gray-500 text-base lg:text-lg mb-6 text-justify">
@@ -50,5 +56,9 @@ export default function RetailIndex() {
         </div>
       </div>
     </div>
+    </div>
+    </>
+    
+    
   );
 }

@@ -50,14 +50,14 @@ const FeaturesLanding = () => {
       {/* Right Half - Content */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start px-6 lg:px-12 py-8">
         <h1 className="text-3xl lg:text-4xl font-bold text-black text-center lg:text-left">
-          Our <span className='text-indigo-700'>Amazing Features</span>
+          Our <span className='text-red-500'>Amazing Features</span>
         </h1>
         <p className="mt-4 text-base lg:text-lg text-gray-700 text-center lg:text-left">
           Discover the latest innovations and technologies that will transform
           your experience. Stay ahead with our cutting-edge features designed to
           make your Retail easier.
         </p>
-        <button className="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-md shadow-md hover:bg-indigo-700">
+        <button className="mt-6 px-6 py-3 bg-red-500 text-white rounded-md shadow-md hover:bg-red-600">
           <a href="/retail/features">Learn More</a>
         </button>
       </div>
