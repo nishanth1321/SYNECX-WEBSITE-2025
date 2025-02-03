@@ -7,33 +7,33 @@ export default function RetailPageServices() {
 
     const features = [
       {
-        icon: <FaPizzaSlice className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
+        icon: <FaPizzaSlice className="text-red-500 text-3xl mb-4 transition-colors" />, 
         title: "Quick Service Restaurants",
         description: "Say goodbye to long lines & hello to effortless dining! Self-checkout lets customers savour meals faster than ever.",
       },
       {
-        icon: <FaShoppingCart className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
+        icon: <FaShoppingCart className="text-red-500 text-3xl mb-4 transition-colors" />, 
         title: "Retail Stores",
         description: "Self-checkout are the heartbeat of modern supermarkets. Skip the lines and bag them your way—shopping made simple.",
       },
       {
-        icon: <FaTicketAlt className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
+        icon: <FaTicketAlt className="text-red-500 text-3xl mb-4 transition-colors" />, 
         title: "Entertainment Venues",
         description: "Enhance the cinema food court experience! Self-checkout kiosks enable quick snack orders and payments, reducing wait times.",
       },
       {
-        icon: <FaTshirt className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
+        icon: <FaTshirt className="text-red-500 text-3xl mb-4 transition-colors" />, 
         title: "Sports Stadiums",
         description: "Streamline stadium dining! Self-checkout let fans order food and drinks quickly, reducing lines and keeping them in the action.",
       },
       
       {
-        icon: <FaStore className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
+        icon: <FaStore className="text-red-500 text-3xl mb-4 transition-colors" />, 
         title: "Convenience Stores",
         description: "Perfect for on-the-go shoppers, self-checkout ensure what you need, with zero hassle and maximum efficiency",
       },
       {
-        icon: <FaHospital className="text-indigo-500 text-3xl mb-4 transition-colors" />, 
+        icon: <FaHospital className="text-red-500 text-3xl mb-4 transition-colors" />, 
         title: "Hospitality and Healthcare",
         description: "Fueling healthcare professionals on the go! Self-checkout in healthcare cafeterias let medical staff and visitors order quickly.",
       },
@@ -51,18 +51,18 @@ export default function RetailPageServices() {
         </p>
       </div>
       <div className="py-10 flex justify-center items-center">
-        <div className="bg-indigo-100/50 rounded-3xl shadow-lg p-8 sm:p-12 max-w-6xl w-full">
+        <div className="bg-white/70 backdrop-blur-sm rounded-3xl shadow-lg p-8 sm:p-12 max-w-6xl w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* First three features */}
             {features.slice(0, 3).map((feature, index) => (
               <div
                 key={index}
-                className="text-center rounded-2xl p-6 transition-colors hover:text-indigo-500"
+                className="text-center rounded-2xl p-6 transition-colors hover:text-red-500"
               >
                 <div className="flex justify-center mb-4">
                   <div className="bg-white rounded-2xl pt-2 w-16 h-16 flex items-center justify-center transition-colors hover:text-white">
                     {React.cloneElement(feature.icon, {
-                      className: "text-indigo-500",
+                      className: "text-red-500",
                     })}
                   </div>
                 </div>
@@ -76,12 +76,12 @@ export default function RetailPageServices() {
             {features.slice(3).map((feature, index) => (
               <div
                 key={index}
-                className="text-center rounded-2xl p-6 transition-colors hover:text-indigo-500"
+                className="text-center rounded-2xl p-6 transition-colors hover:text-red-500"
               >
                 <div className="flex justify-center mb-4">
                   <div className="bg-white rounded-2xl pt-2 w-16 h-16 flex items-center justify-center transition-colors hover:text-white">
                     {React.cloneElement(feature.icon, {
-                      className: "text-indigo-500",
+                      className: "text-red-500",
                     })}
                   </div>
                 </div>
