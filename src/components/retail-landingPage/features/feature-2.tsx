@@ -1,21 +1,29 @@
 "use client";
 
+import Image from "next/image";
+
 export default function FeatureTwo() {
   return (
-    <div className="bg-white py-16 px-4 lg:px-24" style={{ height: "80%" }}>
-      <div className="flex flex-wrap justify-center gap-4">
+    <div className="bg-white py-16 px-4 lg:px-24">
+      
+
+      <div className="flex flex-wrap justify-center gap-8">
         {/* Left Card */}
-        {/* Left Card */}
-        <div className="bg-white shadow-lg rounded-lg w-full md:w-5/12 h-[50vh] flex flex-col p-6 items-center">
+        <div className="bg-white shadow-lg rounded-lg w-full sm:w-10/12 md:w-5/12 h-auto flex flex-col p-6 items-center">
           {/* Image Placeholder */}
-          <div className="w-full h-1/3 border-2 border-dashed border-gray-300 mb-4 flex justify-center items-center">
-            <span className="text-gray-400">Image Placeholder</span>
+          <div className="w-full h-48 relative mb-4 flex justify-center items-center">
+            <Image 
+              src="/screen.svg" 
+              alt="Real-Time Inventory Management" 
+              layout="fill" 
+              objectFit="contain"
+            />
           </div>
           {/* Content */}
-          <h6 className="text-red-500 text-2xl font-medium mb-2">
+          <h6 className="text-red-500 text-2xl font-medium text-center mb-2">
             Real-Time Inventory Management
           </h6>
-          <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
+          <h5 className="text-lg font-semibold text-gray-900 text-center mb-4">
             Smarter Decisions
           </h5>
           <p className="text-gray-600 text-center">
@@ -25,17 +33,23 @@ export default function FeatureTwo() {
             decisions.
           </p>
         </div>
-        {/*Ad Screen */}
-        <div className="bg-white shadow-lg rounded-lg w-full md:w-5/12 h-[50vh] flex flex-col p-6 items-center">
+
+        {/* Right Card */}
+        <div className="bg-white shadow-lg rounded-lg w-full sm:w-10/12 md:w-5/12 h-auto flex flex-col p-6 items-center">
           {/* Image Placeholder */}
-          <div className="w-full h-1/3 border-2 border-dashed border-gray-300 mb-4 flex justify-center items-center">
-            <span className="text-gray-400">Image Placeholder</span>
+          <div className="w-full h-48 relative mb-4 flex justify-center items-center">
+            <Image 
+              src="/screen.svg" 
+              alt="Interactive Ad Space" 
+              layout="fill" 
+              objectFit="contain"
+            />
           </div>
           {/* Content */}
-          <h6 className="text-red-500 text-2xl font-medium mb-2">
+          <h6 className="text-red-500 text-2xl font-medium text-center mb-2">
             Interactive Ad Space
           </h6>
-          <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
+          <h5 className="text-lg font-semibold text-gray-900 text-center mb-4">
             For Enhanced Engagement
           </h5>
           <p className="text-gray-600 text-center">
@@ -45,7 +59,6 @@ export default function FeatureTwo() {
             the payment screen.
           </p>
         </div>
-        
       </div>
     </div>
   );

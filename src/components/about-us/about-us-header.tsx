@@ -28,25 +28,25 @@ export default function AboutUs() {
       </div>
 
       {/* 🖼 Right Section: Swiper Carousel */}
-      <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
+      <div className="w-full lg:w-1/2 mt-10 lg:mt-0 ">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           loop={true}
           className="w-full max-w-lg"
         >
-          <SwiperSlide>
+          <SwiperSlide className="">
             <Image
-              src="/about1.jpg"
+              src="/aboutus.svg"
               alt="AI Innovation"
-              width={500}
-              height={300}
-              className="rounded-xl"
+              width={1200}
+              height={100}
+              className="rounded-xl w-full "
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src="/about2.jpg"
+             src="/aboutuslogo.svg"
               alt="Machine Learning"
               width={500}
               height={300}
@@ -55,7 +55,7 @@ export default function AboutUs() {
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src="/about3.jpg"
+              src="/team.jpg"
               alt="Tech Team"
               width={500}
               height={300}

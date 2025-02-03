@@ -44,7 +44,7 @@ export default function RetailPageServices() {
     <div className='bg-white'>
       <div className="w-full bg-white py-6 flex flex-col items-center text-center" id='services'>
         <h1 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-gray-900 mb-2">
-          Elevate our Digital Presence with Expertise in Industries
+          Elevating  Industrial experience with SynecX AI Retail Solution
         </h1>
         <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl ">
           Elevate our brand with Synecx AI Labs innovative services, crafting standout digital experiences that captivate and convert in a competitive market.

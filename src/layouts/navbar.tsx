@@ -76,9 +76,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 mx-10">
           <Link href="/" className="flex items-center">
             <Image
-              src="/sycenxlogo.png"
+              src="/logo.svg"
               alt="Logo"
-              width={220}
+              width={250}
               height={100}
               priority
             />

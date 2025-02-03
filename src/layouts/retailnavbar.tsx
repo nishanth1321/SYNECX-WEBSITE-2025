@@ -59,10 +59,10 @@ export default function RetailNavbar() {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 mx-10">
         <Link href="/" className="flex items-center">
-            <Image
-              src="/sycenxlogo.png"
+        <Image
+              src="/logo.svg"
               alt="Logo"
-              width={220}
+              width={250}
               height={100}
               priority
             />

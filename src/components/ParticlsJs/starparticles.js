@@ -25,7 +25,7 @@ const StarComponent = (props) => {
           value: "#ffffff", // Black background for night sky
         },
       },
-      fpsLimit: 60,
+      fpsLimit: 120,
       interactivity: {
         events: {
           onHover: {
@@ -36,15 +36,15 @@ const StarComponent = (props) => {
         modes: {
           trail: {
             delay: 0.1,
-            quantity: 3,
+            quantity: 10,
             length: 10,
-            fillColor: "#000000",
+            fillColor: "#f71b1e",
           },
         },
       },
       particles: {
         color: {
-          value: "#000000", // White shooting stars
+          value: "#f71b1e", // White shooting stars
         },
         move: {
           enable: true,
@@ -63,19 +63,19 @@ const StarComponent = (props) => {
           },
         },
         opacity: {
-          value: 1, // Full visibility
+          value: 100, // Full visibility
           animation: {
             enable: true,
             speed: 0.1,
-            minimumValue: 0.2,
+            minimumValue: 0.0,
             sync: false,
           },
         },
         shape: {
-          type: "star", // Star shapes
+          type: "circle", // Star shapes
         },
         size: {
-          value: { min: 1, max: 3 }, // Varying star sizes
+          value: { min: 2, max: 3 }, // Varying star sizes
           animation: {
             enable: true,
             speed: 2,

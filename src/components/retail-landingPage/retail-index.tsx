@@ -3,14 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaRocket } from "react-icons/fa"; // Importing FaRocket icon
-import SnowParticles from "../ParticlsJs/snowparticles";
+import StarComponent from "../ParticlsJs/starparticles";
 
 export default function RetailIndex() {
   return (
     <>
     <div>
     <div className="absolute inset-0 -z-10">
-        <SnowParticles id="particles-js" />
+        <StarComponent id="particles-js" />
       </div>
     <div className="min-h-screen bg-red/70 backdrop-blur-sm px-6 lg:px-28 flex items-center justify-center">
       <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl">

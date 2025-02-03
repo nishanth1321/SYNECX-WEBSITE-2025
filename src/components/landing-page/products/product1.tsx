@@ -20,7 +20,7 @@ export default function Selfcheckout() {
       </div>
 
       {/* Right side with the text content */}
-      <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6 mt-6">
+      <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6 mt-6 sm:mr-32 mr-0">
         <h2 className="text-red-500 text-lg font-semibold mb-2">
           Transform Retail with Smart Self-Checkout!
         </h2>
