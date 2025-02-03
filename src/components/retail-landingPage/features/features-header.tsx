@@ -7,7 +7,7 @@ export default function FeaturesHeader() {
         {/* Centered Title */}
         <p className="text-5xl font-bold mb-4 mt-0 sm:mt-32">
           Explore Features Designed <br /> to Empower{" "}
-          <span className="text-indigo-700">Retail Checkout</span>
+          <span className="text-red-500">Retail Checkout</span>
         </p>
 
         {/* Centered Description */}

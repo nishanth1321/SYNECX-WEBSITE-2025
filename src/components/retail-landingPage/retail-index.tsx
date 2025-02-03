@@ -12,7 +12,7 @@ export default function RetailIndex() {
     <div className="absolute inset-0 -z-10">
         <SnowParticles id="particles-js" />
       </div>
-    <div className="min-h-screen bg-white px-6 lg:px-28 flex items-center justify-center">
+    <div className="min-h-screen bg-red/70 backdrop-blur-sm px-6 lg:px-28 flex items-center justify-center">
       <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl">
         {/* Image Section */}
         <div className="flex justify-center lg:w-1/2 mb-8 lg:mb-0">
@@ -26,7 +26,7 @@ export default function RetailIndex() {
         </div>
 
         {/* Text Section */}
-        <div className="text-center lg:text-left lg:w-1/2">
+        <div className="text-center lg:text-left lg:w-1/2 bg-white/70 p-8">
           <h2 className="text-lg font-medium text-gray-600 mb-4">
             Transforming Retail with AI-Driven Innovation
           </h2>

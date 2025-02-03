@@ -41,7 +41,7 @@ export default function RetailPageServices() {
     
 
   return (
-    <div>
+    <div className='bg-white'>
       <div className="w-full bg-white py-6 flex flex-col items-center text-center" id='services'>
         <h1 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-gray-900 mb-2">
           Elevate our Digital Presence with Expertise in Industries
@@ -51,7 +51,7 @@ export default function RetailPageServices() {
         </p>
       </div>
       <div className="py-10 flex justify-center items-center">
-        <div className="bg-white/70 backdrop-blur-sm rounded-3xl shadow-lg p-8 sm:p-12 max-w-6xl w-full">
+        <div className="bg-white rounded-3xl shadow-lg p-8 sm:p-12 max-w-6xl w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* First three features */}
             {features.slice(0, 3).map((feature, index) => (

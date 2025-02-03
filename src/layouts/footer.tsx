@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-700 mt-16">
+    <footer className="bg-white text-gray-700 ">
       <div>
         <EmailSubscribe />{" "}
       </div>

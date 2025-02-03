@@ -40,7 +40,7 @@ export default function CaseStudyIndividual() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-5xl font-semibold text-gray-900 text-center">
             Case Studies on{" "}
-            <span className="text-indigo-700">AI Self-checkout</span>
+            <span className="text-red-500">AI Self-checkout</span>
           </h2>
           <p className="mt-4 text-center text-gray-600 text-[16px] font-semibold px-4 sm:px-16 lg:px-64">
             Discover how SynecX AI Labs revolutionized self-checkout technology
@@ -78,7 +78,7 @@ export default function CaseStudyIndividual() {
                     <a
                       href={testimonial.pdf}
                       download
-                      className="text-white bg-indigo-500 px-3 py-1 rounded-md text-sm mt-2 sm:mt-0 hover:bg-indigo-600 transition"
+                      className="text-white bg-red-500 px-3 py-1 rounded-md text-sm mt-2 sm:mt-0  transition hover:scale-105 duration-200 ease-in-out"
                     >
                       Download
                     </a>

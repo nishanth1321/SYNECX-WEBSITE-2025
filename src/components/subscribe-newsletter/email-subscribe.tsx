@@ -43,8 +43,8 @@ const EmailSubscribe = () => {
   };
 
   return (
-    <div className="text-center mt-16 md:mt-24 sm:mx-0 mx-6">
-      <h2 className="text-xl md:text-2xl font-bold mb-2">
+    <div className="text-center  sm:mx-0 mx-6">
+      <h2 className="text-xl md:text-2xl font-bold mb-2 pt-10">
         Be Part of the Future
       </h2>
       <p className=" text-md md:text-base mb-6">

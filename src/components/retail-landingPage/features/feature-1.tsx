@@ -1,12 +1,12 @@
 export default function FeatureOne() {
   return (
     <div className="bg-white py-16 px-4 lg:px-24 -mt-10 " style={{ height: "80%" }}>
-      <h1 className="flex justify-center items-center text-4xl text-indigo-700 font-bold mb-4">
+      <h1 className="flex justify-center items-center text-4xl text-red-500 font-bold mb-4">
         Features
       </h1>
       <p className="flex justify-center items-center text-2xl text-gray-500 font-semibold">
         The Innovations that transform your retail experience with
-        <span className="text-indigo-700 ml-2 font-semibold">AI</span>
+        <span className="text-red-500 ml-2 font-semibold">AI</span>
       </p>
 
       <div className="flex flex-wrap justify-center gap-4 mt-24">
@@ -17,7 +17,7 @@ export default function FeatureOne() {
             <span className="text-gray-400">Image Placeholder</span>
           </div>
           {/* Content */}
-          <h6 className="text-indigo-700 text-2xl font-medium mb-2">
+          <h6 className="text-red-500 text-2xl font-medium mb-2">
             Precision Weighing
           </h6>
           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
@@ -37,7 +37,7 @@ export default function FeatureOne() {
             <span className="text-gray-400">Image Placeholder</span>
           </div>
           {/* Content */}
-          <h6 className="text-indigo-700 text-2xl font-medium mb-2">
+          <h6 className="text-red-500 text-2xl font-medium mb-2">
             Smart Recommendations
           </h6>
           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">

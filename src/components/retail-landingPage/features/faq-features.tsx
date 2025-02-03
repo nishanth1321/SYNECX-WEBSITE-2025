@@ -43,7 +43,7 @@ export default function FAQFeatures() {
         {/* Left Section */}
         <div className="lg:w-1/2">
           <div className="text-left">
-            <h1 className="text-indigo-700 font-semibold">Answeres to</h1>
+            <h1 className="text-red-500 font-semibold">Answeres to</h1>
             <h2 className="text-3xl font-semibold text-gray-900">
               Frequently Asked Questions
             </h2>
@@ -63,7 +63,7 @@ export default function FAQFeatures() {
                 onClick={() => toggleFAQ(index)}
               >
                 <span>{faq.question}</span>
-                <div className="ml-4 bg-indigo-400 text-white rounded-full w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center">
+                <div className="ml-4 bg-red-400 text-white rounded-full w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center">
                   <span className="text-xl sm:text-2xl">
                     {activeIndex === index ? "-" : "+"}
                   </span>
