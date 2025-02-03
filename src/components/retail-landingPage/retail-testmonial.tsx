@@ -85,7 +85,7 @@ const RetailTestimonial = () => {
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-black">
-          Stories of <span className="text-indigo-500">AI Impact</span>
+          Stories of <span className="text-indigo-700">AI Impact</span>
         </h1>
         <p className="text-lg text-gray-500 mt-2">
           See what people are saying.

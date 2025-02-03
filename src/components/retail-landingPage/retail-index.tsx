@@ -28,7 +28,7 @@ export default function RetailIndex() {
             Empowering <span className="text-indigo-300">Retailers</span> with{" "}
             {/* <span className="text-indigo-400">Intelligent</span>{" "} */}
             <span className="text-indigo-500">AI Powered</span>{" "}
-            <span className="text-indigo-600">Self-Checkout</span>.
+            <span className="text-indigo-700">Self-Checkout</span>.
           </h1>
 
           <p className="text-gray-500 text-base lg:text-lg mb-6 text-justify">

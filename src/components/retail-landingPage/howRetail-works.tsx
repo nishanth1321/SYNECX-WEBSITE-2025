@@ -36,7 +36,7 @@ export default function HowRetailWorks() {
         }
       }}
     >
-      <h1 className="flex justify-center items-center mb-4 text-4xl font-bold mt-24 ">How Our <span className="text-indigo-500 ml-2">AI Retail Works !</span> </h1>
+      <h1 className="flex justify-center items-center mb-4 text-4xl font-bold mt-24 ">How Our <span className="text-indigo-700 ml-2">AI Retail Works !</span> </h1>
       <Box
        sx={{
         display: "flex",

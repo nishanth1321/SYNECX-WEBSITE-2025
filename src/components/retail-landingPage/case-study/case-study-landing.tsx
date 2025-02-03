@@ -1,5 +1,6 @@
 import RetailNavbar from "@/layouts/retailnavbar";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CaseStudyIndividual() {
   const testimonials = [
@@ -8,28 +9,12 @@ export default function CaseStudyIndividual() {
       studyon: "AI-Powered Self-Checkout",
       image: "/retail-ai-checkout.png",
       text: "SynecX AI Labs deployed an AI-powered self-checkout system that reduced customer wait times by 45% and increased checkout efficiency. The system integrated computer vision and machine learning to detect and process items without barcode scanning.",
-      pdf: "/samplepdf.pdf",
     },
     {
       studyname: "SmartMart Express",
       studyon: "Automated Grocery Checkout",
       image: "/smartmart-checkout.jpg",
       text: "SynecX AI Labs implemented an AI-driven self-checkout solution for SmartMart, minimizing errors and improving fraud detection by 30%. Customers enjoyed a seamless shopping experience with AI-powered object recognition and real-time billing.",
-      pdf: "/pdfs/smartmart-case-study.pdf",
-    },
-    {
-      studyname: "MetroTech Supermarkets",
-      studyon: "Cashierless Checkout Innovation",
-      image: "/metrotech-checkout.jpg",
-      text: "Through AI and deep learning, SynecX AI Labs revolutionized MetroTech's self-checkout, eliminating the need for manual scanning. The solution improved transaction accuracy, reduced theft risk, and enhanced customer experience.",
-      pdf: "/pdfs/metrotech-case-study.pdf",
-    },
-    {
-      studyname: "AI Convenience Stores",
-      studyon: "Smart Vision-Based Checkout",
-      image: "/ai-convenience.jpg",
-      text: "SynecX AI Labs developed a smart self-checkout system using AI vision technology, allowing customers to pick up items and walk out while payments were processed automatically. The solution increased operational efficiency and improved store revenue.",
-      pdf: "/pdfs/ai-convenience-case-study.pdf",
     },
   ];
 
@@ -74,14 +59,6 @@ export default function CaseStudyIndividual() {
                         {testimonial.studyon}
                       </p>
                     </div>
-                    {/* Download Button */}
-                    <a
-                      href={testimonial.pdf}
-                      download
-                      className="text-white bg-indigo-500 px-3 py-1 rounded-md text-sm mt-2 sm:mt-0 hover:bg-indigo-600 transition"
-                    >
-                      Download
-                    </a>
                   </div>
                   <p className="text-black mt-4 text-[15px] bg-gray-100/70 p-3 rounded-md">
                     {testimonial.text}
@@ -89,6 +66,14 @@ export default function CaseStudyIndividual() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Centered Learn More Button */}
+          <div className="flex justify-center mt-12">
+            <button className="text-white bg-indigo-500 px-6 py-3 rounded-md text-lg font-semibold hover:bg-indigo-600 transition">
+              <Link href={"/retail/case-study"}> Learn More</Link>
+              
+            </button>
           </div>
         </div>
       </div>

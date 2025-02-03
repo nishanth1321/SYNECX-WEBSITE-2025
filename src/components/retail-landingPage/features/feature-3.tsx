@@ -12,7 +12,7 @@ export default function FeatureThree() {
             <span className="text-gray-400">Image Placeholder</span>
           </div>
           {/* Content */}
-          <h6 className="text-blue-600 text-2xl font-medium mb-2">
+          <h6 className="text-indigo-700 text-2xl font-medium mb-2">
             Seamless Payments
           </h6>
           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
@@ -33,7 +33,7 @@ export default function FeatureThree() {
             <span className="text-gray-400">Image Placeholder</span>
           </div>
           {/* Content */}
-          <h6 className="text-blue-600 text-2xl font-medium mb-2">
+          <h6 className="text-indigo-700 text-2xl font-medium mb-2">
             Hassle Free Checkout
           </h6>
           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
