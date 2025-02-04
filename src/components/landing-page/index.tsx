@@ -33,8 +33,7 @@ export default function Home() {
               At SynecX AI Labs, we are pioneering the future of industries with
               transformative AI solutions, harnessing the power of deep learning
               and computer vision. Our cutting-edge technology drives automation
-              in Self-Checkout, AI-powered OCR, and Defect Detection in Manufacturing.
-              By blending innovation with intelligent automation, we enable
+              in Self-Checkout, AI OCR and AI-powered quality inspection blending innovation with intelligent automation, we enable
               businesses to unlock efficiency, accuracy, and scalability.
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 pl-6 pb-4">

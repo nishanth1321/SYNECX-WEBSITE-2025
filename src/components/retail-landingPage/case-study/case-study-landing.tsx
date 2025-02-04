@@ -7,13 +7,13 @@ export default function CaseStudyIndividual() {
     {
       studyname: "Retail Giant Inc.",
       studyon: "AI-Powered Self-Checkout",
-      image: "/retail-ai-checkout.png",
+      image: "/casestudy1.svg",
       text: "SynecX AI Labs deployed an AI-powered self-checkout system that reduced customer wait times by 45% and increased checkout efficiency. The system integrated computer vision and machine learning to detect and process items without barcode scanning.",
     },
     {
       studyname: "SmartMart Express",
       studyon: "Automated Grocery Checkout",
-      image: "/smartmart-checkout.jpg",
+      image: "/casestudy2.svg",
       text: "SynecX AI Labs implemented an AI-driven self-checkout solution for SmartMart, minimizing errors and improving fraud detection by 30%. Customers enjoyed a seamless shopping experience with AI-powered object recognition and real-time billing.",
     },
   ];

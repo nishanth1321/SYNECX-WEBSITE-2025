@@ -3,7 +3,7 @@ import { Quicksand } from "next/font/google";
 import "./globals.css";
 import Footer from "@/layouts/footer";
 
-const inter = Quicksand({ subsets: ["latin"] });
+const inter = Quicksand({ subsets: ["vietnamese"] });
 
 export const metadata: Metadata = {
   title: "SYNECX AI LABS",

@@ -9,8 +9,8 @@ const testimonials = [
     name: "Shabana",
     title: "Backend Engineer",
     quote:
-      "The mentorship at Synecx AI Labs revolutionized my backend development skills. Learning Node.js and database management gave me the confidence to efficient APIs with ease.",
-    image: "assets/femaleprofile.png",
+      "The mentorship at Synecx AI Labs revolutionized my backend development skills. Learning Node.js and database management",
+    image: "men.svg",
     bgImage: "/assets/blu.png",
   },
   {
@@ -19,7 +19,7 @@ const testimonials = [
     title: "DevOps Engineer",
     quote:
       "The DevOps mentorship at Synecx AI Labs completely transformed the way I approach software deployment. Hands-on experience helped me.",
-    image: "/assets/maleprofile.png",
+    image: "women.svg",
     bgImage: "/assets/blu.png",
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
     title: "Vision Engineer",
     quote:
       "The mentorship at Synecx AI Labs gave me real-world experience with cutting-edge computer vision technologies.",
-    image: "/assets/maleprofile.png",
+    image: "men.svg",
     bgImage: "/assets/blu.png",
   },
   {
@@ -37,28 +37,26 @@ const testimonials = [
     title: "Application Engineer",
     quote:
       "Thanks to Synecx AI Labs, I now have a solid foundation in building scalable applications with confidence.",
-    image: "/assets/maleprofile.png",
+    image: "women.svg",
     bgImage: "/assets/blu.png",
   },
 ];
 
 const RetailTestimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false); // State to track mobile view
+  const [isMobile, setIsMobile] = useState(false);
   const totalSlides = testimonials.length;
 
-  // Detect screen size and update `isMobile` state
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 640); // Set to `true` for screens smaller than or equal to 640px
+      setIsMobile(window.innerWidth <= 640);
     };
 
-    handleResize(); // Check on mount
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Auto-slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
@@ -69,12 +67,6 @@ const RetailTestimonial = () => {
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex >= totalSlides - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex <= 0 ? totalSlides - 1 : prevIndex - 1
     );
   };
 
@@ -92,20 +84,16 @@ const RetailTestimonial = () => {
         </p>
       </div>
 
-      {/* Testimonial Slider */}
       <div className="relative w-full max-w-6xl overflow-hidden">
         <div
           className="flex transition-transform ease-in-out"
           style={{
-            transform: `translateX(-${currentIndex * (isMobile ? 100 : 10)}%)`, // 100% for mobile, 33.33% for larger screens
+            transform: `translateX(-${currentIndex * (isMobile ? 100 : 10)}%)`,
             ...transitionStyle,
           }}
         >
           {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 w-full sm:w-1/3 p-4" // Full width on mobile, 1/3 width on larger screens
-            >
+            <div key={index} className="flex-shrink-0 w-full sm:w-1/3 p-4">
               <div
                 className="relative flex flex-col items-center justify-between p-8 shadow-lg rounded-lg text-center bg-cover bg-center"
                 style={{
@@ -113,14 +101,12 @@ const RetailTestimonial = () => {
                   backgroundImage: `url(${testimonial.bgImage})`,
                 }}
               >
-                {/* Testimonial Text */}
                 <div className="text-center mb-4">
                   <p className="text-lg font-medium text-black mb-4">
                     &quot;{testimonial.quote}&quot;
                   </p>
                 </div>
 
-                {/* Testimonial Image */}
                 <div className="relative z-10 mb-4">
                   <img
                     src={testimonial.image}
@@ -129,7 +115,6 @@ const RetailTestimonial = () => {
                   />
                 </div>
 
-                {/* Name and Title Below Image */}
                 <div>
                   <h3 className="text-xl font-semibold text-black">
                     {testimonial.name}
@@ -142,7 +127,6 @@ const RetailTestimonial = () => {
         </div>
       </div>
 
-      {/* Optional Dots */}
       <div className="flex mt-8 space-x-2 justify-center">
         {testimonials.map((_, index) => (
           <button

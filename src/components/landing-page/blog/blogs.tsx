@@ -25,25 +25,25 @@ const Blogs = () => {
       id: 1,
       title: "Exploring the Future of Web Development",
       description: "A deep dive into the latest trends in web technologies.",
-      image: "/5.png",
+      image: "/blogs.svg",
     },
     {
       id: 2,
       title: "Mastering React with TypeScript",
       description: "Learn how TypeScript enhances React development.",
-      image: "/5.png",
+      image: "/blogs.svg",
     },
     {
       id: 3,
       title: "The Power of Tailwind CSS",
       description: "How Tailwind CSS simplifies styling and speeds up UI design.",
-      image: "/5.png",
+      image: "/blogs.svg",
     },
     {
       id: 4,
       title: "Building Scalable Applications",
       description: "Best practices for creating scalable web applications.",
-      image: "/5.png",
+      image: "/blogs.svg",
     },
   ];
 
@@ -66,7 +66,7 @@ const Blogs = () => {
               <img
                 src={blog.image}
                 alt={blog.title}
-                className="w-full h-52 object-cover rounded-lg  "
+                className="w-full h-52 object-contain rounded-lg  "
               />
               <div className="p-6">
                 <h2 className="text-xl font-semibold text-gray-900">{blog.title}</h2>

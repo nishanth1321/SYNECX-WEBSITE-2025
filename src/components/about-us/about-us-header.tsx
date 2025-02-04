@@ -18,12 +18,12 @@ export default function AboutUs() {
           <span className="text-red-500">SynecX AI Labs</span>
         </h1>
         <p className="text-gray-700 text-lg text-justify">
-          SynecX AI Labs, we are a pioneering AI startup company at the
-          forefront of automated computer vision and deep learning solutions. We
-          empower businesses with intelligent tools to streamline processes,
-          gain deeper insights, and make data-driven decisions. Our team is
-          comprised of passionate AI specialists and computer vision scientists
-          with extensive experience in deep learning algorithms.
+          At SynecX AI Labs, we are at the forefront of AI innovation,
+          leveraging computer vision, deep learning, and artificial intelligence
+          to revolutionize industries.Our team of AI specialists and computer
+          vision scientists is dedicated to pushing the boundaries of machine
+          learning, automation, and advanced analytics. At SynecX AI Labs, we
+          don’t just innovate—we transform the future. 🚀
         </p>
       </div>
 
@@ -46,7 +46,7 @@ export default function AboutUs() {
           </SwiperSlide>
           <SwiperSlide>
             <Image
-             src="/aboutuslogo.svg"
+              src="/aboutuslogo.svg"
               alt="Machine Learning"
               width={500}
               height={300}
@@ -55,7 +55,7 @@ export default function AboutUs() {
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src="/team.jpg"
+              src="/aboutus3.svg"
               alt="Tech Team"
               width={500}
               height={300}

@@ -33,11 +33,11 @@ export default function Logistics() {
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-900">
-                Invoice SAP & ERP
+                AI Tax Invoice
               </h3>
               <p className="text-gray-600 text-justify mt-8 sm:mt-4 -ml-12 sm:-ml-0">
               Our Gen AI-powered intelligent agent automates invoice extraction, ensuring seamless, 
-              error-free integration—boosting efficiency without vendor lock-in.
+              error-free integration—boosting efficiency without vendor lock-in integrating with existing SAP & ERP Solutions.
               </p>
             </div>
           </div>
@@ -66,7 +66,6 @@ export default function Logistics() {
                 Health Care
               </h3>
               <p className="text-gray-600 text-justify mt-8 sm:mt-4 -ml-12 sm:-ml-0">
-              Manual prescription and billing entry causes delays and errors in healthcare workflows. 
               Our smart AI agent scans prescriptions, extracts key data and automates billing, 
               ensuring real-time processing so healthcare staff can focus on patient, not 
               paperwork.
