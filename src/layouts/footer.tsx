@@ -275,7 +275,7 @@ const Footer = () => {
         </div>
 
         {/* Links Section - Centered on Mobile, Left-Aligned on Desktop */}
-        <div className="flex flex-col sm:flex-row flex-wrap gap-8 text-center sm:text-left w-full sm:w-auto sm:space-x-14 items-center sm:items-start">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-8 text-center sm:text-left w-full sm:w-auto sm:space-x-32 items-center sm:items-start">
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -351,7 +351,7 @@ const Footer = () => {
                   href="/retail"
                   className="hover:text-black transition-colors duration-300"
                 >
-                  INstagram
+                  Instagram
                 </a>
               </li>
               <li>

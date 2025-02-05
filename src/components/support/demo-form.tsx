@@ -6,16 +6,11 @@ import { FaChartBar } from "react-icons/fa";
 const DemoForm: React.FC = () => {
   const [formData, setFormData] = useState({
     firstName: "",
-    lastName: "",
     email: "",
     phoneNumber: "",
     company: "",
-    businessType: "",
-    branchesCount: "",
-    location: "",
     product: "",
     requirement: "",
-    description: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -48,16 +43,11 @@ const DemoForm: React.FC = () => {
         },
         body: JSON.stringify({
           firstName: formData.firstName,
-          lastName: formData.lastName,
           email: formData.email,
           phoneNumber: formData.phoneNumber,
           companyName: formData.company,
-          businessType: formData.businessType,
-          branchesCount: formData.branchesCount,
-          location: formData.location,
           product: formData.product,
           requirement: formData.requirement,
-          description: formData.description,
         }),
       });
 
@@ -68,16 +58,11 @@ const DemoForm: React.FC = () => {
         setMessageColor("text-green-600"); // Success message color
         setFormData({
           firstName: "",
-          lastName: "",
           email: "",
           phoneNumber: "",
           company: "",
-          businessType: "",
-          branchesCount: "",
-          location: "",
           product: "",
           requirement: "",
-          description: "",
         });
       } else {
         setMessage(data.message || "Failed to submit demo request.");
@@ -104,10 +89,7 @@ const DemoForm: React.FC = () => {
             <h2 className="text-2xl font-bold mb-6 text-center text-gray-700">
               Request a Demo
             </h2>
-
-            {/* First Name and Last Name (same row) */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-              <div className="flex-1">
+            <div className="">
                 <label
                   htmlFor="firstName"
                   className="block text-gray-700 text-sm font-bold mb-2"
@@ -124,23 +106,10 @@ const DemoForm: React.FC = () => {
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
                 />
               </div>
-              <div className="flex-1">
-                <label
-                  htmlFor="lastName"
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                >
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
-                />
-              </div>
+            {/* First Name and Last Name (same row) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              
+             
             </div>
 
             {/* Email and Phone Number (same row) */}
@@ -200,74 +169,7 @@ const DemoForm: React.FC = () => {
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
                 />
               </div>
-              <div className="flex-1">
-                <label
-                  htmlFor="businessType"
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                >
-                  Business Type
-                </label>
-                <select
-                  id="businessType"
-                  name="businessType"
-                  value={formData.businessType}
-                  onChange={handleChange}
-                  required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
-                >
-                  <option value="">Select Business Type</option>
-                  <option value="QUICK_SERVICE_RESTAURANTS">
-                    Quick Service Restaurants
-                  </option>
-                  <option value="UNIVERSITIES_CAFE">Universities Cafe</option>
-                  <option value="CINEMA_THEATERS">Cinema Theaters</option>
-                  <option value="CONVENIENCE_STORES">Convenience Stores</option>
-                  <option value="SHOPPING_MALLS">Shopping Malls</option>
-                  <option value="SPORT_STADIUM">Sport Stadium</option>
-                </select>
-              </div>
-            </div>
-
-            {/* Branches Count and Location (same row) */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-              <div className="flex-1">
-                <label
-                  htmlFor="branchesCount"
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                >
-                  Number of Branches
-                </label>
-                <input
-                  type="text"
-                  id="branchesCount"
-                  name="branchesCount"
-                  value={formData.branchesCount}
-                  onChange={handleChange}
-                  required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
-                />
-              </div>
-              <div className="flex-1">
-                <label
-                  htmlFor="location"
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                >
-                  Location
-                </label>
-                <input
-                  type="text"
-                  id="location"
-                  name="location"
-                  value={formData.location}
-                  onChange={handleChange}
-                  required
-                  className="shadow appearance-none border rounded w-full sm:w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
-                />
-              </div>
-            </div>
-
-            {/* Product */}
-            <div className="mb-4">
+              <div className="mb-4">
               <label
                 htmlFor="product"
                 className="block text-gray-700 text-sm font-bold mb-2"
@@ -290,8 +192,10 @@ const DemoForm: React.FC = () => {
                 <option value="LOGISTICS_SOLUTION">Logistics Solution</option>
               </select>
             </div>
+             
+            </div>
 
-            {/* Requirement */}
+       
             <div className="mb-4">
               <label
                 htmlFor="requirement"
@@ -310,24 +214,7 @@ const DemoForm: React.FC = () => {
               ></textarea>
             </div>
 
-            {/* Description */}
-            <div className="mb-4">
-              <label
-                htmlFor="description"
-                className="block text-gray-700 text-sm font-bold mb-2"
-              >
-                Description
-              </label>
-              <textarea
-                id="description"
-                name="description"
-                value={formData.description}
-                onChange={handleChange}
-                rows={1}
-                required
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
-              ></textarea>
-            </div>
+          
 
             {/* Submit Button */}
             <div className="flex items-center justify-center">

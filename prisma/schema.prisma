@@ -19,7 +19,6 @@ model Quotation {
   emailId       String       @unique
   phoneNumber   String
   companyName   String
-  businessType  BusinessType
   branchesCount String
   location      String
   product       Product
@@ -31,16 +30,11 @@ model Quotation {
 model Demo {
   demo_id       String       @id @default(auto()) @map("_id") @db.ObjectId
   firstName     String
-  lastName      String
   emailId       String       @unique
   phoneNumber   String
   companyName   String
-  businessType  BusinessType
-  branchesCount String
-  location      String
   product       Product
   requirement   String
-  description   String
   createdAt     DateTime     @default(now())
 }
 
@@ -71,14 +65,7 @@ enum Product {
   LOGISTICS_SOLUTION
 }
 
-enum BusinessType {
-  QUICK_SERVICE_RESTAURANTS
-  UNIVERSITIES_CAFE
-  CINEMA_THEATERS
-  CONVENIENCE_STORES
-  SHOPPING_MALLS
-  SPORT_STADIUM
-}
+
 
 enum Role {
   FULLSTACK_WEB_DEVELOPER

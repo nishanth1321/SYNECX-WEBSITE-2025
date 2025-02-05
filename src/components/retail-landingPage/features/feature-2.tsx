@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function FeatureTwo() {
+export default function FeatureThree() {
   return (
     <div className="bg-white py-16 px-4 lg:px-24">
       

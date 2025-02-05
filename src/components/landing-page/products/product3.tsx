@@ -6,13 +6,13 @@ export default function Manufacturing() {
   return (
     <div className="bg-white py-16 flex flex-col lg:flex-row items-center justify-center px-4 lg:px-60">
       <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-start">
-       <div className="relative w-[280px] h-[200px] sm:w-[320px] sm:h-[550px] lg:w-[600px] lg:h-[400px] bg-green-200 my-0 sm:mt-32">
+       <div className="relative w-[280px] h-[200px] sm:w-[320px] sm:h-[550px] lg:w-[600px] lg:h-[400px]  my-0 sm:mt-32">
                <Image
-                 src="/blog3.svg"
+                 src="/ailogo.png"
                  alt="Mobile App Preview"
                  layout="fill"
                  objectFit="cover"
-                 className="rounded-lg shadow-lg"
+                 className="rounded-lg "
                />
              </div>
       </div>

@@ -58,7 +58,7 @@
 // }
 import Image from "next/image";
 
-export default function FeatureOne() {
+export default function FeatureTwo() {
   return (
     <div className="bg-white py-16 px-4 lg:px-24 -mt-10">
       <h1 className="flex justify-center items-center text-4xl text-red-500 font-bold mb-4">

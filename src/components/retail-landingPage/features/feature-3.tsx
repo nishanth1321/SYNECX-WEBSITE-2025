@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function FeatureThree() {
+export default function FeatureFour() {
   return (
     <div className="bg-white py-10 px-4 lg:px-24" style={{ height: "80%" }}>
       <div className="flex flex-wrap justify-center gap-4">

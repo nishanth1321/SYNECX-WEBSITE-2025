@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { FaApple, FaLayerGroup, FaBuilding, FaShieldAlt, FaDraftingCompass, FaCheckCircle, FaShoppingCart, FaTicketAlt, FaTshirt, FaPizzaSlice, FaGasPump, FaHospital, FaStore } from "react-icons/fa"; // Updated icons
+import { FaApple, FaLayerGroup, FaBuilding, FaShieldAlt, FaDraftingCompass, FaCheckCircle, FaShoppingCart, FaTicketAlt, FaTshirt, FaPizzaSlice, FaGasPump, FaHospital, FaStore, FaFootballBall } from "react-icons/fa"; // Updated icons
 
 export default function RetailPageServices() {
 
@@ -22,7 +22,7 @@ export default function RetailPageServices() {
         description: "Enhance the cinema food court experience! Self-checkout kiosks enable quick snack orders and payments, reducing wait times.",
       },
       {
-        icon: <FaTshirt className="text-red-500 text-3xl mb-4 transition-colors" />, 
+        icon: <FaFootballBall className="text-red-500 text-3xl mb-4 transition-colors" />, 
         title: "Sports Stadiums",
         description: "Streamline stadium dining! Self-checkout let fans order food and drinks quickly, reducing lines and keeping them in the action.",
       },
@@ -62,7 +62,7 @@ export default function RetailPageServices() {
                 <div className="flex justify-center mb-4">
                   <div className="bg-white rounded-2xl pt-2 w-16 h-16 flex items-center justify-center transition-colors hover:text-white">
                     {React.cloneElement(feature.icon, {
-                      className: "text-red-500",
+                      className: "text-red-500 text-3xl",
                     })}
                   </div>
                 </div>
@@ -81,7 +81,7 @@ export default function RetailPageServices() {
                 <div className="flex justify-center mb-4">
                   <div className="bg-white rounded-2xl pt-2 w-16 h-16 flex items-center justify-center transition-colors hover:text-white">
                     {React.cloneElement(feature.icon, {
-                      className: "text-red-500",
+                      className: "text-red-500 text-3xl",
                     })}
                   </div>
                 </div>

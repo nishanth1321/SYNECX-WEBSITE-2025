@@ -79,13 +79,13 @@ export default function Selfcheckout() {
     <div className="bg-white py-16 flex flex-col lg:flex-row items-center justify-between px-6 lg:px-24">
       {/* Left Side - Image */}
       <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-        <div className="relative w-[280px] h-[200px] sm:w-[320px] sm:h-[550px] lg:w-[600px] lg:h-[400px] bg-green-200">
+        <div className="relative w-[280px] h-[200px] sm:w-[320px] sm:h-[550px] lg:w-[600px] lg:h-[400px] ">
           <Image
-            src="/blog1.svg"
+            src="/ailogo.png"
             alt="Mobile App Preview"
             layout="fill"
             objectFit="cover"
-            className="rounded-lg shadow-lg"
+            className="rounded-lg "
           />
         </div>
       </div>
