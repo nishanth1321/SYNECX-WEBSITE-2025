@@ -1,7 +1,8 @@
+import { notFound } from "next/navigation";
 import Navbar from "@/layouts/navbar";
-import { useRouter } from "next/router";
 import React from "react";
 
+// Blog Data (same as used in the listing page)
 const blogData = [
   {
     title: "exploring-the-future-of-web-development",
@@ -29,19 +30,25 @@ const blogData = [
   },
 ];
 
-const BlogPost = () => {
-  const router = useRouter();
-  const { title } = router.query;
+// 🔹 Required function for static exports
+export async function generateStaticParams() {
+  return blogData.map((blog) => ({
+    title: blog.title,
+  }));
+}
 
-  // Find the blog post by its title
-  const blog = blogData.find((post) => post.title === title);
+// Props for getting dynamic route parameters
+interface BlogPageProps {
+  params: {
+    title: string;
+  };
+}
+
+const BlogPost: React.FC<BlogPageProps> = ({ params }) => {
+  const blog = blogData.find((post) => post.title === decodeURIComponent(params.title));
 
   if (!blog) {
-    return (
-      <div className="flex flex-col items-center justify-center h-screen">
-        <h1 className="text-3xl font-bold text-red-500">Blog Not Found</h1>
-      </div>
-    );
+    return notFound(); // Returns a 404 error page if the blog is not found
   }
 
   return (
