@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState } from "react";
@@ -76,22 +75,22 @@ const QueryForm: React.FC = () => {
     <div className="max-w-7xl mx-4 flex flex-col lg:flex-row items-start gap-12 mt-24 sm:mx-auto">
       {/* Left Section - Form */}
       <div className="lg:w-1/2 order-1 lg:order-1">
-      <div className="text-left pl-12">
-          <h1 className="text-red-500 font-semibold">Query</h1>
+        <div className="text-left pl-12">
+          <h1 className="text-red-500 font-semibold">Have a Query?</h1>
           <h2 className="text-3xl font-semibold text-gray-900">
-            Your Query Here
+            We are Here to Help!
           </h2>
           <p className="mt-4 text-gray-600">
-            Our Demo section offers quick answers to common questions about
-            SynecX AI Labs&apos; services and processes, providing the essential
-            information you need for a seamless experience.
+            Have questions about our AI solutions, services, or processes? Fill
+            out the form, and our team will get back to you with the answers you
+            need. We are happy to assist!
           </p>
         </div>
       </div>
 
       {/* Right Section - Text */}
       <div className="lg:w-1/2 order-2 lg:order-2 hidden lg:block">
-      <div className="h-auto flex justify-center items-center p-6">
+        <div className="h-auto flex justify-center items-center p-6">
           <form
             onSubmit={handleSubmit}
             className="bg-white shadow-lg rounded px-8 pt-6 pb-8 w-full max-w-lg shadow-indigo-200"
@@ -201,7 +200,9 @@ const QueryForm: React.FC = () => {
                     Select Product
                   </option>
                   <option value="RETAIL_SOLUTION">RETAIL_SOLUTION</option>
-                  <option value="MANUFACTURING_SOLUTION">MANUFACTURING_SOLUTION</option>
+                  <option value="MANUFACTURING_SOLUTION">
+                    MANUFACTURING_SOLUTION
+                  </option>
                   <option value="LOGISTICS_SOLUTION">LOGISTICS_SOLUTION</option>
                 </select>
               </div>
@@ -251,4 +252,3 @@ const QueryForm: React.FC = () => {
 };
 
 export default QueryForm;
-

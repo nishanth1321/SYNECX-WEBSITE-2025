@@ -6,19 +6,17 @@ export default function Manufacturing() {
   return (
     <div className="bg-white py-16 flex flex-col lg:flex-row items-center justify-center px-4 lg:px-60">
       <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-start">
-        <div className="relative w-[200px] h-[400px] sm:w-[250px] sm:h-[450px] lg:w-[300px] lg:h-[550px] -mt-10">
-         
-
-          <Image
-            src="/aiLogo.png"
-            alt="AI Manufacturing Solutions Preview"
-            fill
-            style={{ objectFit: "contain" }}
-            className="relative z-1 rounded-xl -mt-10"
-          />
-        </div>
+       <div className="relative w-[280px] h-[200px] sm:w-[320px] sm:h-[550px] lg:w-[600px] lg:h-[400px] bg-green-200 my-0 sm:mt-32">
+               <Image
+                 src="/blog3.svg"
+                 alt="Mobile App Preview"
+                 layout="fill"
+                 objectFit="cover"
+                 className="rounded-lg shadow-lg"
+               />
+             </div>
       </div>
-      <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6 mb-12 lg:mb-0 mt-20">
+      <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6 mb-12 lg:mb-0 mt-20 pl-0 sm:pl-20">
         <h2 className="text-red-500 text-lg font-semibold mt-2">
           Seamless Quality - Zero Defects with AI
         </h2>

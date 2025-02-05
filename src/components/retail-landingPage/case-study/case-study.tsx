@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function CaseStudyIndividual() {
   const testimonials = [
     {
-      studyname: "Retail Giant Inc.",
-      studyon: "AI-Powered Self-Checkout",
+      studyname: "Revolutionizing Retail",
+      studyon: "Success Story at Cakes and Bakes",
       image: "/casestudy1.svg",
-      text: "SynecX AI Labs deployed an AI-powered self-checkout system that reduced customer wait times by 45% and increased checkout efficiency. The system integrated computer vision and machine learning to detect and process items without barcode scanning.",
-      pdf: "/casestudy1.pdf",
+      text: " Cakes and Bakes, a cherished bakery chain renowned for its delectable treats, rose to this challenge by embracing self-checkout technology. ",
+      pdf: "/cakes and bakes SynecX.pdf",
     },
   //   {
   //     studyname: "SmartMart Express",
@@ -36,7 +36,7 @@ export default function CaseStudyIndividual() {
   return (
     <div>
       <RetailNavbar />
-      <div className="py-16 pt-24">
+      <div className="py-16 pt-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-5xl font-semibold text-gray-900 text-center">
             Case Studies on{" "}

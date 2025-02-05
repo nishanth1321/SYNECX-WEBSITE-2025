@@ -93,7 +93,7 @@ const logos = [
   {
     src: "/place.svg",
     title: "Place",
-    description: "Set the Tray",
+    description: "The Item in Tray",
   },
   {
     src: "/pay.svg",

@@ -1,4 +1,4 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ContactInfo() {
   return (
@@ -6,7 +6,7 @@ export default function ContactInfo() {
       <div className="flex flex-wrap md:flex-nowrap">
         <div className="w-full md:w-1/2 h-96 md:ml-40">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.360703282096!2d76.94401937479508!3d11.01154035481348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8591e736d17b9%3A0x9f6c6b2459d194e8!2s53%2C%20Venkatasamy%20Rd%20W%2C%20West%2C%20R.S.%20Puram%2C%20Coimbatore%2C%20Tamil%20Nadu%20641002!5e0!3m2!1sen!2sin!4v1729237872657!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.6534270801044!2d76.90603197584062!3d11.06458945381073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f54a07e4d951%3A0xe238e2e671eaec58!2sSynecX%20AI%20Labs!5e0!3m2!1sen!2sin!4v1738730473243!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -23,7 +23,7 @@ export default function ContactInfo() {
             <div className="mb-5">
               <FaPhoneAlt className="inline-block text-red-500 mr-2" />
               <span className="font-semibold">Mobile</span>
-              <p className="text-gray-400">+43456734567</p>
+              <p className="text-gray-400"> 0422 2212342</p>
             </div>
 
             <div className="mb-4">
@@ -31,7 +31,7 @@ export default function ContactInfo() {
               <span className="font-semibold">Email</span>
               <p className="text-gray-400">
                 <a href="mailto:info@agico.com" className="hover:underline">
-                sales@synecxailabs.io
+                  sales@synecxailabs.io
                 </a>
               </p>
             </div>
@@ -40,7 +40,7 @@ export default function ContactInfo() {
               <FaMapMarkerAlt className="inline-block text-red-500 mr-2" />
               <span className="font-semibold">Address</span>
               <p className="text-gray-400">
-              inttha street that intha orru tha intha state tha 
+              Coimbatore, India 641108
               </p>
             </div>
           </div>

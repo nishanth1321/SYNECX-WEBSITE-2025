@@ -1,13 +1,27 @@
-import { FaCog, FaTruck } from 'react-icons/fa';
+import { FaCog, FaStackExchange, FaTruck } from 'react-icons/fa';
 import Link from 'next/link';
 
 // Sub-services data for Enterprise Solutions
 const logisticsSubServices = [
   {
-    title: "AI-Powered Logistics Management",
+    title: "AI-Powered Tax Invoice",
+    description: 
+      "Transform your supply chain with intelligent logistics solutions that optimize routes, reduce costs, and enhance delivery efficiency.",
+    icon: <FaStackExchange className="text-4xl text-teal-500 mb-4" />,
+    href: "/", // example route
+  },
+  {
+    title: "Smart Logicx",
     description: 
       "Transform your supply chain with intelligent logistics solutions that optimize routes, reduce costs, and enhance delivery efficiency.",
     icon: <FaTruck className="text-4xl text-teal-500 mb-4" />,
+    href: "/", // example route
+  },
+  {
+    title: "HealthCare",
+    description: 
+      "Transform your supply chain with intelligent logistics solutions that optimize routes, reduce costs, and enhance delivery efficiency.",
+    icon: <FaStackExchange className="text-4xl text-teal-500 mb-4" />,
     href: "/", // example route
   },
   

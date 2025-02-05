@@ -22,7 +22,6 @@ const DemoForm: React.FC = () => {
   const [message, setMessage] = useState("");
   const [messageColor, setMessageColor] = useState(""); // State for message color
 
-  // Handle input changes
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -35,7 +34,6 @@ const DemoForm: React.FC = () => {
     }));
   };
 
-  // Handle form submission
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -95,7 +93,7 @@ const DemoForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-12 ">
+    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-12 " id="demo">
       {/* Left Section - Form */}
       <div className="lg:w-1/2 order-2 lg:order-1 ">
         <div className="h-auto flex justify-center items-center p-6 ml-4 sm:ml-2">
@@ -123,7 +121,7 @@ const DemoForm: React.FC = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
                 />
               </div>
               <div className="flex-1">
@@ -140,7 +138,7 @@ const DemoForm: React.FC = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
                 />
               </div>
             </div>
@@ -161,7 +159,7 @@ const DemoForm: React.FC = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
                 />
               </div>
               <div className="flex-1">
@@ -178,7 +176,7 @@ const DemoForm: React.FC = () => {
                   value={formData.phoneNumber}
                   onChange={handleChange}
                   required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
                 />
               </div>
             </div>
@@ -199,7 +197,7 @@ const DemoForm: React.FC = () => {
                   value={formData.company}
                   onChange={handleChange}
                   required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
                 />
               </div>
               <div className="flex-1">
@@ -215,7 +213,7 @@ const DemoForm: React.FC = () => {
                   value={formData.businessType}
                   onChange={handleChange}
                   required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
                 >
                   <option value="">Select Business Type</option>
                   <option value="QUICK_SERVICE_RESTAURANTS">
@@ -246,7 +244,7 @@ const DemoForm: React.FC = () => {
                   value={formData.branchesCount}
                   onChange={handleChange}
                   required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
                 />
               </div>
               <div className="flex-1">
@@ -263,7 +261,7 @@ const DemoForm: React.FC = () => {
                   value={formData.location}
                   onChange={handleChange}
                   required
-                  className="shadow appearance-none border rounded w-full sm:w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                  className="shadow appearance-none border rounded w-full sm:w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
                 />
               </div>
             </div>
@@ -282,7 +280,7 @@ const DemoForm: React.FC = () => {
                 value={formData.product}
                 onChange={handleChange}
                 required
-                className="shadow appearance-none border rounded  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                className="shadow appearance-none border rounded  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
               >
                 <option value="">Select Product</option>
                 <option value="RETAIL_SOLUTION">Retail Solution</option>
@@ -308,7 +306,7 @@ const DemoForm: React.FC = () => {
                 onChange={handleChange}
                 rows={1}
                 required
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
               ></textarea>
             </div>
 
@@ -327,7 +325,7 @@ const DemoForm: React.FC = () => {
                 onChange={handleChange}
                 rows={1}
                 required
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-300"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-200"
               ></textarea>
             </div>
 
@@ -336,7 +334,7 @@ const DemoForm: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`bg-indigo-400 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-blue-300 ${
+                className={`bg-indigo-400 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-blue-200 ${
                   isSubmitting ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >
@@ -363,29 +361,30 @@ const DemoForm: React.FC = () => {
 
       {/* Right Section - Text */}
       <div className="lg:w-1/2 order-1 lg:order-2">
-        <div className="text-left sm:mx-0 mx-6 ">
-          <h1 className="text-red-500 font-semibold">Demo</h1>
+        <div className="text-left sm:mx-0 mx-6">
+          <h1 className="text-red-500 font-semibold">Book a Demo</h1>
           <h2 className="text-3xl font-semibold text-gray-900">
-            Book your Demo Here
+            Experience Our AI Solutions Firsthand
           </h2>
           <p className="mt-4 text-gray-600">
-            Our Demo section offers quick answers to common questions about
-            SynecX AI Labs&apos; services and processes, providing the essential
-            information you need for a seamless experience.
+            Schedule a personalized demo with our experts to see how SynecX AI
+            Labs can streamline your operations. Get hands-on experience and
+            answers to all your questions.
           </p>
+
+          {/* Demo Feature Highlight */}
           <div className="flex items-start mt-10">
             <div className="flex-shrink-0 h-8 w-8 flex items-center justify-center rounded-full bg-indigo-500 text-white font-bold mr-4">
               <FaChartBar />
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-900">
-                Demo header
+                Live AI-Powered Demo
               </h3>
               <p className="text-gray-600">
-                Say goodbye to manual data entry! Our demo for solution
-                automatically scans barcodes and QR codes, extracts key details
-                like to/from addresses seamlessly. Speed up logistics, reduce
-                errors, and improve efficiency.{" "}
+                Discover how our AI-driven solutions can optimize your workflow,
+                enhance accuracy, and save time. Book a live session and explore
+                real-world applications tailored to your needs.
               </p>
             </div>
           </div>

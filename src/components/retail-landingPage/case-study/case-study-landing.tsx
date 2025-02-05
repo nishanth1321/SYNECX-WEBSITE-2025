@@ -5,10 +5,10 @@ import Link from "next/link";
 export default function CaseStudyIndividual() {
   const testimonials = [
     {
-      studyname: "Retail Giant Inc.",
-      studyon: "AI-Powered Self-Checkout",
+      studyname: "Revolutionizing Retail",
+      studyon: "Success Story at Cakes and Bakes",
       image: "/casestudy1.svg",
-      text: "SynecX AI Labs deployed an AI-powered self-checkout system that reduced customer wait times by 45% and increased checkout efficiency. The system integrated computer vision and machine learning to detect and process items without barcode scanning.",
+      text: " Cakes and Bakes, a cherished bakery chain renowned for its delectable treats, rose to this challenge by embracing self-checkout technology. ",
     },
     {
       studyname: "SmartMart Express",
