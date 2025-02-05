@@ -130,10 +130,10 @@ export default function Navbar() {
               Career
             </Link>
             <Link
-              href="/support"
+              href="/contact"
               className="text-gray-600 font-bold hover:text-black transition text-sm duration-200"
             >
-              Support
+              contact
             </Link>
           </div>
 
@@ -143,7 +143,7 @@ export default function Navbar() {
                 isContact ? "bg-white text-black" : "bg-black text-white"
               }`}
             >
-              <span className="mr-2">Contact Us</span>
+              <span className="mr-2">Get in Touch</span>
             </button>
           </Link>
 

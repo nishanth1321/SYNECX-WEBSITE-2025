@@ -98,14 +98,14 @@ export default function RetailNavbar() {
               Case Studies
             </Link>
             <Link
-              href="/support"
+              href="/contact"
               className="text-gray-600 font-bold hover:text-black transition text-sm duration-200"
             >
-              Support
+              contact
             </Link>
           </div>
 
-          <Link href="/support">
+          <Link href="/contact">
             <button className="bg-black text-white h-10 w-28 rounded-md p-1"
               
             >

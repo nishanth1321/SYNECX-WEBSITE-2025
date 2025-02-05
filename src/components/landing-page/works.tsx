@@ -44,7 +44,7 @@ export default function HowItWorksSection() {
               <div className="flex justify-center items-center mb-4">
                 <div className=" rounded-2xl w-20 h-20 flex items-center justify-center transition-colors duration-300 ">
                   {React.cloneElement(step.icon, {
-                    className: "text-red-500 ",
+                    className: "text-red-500 text-4xl",
                   })}
                 </div>
               </div>

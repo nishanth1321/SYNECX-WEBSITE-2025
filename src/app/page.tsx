@@ -8,6 +8,7 @@ import LatestBlog from "@/components/landing-page/blogs";
 import Selfcheckout from "@/components/landing-page/products/product1";
 import Manufacturing from "@/components/landing-page/products/product3";
 import Logistics from "@/components/landing-page/products/product2";
+import ContactInfo from "@/components/support/contact";
 
 export const metadata = { title: "SYNECX | HOME " } as Metadata;
 
@@ -22,6 +23,7 @@ const page = () => {
       <FAQSection />
       <LatestBlog />
       <ClientSection />
+      <ContactInfo />
     </>
   );
 };

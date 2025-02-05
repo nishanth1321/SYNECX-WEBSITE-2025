@@ -1,4 +1,3 @@
-
 // "use client";
 // import EmailSubscribe from "@/components/subscribe-newsletter/email-subscribe";
 // import Image from "next/image";
@@ -344,24 +343,34 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-            <p className="mb-4 text-sm md:text-base transition-colors duration-300 hover:text-black">
-              <b>Address:</b> Coimbatore, India 641108
-            </p>
-            <p className="mb-4 text-sm md:text-base">
-              <b>Email:</b>
-              <a
-                href="mailto:info@synecxailabs.io"
-                className="text-gray-700 hover:text-black transition-colors duration-300 pl-1"
-              >
-                info@synecxailabs.io
-              </a>
-            </p>
-            <p className="text-sm md:text-base">
-              <b>Phone:</b> 0422 2212342
-            </p>
+            <h3 className="text-lg font-semibold mb-4">Socials</h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="/retail"
+                  className="hover:text-black transition-colors duration-300"
+                >
+                  INstagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  className="hover:text-black transition-colors duration-300"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  className="hover:text-black transition-colors duration-300"
+                >
+                 LinkedIn
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div>
