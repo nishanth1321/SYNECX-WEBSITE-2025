@@ -21,6 +21,8 @@ export default function RetailNavbar() {
     if (targetDiv) {
       targetDiv.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the div
     }
+
+
   };
 
   const dropdownRef = useRef<HTMLDivElement | null>(null);
@@ -58,8 +60,8 @@ export default function RetailNavbar() {
     <nav className="bg-white/30 backdrop-blur-md fixed max-w-screen w-screen z-10 shadow-lg h-20 flex items-center gap-10">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 mx-10">
-        <Link href="/" className="flex items-center">
-        <Image
+          <Link href="/" className="flex items-center">
+            <Image
               src="/logo.svg"
               alt="Logo"
               width={250}
@@ -70,7 +72,7 @@ export default function RetailNavbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-          <Link
+            <Link
               href="/retail"
               className="text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             >
@@ -85,12 +87,12 @@ export default function RetailNavbar() {
             </Link>
 
             <Link
-        href="#"
-        onClick={handleScrollToServices}
-        className="text-gray-600 font-bold hover:text-black text-sm transition duration-200"
-      >
-        Industries
-      </Link>
+              href="#"
+              onClick={handleScrollToServices}
+              className="text-gray-600 font-bold hover:text-black text-sm transition duration-200"
+            >
+              Industries
+            </Link>
             <Link
               href="/retail/case-study"
               className="text-gray-600 font-bold hover:text-black transition text-sm duration-200"
@@ -105,10 +107,8 @@ export default function RetailNavbar() {
             </Link>
           </div>
 
-          <Link href="/contact">
-            <button className="bg-black text-white h-10 w-28 rounded-md p-1"
-              
-            >
+          <Link href="/contact#demo">
+            <button className="bg-black text-white h-10 w-28 rounded-md p-1">
               <span className="mr-2">Try Demo</span>
             </button>
           </Link>
@@ -170,7 +170,8 @@ export default function RetailNavbar() {
             Support
           </Link>
           <Link href="/support">
-            <button className="bg-black text-white"
+            <button
+              className="bg-black text-white"
               onClick={() => setIsOpen(false)} // Close mobile menu on contact button click
             >
               <span className="mr-2">Try Demo</span>

@@ -12,6 +12,7 @@ type DropdownState = {
 };
 
 export default function Navbar() {
+  
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<DropdownState>({

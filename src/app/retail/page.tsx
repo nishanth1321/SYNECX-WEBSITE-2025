@@ -2,7 +2,7 @@ import RetailHome from "@/components/retail-landingPage/retail-home";
 import RetailNavbar from "@/layouts/retailnavbar";
 import React from "react";
 import { Metadata } from "next";
-export const metadata = { title: "SYNECX | RETAIL " } as Metadata;
+export const metadata = { title: "SYNECX | RETAIL | HOME " } as Metadata;
 const page = () => {
   return (
     <div>

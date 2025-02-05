@@ -46,7 +46,7 @@ export default function RetailIndex() {
           </p>
 
           <div className="flex justify-center lg:justify-start">
-            <Link href="#" legacyBehavior>
+            <Link href="/contact#demo" legacyBehavior>
               <a className="bg-black text-white px-6 py-3 rounded-lg flex items-center">
                 <span className="mr-2">Faster. Smarter. Easier. </span>
                 <FaRocket />

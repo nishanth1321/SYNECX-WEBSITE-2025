@@ -9,7 +9,7 @@ import Navbar from '@/layouts/navbar'
 import React from 'react'
 import { Metadata } from 'next'
 
-export const metadata = ({ title : "SYNECX | SUPPORT "}) as Metadata
+export const metadata = ({ title : "SYNECX | CONTACT "}) as Metadata
 
 
 const page = () => {
