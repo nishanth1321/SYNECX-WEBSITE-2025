@@ -126,7 +126,7 @@ const Blogs = () => {
                   {blog.displayTitle}
                 </h2>
                 <p className="text-gray-600 mt-2">{blog.description}</p>
-                <Link href={`/blogs/${blog.title}`}>
+                <Link href={`/blog/${blog.title}`}>
                   <button className="absolute bottom-4 right-4 bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-300">
                     Read More
                   </button>
