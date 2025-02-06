@@ -85,7 +85,7 @@ Just **place your items, pay your bill, and walk out with a smile**. 😊
 
 **The future of checkout has arrived—and it's more intelligent than ever.** 🚀  
 `,
-    image: "/blogs.svg",
+    image: "/blog1.svg",
   },
   {
     title: "Customer-Experience-with-AI-Powered-Self-Checkout-Kiosk",
@@ -165,7 +165,7 @@ No scanning—just **shop, pay, and walk out with ease**. 😊
 **The revolution in retail checkout has arrived!** 🚀  
 `
 ,
-      image: "/blogs.svg",
+      image: "/blog3.svg",
   },
   {
     title: "How AI-Deep-Learning-and-Computer-Vision-Are-Revolutionizing-Retail-Checkout",
@@ -282,7 +282,7 @@ The **future of shopping is here**—and it’s powered by **AI, deep learning, 
 `
 
 ,
-      image: "/blogs.svg",
+      image: "/blog6.svg",
   },
 ];
 
@@ -316,10 +316,10 @@ const BlogPost: React.FC<BlogPageProps> = ({ params }) => {
         <div className="max-w-3xl w-full py-12">
           <img
             src={blog.image}
-            className="w-full rounded-lg"
+            className="w-full rounded-lg pt-20 sm:pt-20"
           />
           {/* Using react-markdown to render Markdown content */}
-          <article className="prose prose-lg prose-blue max-w-none w-full mt-6 text-gray-800 text-justify">
+          <article className="prose prose-lg prose-blue max-w-none w-full mt-6 text-gray-800 text-justify px-3 sm:px-0">
             <ReactMarkdown>{blog.content}</ReactMarkdown>
           </article>
         </div>

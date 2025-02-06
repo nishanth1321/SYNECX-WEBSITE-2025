@@ -313,7 +313,7 @@ const ApplyJob: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-4 flex flex-col lg:flex-row items-start gap-12 mt-24 sm:mx-auto bg-white/70 backdrop-blur-sm">
+    <div className="max-w-7xl mx-4 flex flex-col lg:flex-row items-start gap-12 mt-24 sm:mx-auto bg-white/70 backdrop-blur-sm" id="careerform">
       {/* Left Section - Form */}
       <div className="lg:w-1/2">
         <div className="h-auto flex justify-center items-center p-6">
@@ -433,7 +433,7 @@ const ApplyJob: React.FC = () => {
             </div>
             <div className="flex justify-center items-center mt-2">
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfNi0LeT1i24p4SkzC0yGZ7WZ-mt6xMdNK18rEYpIt4aLXLCA/viewform?usp=sharing" // Replace with your actual link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdzPOx3oLqDcgwmIWe1mGpzhtAg2LYPDb_LNXQYa-gyZngYUA/viewform?usp=header" // Replace with your actual link
                 target="_blank"
                 rel="noopener noreferrer"
               >

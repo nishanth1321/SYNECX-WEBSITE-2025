@@ -195,35 +195,42 @@ export default function Navbar() {
             {dropdownOpen.services && (
               <div className="mt-2 space-y-2 pl-4">
                 <Link
-                  href="/"
+                  href="/retail"
                   className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
                   onClick={() => setIsOpen(false)}
                 >
-                  Retail
+                  Retail Solutions
                 </Link>
                 <Link
                   href="/"
                   className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
                   onClick={() => setIsOpen(false)}
                 >
-                  Manufacturing
+                  OCR Solutions
                 </Link> <Link
                   href="/"
                   className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
                   onClick={() => setIsOpen(false)}
                 >
-                  Logistics
+                  Manufacturing Solutions
                 </Link>
               </div>
             )}
           </div>
 
           <Link
-            href="/"
+            href="/events"
             className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
            Events
+          </Link>
+          <Link
+            href="/blogs"
+            className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
+            onClick={() => setIsOpen(false)}
+          >
+           Blogs
           </Link>
           <Link
             href="/career"
@@ -233,7 +240,7 @@ export default function Navbar() {
             Career
           </Link>
           <Link
-            href="/support"
+            href="/contact"
             className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
@@ -246,7 +253,7 @@ export default function Navbar() {
               }`}
               onClick={() => setIsOpen(false)} // Close mobile menu on contact button click
             >
-              <span className="mr-2">Contact Us</span>
+              <span className="mr-2">Get in Touch</span>
             </button>
           </Link>
         </div>

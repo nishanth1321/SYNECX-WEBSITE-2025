@@ -41,7 +41,7 @@ export default function RetailPageServices() {
     
 
   return (
-    <div className='bg-white'>
+    <div className='bg-white pt-10 sm:pt-20 mx-3 sm:mx-0'>
       <div className="w-full bg-white py-6 flex flex-col items-center text-center" id='services'>
         <h1 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-gray-900 mb-2">
           Elevating  Industrial experience with SynecX AI Retail Solution

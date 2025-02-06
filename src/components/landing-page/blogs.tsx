@@ -131,7 +131,7 @@ export default function LatestBlog() {
       title: "The Untold Story of Shipping Labels: Making the World Go Round ",
       description:
         "Have you ever wondered what ensures your package, whether a gift or an important document, arrives at just the right doorstep? The hero behind the scenes is that simple yet powerful shipping label glued to the box.  🚀",
-      images: ["/news-img2.jpeg", "/news-img3.webp", "/news-img1.jpeg"],
+      images: ["/ocr1.svg", "/ocr2.svg", "/ocr3.svg"],
       date: "Apr 28 2024",
     },
     {

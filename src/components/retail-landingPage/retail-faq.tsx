@@ -41,7 +41,7 @@ export default function RetailLandingPageFAQ() {
   
 
   return (
-    <div className="py-16 bg-gray-50">
+    <div className="py-16 bg-gray-50 mx-3 sm:mx-0">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-semibold text-gray-900">Frequently Asked Questions</h2>
         <p className="mt-4 text-gray-600">

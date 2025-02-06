@@ -9,20 +9,20 @@ const Blogs = () => {
     {
       title: "Camera-Based-AI-Self-Checkout",
       displayTitle: "Camera-Based-AI-Self-Checkout",
-      description: "A deep dive into the latest trends in web technologies.",
-      image: "/blogs.svg",
+      description: "Imagine a world where checkout lines disappear, scanning barcodes becomes a thing of the past, and paying for your items is as simple as placing them on a counter",
+      image: "/blog1.svg",
     },
     {
       title: "Customer-Experience-with-AI-Powered-Self-Checkout-Kiosk",
       displayTitle: "Customer Experience with AI-Powered Self-Checkout Kiosk",
-      description: "Learn how TypeScript enhances React development.",
-      image: "/blogs.svg",
+      description: "AI-powered self-checkout kiosks, fuelled by cutting-edge technologies like AI, deep learning, and computer vision, are revolutionizing the retail experience. ",
+      image: "/blog3.svg",
     },
     {
       title: "How AI-Deep-Learning-and-Computer-Vision-Are-Revolutionizing-Retail-Checkout",
       displayTitle: "How our technologies are Revolutionizing Retail Checkout",
-      description: "How Tailwind CSS simplifies styling and speeds up UI design.",
-      image: "/blogs.svg",
+      description: "The world of AI-driven self-checkout kiosks, where complex algorithms and high-performance computing meet everyday convenience.",
+      image: "/blog6.svg",
     },
    
   ];

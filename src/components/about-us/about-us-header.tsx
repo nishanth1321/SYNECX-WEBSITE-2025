@@ -20,7 +20,7 @@ export default function AboutUs() {
         <p className="text-gray-700 text-lg text-justify">
           At SynecX AI Labs, we are at the forefront of AI innovation,
           leveraging computer vision, deep learning, and artificial intelligence
-          to revolutionize industries.Our team of AI specialists and computer
+          to revolutionize industries. Our team of AI specialists and computer
           vision scientists is dedicated to pushing the boundaries of machine
           learning, automation, and advanced analytics. At SynecX AI Labs, we
           don’t just innovate—we transform the future. 🚀

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function FeatureOne() {
+export default function FeatureFour() {
   return (
     <div className="bg-white py-10 px-4 lg:px-24" style={{ height: "80%" }}>
       <div className="flex flex-wrap justify-center gap-4">
@@ -12,7 +12,7 @@ export default function FeatureOne() {
           {/* Image Placeholder */}
            <div className="w-full h-48 relative mb-4 flex justify-center items-center">
                       <Image 
-                        src="/screen.svg" 
+                        src="/payandgo.svg" 
                         alt="Precision Weighing" 
                         layout="fill" 
                         objectFit="contain"
@@ -38,7 +38,7 @@ export default function FeatureOne() {
           {/* Image Placeholder */}
            <div className="w-full h-48 relative mb-4 flex justify-center items-center">
                       <Image 
-                        src="/screen.svg" 
+                        src="/checkout.svg" 
                         alt="Precision Weighing" 
                         layout="fill" 
                         objectFit="contain"

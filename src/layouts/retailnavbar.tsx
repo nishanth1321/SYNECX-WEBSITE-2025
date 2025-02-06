@@ -87,7 +87,7 @@ export default function RetailNavbar() {
             </Link>
 
             <Link
-              href="#"
+              href="/retail#services"
               onClick={handleScrollToServices}
               className="text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             >
@@ -108,7 +108,7 @@ export default function RetailNavbar() {
           </div>
 
           <Link href="/contact#demo">
-            <button className="bg-black text-white h-10 w-28 rounded-md p-1">
+            <button className="bg-black text-white h-10 w-28 rounded-md p-1 hidden sm:block">
               <span className="mr-2">Try Demo</span>
             </button>
           </Link>
@@ -139,8 +139,15 @@ export default function RetailNavbar() {
         <div className="px-4 pt-4 pb-3 space-y-2">
           {/* Services with Dropdown */}
           <div className="block">
+          <Link
+            href="/"
+            className="block text-gray-600 mb-2 font-bold hover:text-black text-sm transition duration-200"
+            onClick={() => setIsOpen(false)}
+          >
+            Home
+          </Link>
             <Link
-              href="/about-us"
+              href="/retail/features"
               className="block mb-2  text-gray-600 font-bold hover:text-black text-sm transition duration-200"
               onClick={() => setIsOpen(false)}
             >
@@ -153,28 +160,22 @@ export default function RetailNavbar() {
             className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
-            Events
+            Case Studies
           </Link>
+          
           <Link
-            href="/"
+            href="/contact"
             className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
-            Career
+            contact
           </Link>
-          <Link
-            href="/support"
-            className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
-            onClick={() => setIsOpen(false)}
-          >
-            Support
-          </Link>
-          <Link href="/support">
+          <Link href="/contact#demo">
             <button
-              className="bg-black text-white"
+              className={`block w-full px-4 py-2 border border-black rounded-lg shadow-lg transition duration-200 mt-2 $`}
               onClick={() => setIsOpen(false)} // Close mobile menu on contact button click
             >
-              <span className="mr-2">Try Demo</span>
+              <span className="mr-2">Demo Now</span>
             </button>
           </Link>
         </div>

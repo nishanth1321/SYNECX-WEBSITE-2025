@@ -24,10 +24,10 @@ const Whysycenx = () => {
 
       {/* Tab Content */}
       <div className="relative z-0 flex flex-col md:flex-row items-center md:items-start">
-        <div className="md:w-1/2 mb-6 md:mb-0 ml-0 sm:ml-28 mt-0 sm:mt-8">
+        <div className="md:w-1/2 mb-6 md:mb-0 ml-0 sm:ml-28 mt-0 sm:mt-1">
           <img
-            src={"/5.png"}
-            className="w-full h-[200px] md:h-[300px] object-cover "
+            src={"/careerheader.svg"}
+            className="w-full h-[200px] md:h-[400px] object-cover  rounded-md "
           />
         </div>
         <div className="md:w-1/2 md:ml-8 sm:mx-0 mx-4">
@@ -38,7 +38,7 @@ const Whysycenx = () => {
           {/* Learn Section */}
           <div className="text-base md:text-lg text-blue-500 mb-6">
             <div className="flex items-start">
-              <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-indigo-500 text-white font-bold mr-4">
+              <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-red-500 text-white font-bold mr-4">
                 <FaLightbulb />
               </div>
               <div>
@@ -54,7 +54,7 @@ const Whysycenx = () => {
           {/* Thrive Section */}
           <div className="text-base md:text-lg text-blue-500 mb-6">
             <div className="flex items-start">
-              <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-indigo-500 text-white font-bold mr-4">
+              <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-red-500 text-white font-bold mr-4">
                 <FaArrowRight />
               </div>
               <div>
@@ -70,7 +70,7 @@ const Whysycenx = () => {
             {/* Lead Section */}
             <div className="text-base md:text-lg text-blue-500">
               <div className="flex items-start">
-                <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-indigo-500 text-white font-bold mr-4">
+                <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-red-500 text-white font-bold mr-4">
                   <FaRocket />
                 </div>
                 <div>

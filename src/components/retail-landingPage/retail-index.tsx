@@ -15,7 +15,7 @@ export default function RetailIndex() {
     <div className="min-h-screen bg-red/70 backdrop-blur-sm px-6 lg:px-28 flex items-center justify-center">
       <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl">
         {/* Image Section */}
-        <div className="flex justify-center lg:w-1/2 mb-8 lg:mb-0">
+        <div className="flex justify-center lg:w-1/2 mb-8 lg:mb-0 pt-14 sm:pt-0">
           <Image
             src="/aiLogo.png" // Updated to reflect retail-specific image
             alt="AI solutions for retail"

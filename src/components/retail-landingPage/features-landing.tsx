@@ -19,7 +19,7 @@ const FeaturesLanding = () => {
         >
           <SwiperSlide className="flex justify-center items-center">
             <Image
-              src="/sample.png"
+              src="/1.svg"
               alt="Slide 1"
               width={500} // Set explicit width
               height={300} // Set explicit height
@@ -28,7 +28,7 @@ const FeaturesLanding = () => {
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">
             <Image
-              src="/sample.png"
+              src="/2.svg"
               alt="Slide 2"
               width={500}
               height={300}
@@ -37,7 +37,16 @@ const FeaturesLanding = () => {
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">
             <Image
-              src="/ui-test.png"
+              src="/3.svg"
+              alt="Slide 3"
+              width={500}
+              height={300}
+              className="w-full h-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center items-center">
+            <Image
+              src="/4.svg"
               alt="Slide 3"
               width={500}
               height={300}

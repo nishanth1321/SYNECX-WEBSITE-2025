@@ -2,60 +2,61 @@
 
 import Image from "next/image";
 
-export default function FeatureFour() {
+export default function FeatureThree() {
   return (
-    <div className="bg-white py-10 px-4 lg:px-24" style={{ height: "80%" }}>
-      <div className="flex flex-wrap justify-center gap-4">
-        
-        {/* Right Card */}
-        <div className="bg-white shadow-lg rounded-lg w-full md:w-5/12 h-[50vh] flex flex-col p-6 items-center">
+    <div className="bg-white py-16 px-4 lg:px-24">
+      
+
+      <div className="flex flex-wrap justify-center gap-8">
+        {/* Left Card */}
+        <div className="bg-white shadow-lg rounded-lg w-full sm:w-10/12 md:w-5/12 h-auto flex flex-col p-6 items-center">
           {/* Image Placeholder */}
-           <div className="w-full h-48 relative mb-4 flex justify-center items-center">
-                      <Image 
-                        src="/screen.svg" 
-                        alt="Precision Weighing" 
-                        layout="fill" 
-                        objectFit="contain"
-                      />
-                    </div>
+          <div className="w-full h-48 relative mb-4 flex justify-center items-center">
+            <Image 
+              src="/inv.svg" 
+              alt="Real-Time Inventory Management" 
+              layout="fill" 
+              objectFit="contain"
+            />
+          </div>
           {/* Content */}
-          <h6 className="text-red-500 text-2xl font-medium mb-2">
-            Seamless Payments
+          <h6 className="text-red-500 text-2xl font-medium text-center mb-2">
+            Real-Time Inventory Management
           </h6>
-          <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
-            For Everyone
+          <h5 className="text-lg font-semibold text-gray-900 text-center mb-4">
+            Smarter Decisions
           </h5>
           <p className="text-gray-600 text-center">
-            Offer customers the freedom to pay their way! With integrated
-            support for cards, mobile wallets, and QR codes, our system makes
-            every payment secure, swift, and stress-free. Convenience is just a
-            tap away.
+            Empower your business with actionable analytics. Monitor sales
+            trends, track inventory, and understand customer preferences with
+            our live dashboard. Stay ahead by making informed, data-driven
+            decisions.
           </p>
         </div>
 
         {/* Right Card */}
-        <div className="bg-white shadow-lg rounded-lg w-full md:w-5/12 h-[50vh] flex flex-col p-6 items-center">
+        <div className="bg-white shadow-lg rounded-lg w-full sm:w-10/12 md:w-5/12 h-auto flex flex-col p-6 items-center">
           {/* Image Placeholder */}
-           <div className="w-full h-48 relative mb-4 flex justify-center items-center">
-                      <Image 
-                        src="/screen.svg" 
-                        alt="Precision Weighing" 
-                        layout="fill" 
-                        objectFit="contain"
-                      />
-                    </div>
+          <div className="w-full h-48 relative mb-4 flex justify-center items-center">
+            <Image 
+              src="/add.svg" 
+              alt="Interactive Ad Space" 
+              layout="fill" 
+              objectFit="contain"
+            />
+          </div>
           {/* Content */}
-          <h6 className="text-red-500 text-2xl font-medium mb-2">
-            Hassle Free Checkout
+          <h6 className="text-red-500 text-2xl font-medium text-center mb-2">
+            Interactive Ad Space
           </h6>
-          <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
-            Stay in Control
+          <h5 className="text-lg font-semibold text-gray-900 text-center mb-4">
+            For Enhanced Engagement
           </h5>
           <p className="text-gray-600 text-center">
-          Our hassle-free self-checkout combines speed, accuracy, and an interactive,
-          user-friendly UI, making it effortless. Customers can scan, pay, 
-          and go seamlessly, while businesses enjoy efficience 
-          with an intuitive experience.
+            Turn every second into a sales opportunity! Capture customer
+            attention during checkout with rotating, dynamic ads that showcase
+            the latest deals, trending products, or special promotions right on
+            the payment screen.
           </p>
         </div>
       </div>

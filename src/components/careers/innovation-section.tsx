@@ -77,7 +77,7 @@ const Openings = () => {
         </div>
         <div className="flex justify-center mt-8">
           <a
-            href="#"
+            href="#careerform"
             className="inline-block bg-transparent border-2 border-gray-900 text-gray-900 text-base md:text-lg font-medium py-2 px-6 rounded-full hover:bg-gray-900 hover:text-white transition duration-300 transform hover:scale-105 hover:shadow-lg"
           >
             Apply Now

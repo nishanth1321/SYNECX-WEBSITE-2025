@@ -1,13 +1,13 @@
 "use client"
 import Image from "next/image";
 import React from "react";
-import SnowParticles from "../ParticlsJs/snowparticles";
+import StarComponent from "../ParticlsJs/starparticles";
 
 const Events = () => {
   return (
     <div>
        <div className="absolute inset-0 -z-10">
-        <SnowParticles id="particles-js" />
+        <StarComponent id="particles-js" />
       </div>
       <div className="h-screen  flex justify-center items-center">
          

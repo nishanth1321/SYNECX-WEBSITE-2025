@@ -1,62 +1,115 @@
-"use client";
+// import Image from "next/image";
 
+// export default function FeatureOne() {
+//   return (
+//     <div className="bg-white py-16 px-4 lg:px-24 -mt-10 " style={{ height: "80%" }}>
+//       <h1 className="flex justify-center items-center text-4xl text-red-500 font-bold mb-4">
+//         Features
+//       </h1>
+//       <p className="flex justify-center items-center text-2xl text-gray-500 font-semibold">
+//         The Innovations that transform your retail experience with
+//         <span className="text-red-500 ml-2 font-semibold">AI</span>
+//       </p>
+
+//       <div className="flex flex-wrap justify-center gap-4 mt-24">
+//         {/* Left Card */}
+//         <div className="bg-white shadow-lg rounded-lg w-full md:w-5/12 h-[50vh] flex flex-col p-6 items-center">
+//           {/* Image Placeholder */}
+//           <div className="w-full h-1/3 border-2 border-dashed border-gray-300 mb-4 flex justify-center items-center">
+//             <Image src={"/screen.svg"} alt={""} height={220} width={220}></Image>
+//           </div>
+//           {/* Content */}
+//           <h6 className="text-red-500 text-2xl font-medium mb-2">
+//             Precision Weighing
+//           </h6>
+//           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
+//             Seamless Experience
+//           </h5>
+//           <p className="text-gray-600 text-center">
+//             Ensure every product is weighed with pinpoint accuracy. From bulk
+//             items to fresh produce, our smart weighing system integrates
+//             smoothly into self-checkout, maintaining speed and efficiency. Say
+//             goodbye to errors and hello to effortless transactions.
+//           </p>
+//         </div>
+//         {/* Right Card */}
+//         <div className="bg-white shadow-lg rounded-lg w-full md:w-5/12 h-[50vh] flex flex-col p-6 items-center">
+//           {/* Image Placeholder */}
+//           <div className="w-full h-1/3 border-2 border-dashed border-gray-300 mb-4 flex justify-center items-center">
+//             <span className="text-gray-400">Image Placeholder</span>
+//           </div>
+//           {/* Content */}
+//           <h6 className="text-red-500 text-2xl font-medium mb-2">
+//             Smart Recommendations
+//           </h6>
+//           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
+//             For Better Shopping
+//           </h5>
+//           <p className="text-gray-600 text-center">
+//             Enhance the shopping journey with personalized recommendations. Our
+//             system highlights complementary products and alerts customers to
+//             soon-to-expire items, helping them save money and shop smarter.
+//           </p>
+//         </div>
+
+//       </div>
+//     </div>
+//   );
+// }
 import Image from "next/image";
 
-export default function FeatureThree() {
+export default function FeatureTwo() {
   return (
-    <div className="bg-white py-16 px-4 lg:px-24">
-      
-
-      <div className="flex flex-wrap justify-center gap-8">
+    <div className="bg-white py-16 px-4 lg:px-24 -mt-10">
+      <div className="flex flex-wrap justify-center gap-8 mt-12">
         {/* Left Card */}
-        <div className="bg-white shadow-lg rounded-lg w-full sm:w-10/12 md:w-5/12 h-auto flex flex-col p-6 items-center">
+        <div className="bg-white shadow-lg rounded-lg w-full sm:w-5/12 md:w-5/12 lg:w-5/12 h-[auto] flex flex-col p-6 items-center">
           {/* Image Placeholder */}
           <div className="w-full h-48 relative mb-4 flex justify-center items-center">
-            <Image 
-              src="/screen.svg" 
-              alt="Real-Time Inventory Management" 
-              layout="fill" 
+            <Image
+              src="/weight.svg"
+              alt="Precision Weighing"
+              layout="fill"
               objectFit="contain"
             />
           </div>
           {/* Content */}
-          <h6 className="text-red-500 text-2xl font-medium text-center mb-2">
-            Real-Time Inventory Management
+          <h6 className="text-red-500 text-2xl font-medium mb-2">
+            Precision Weighing
           </h6>
-          <h5 className="text-lg font-semibold text-gray-900 text-center mb-4">
-            Smarter Decisions
+          <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
+            Seamless Experience
           </h5>
           <p className="text-gray-600 text-center">
-            Empower your business with actionable analytics. Monitor sales
-            trends, track inventory, and understand customer preferences with
-            our live dashboard. Stay ahead by making informed, data-driven
-            decisions.
+            Ensure every product is weighed with pinpoint accuracy. From bulk
+            items to fresh produce, our smart weighing system integrates
+            smoothly into self-checkout, maintaining speed and efficiency. Say
+            goodbye to errors and hello to effortless transactions.
           </p>
         </div>
 
         {/* Right Card */}
-        <div className="bg-white shadow-lg rounded-lg w-full sm:w-10/12 md:w-5/12 h-auto flex flex-col p-6 items-center">
+        <div className="bg-white shadow-lg rounded-lg w-full sm:w-5/12 md:w-5/12 lg:w-5/12 h-[auto] flex flex-col p-6 items-center">
           {/* Image Placeholder */}
           <div className="w-full h-48 relative mb-4 flex justify-center items-center">
-            <Image 
-              src="/screen.svg" 
-              alt="Interactive Ad Space" 
-              layout="fill" 
+            <Image
+              src="/reco.svg"
+              alt="Precision Weighing"
+              layout="fill"
               objectFit="contain"
             />
           </div>
           {/* Content */}
-          <h6 className="text-red-500 text-2xl font-medium text-center mb-2">
-            Interactive Ad Space
+          <h6 className="text-red-500 text-2xl font-medium mb-2 flex justify-center items-center">
+            Smart Recommendations
           </h6>
-          <h5 className="text-lg font-semibold text-gray-900 text-center mb-4">
-            For Enhanced Engagement
+          <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
+            For Better Shopping
           </h5>
           <p className="text-gray-600 text-center">
-            Turn every second into a sales opportunity! Capture customer
-            attention during checkout with rotating, dynamic ads that showcase
-            the latest deals, trending products, or special promotions right on
-            the payment screen.
+            Enhance the shopping journey with personalized recommendations. Our
+            system highlights complementary products and alerts customers to
+            soon-to-expire items, helping them save money and shop smarter.
           </p>
         </div>
       </div>
