@@ -26,7 +26,7 @@ export default function FeatureOne() {
             Seamless AI-Powered Transactions
           </h5>
           <p className="text-gray-600 text-center">
-            Our AI-driven self-checkout system ensures that customers' carts update in real-time,
+            Our AI-driven self-checkout system ensures that customers carts update in real-time,
             providing accurate pricing, discounts, and item availability. Say goodbye to checkout
             delays and experience smooth, automated shopping.
           </p>
