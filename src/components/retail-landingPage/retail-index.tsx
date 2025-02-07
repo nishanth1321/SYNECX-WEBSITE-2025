@@ -17,7 +17,7 @@ export default function RetailIndex() {
         {/* Image Section */}
         <div className="flex justify-center lg:w-1/2 mb-8 lg:mb-0 pt-14 sm:pt-0">
           <Image
-            src="/aiLogo.png" // Updated to reflect retail-specific image
+            src="/aihand.svg" // Updated to reflect retail-specific image
             alt="AI solutions for retail"
             width={500}
             height={500}

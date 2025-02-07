@@ -8,7 +8,7 @@ export default function Manufacturing() {
       <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-start">
        <div className="relative w-[280px] h-[200px] sm:w-[320px] sm:h-[550px] lg:w-[600px] lg:h-[400px]  my-0 sm:mt-32">
                <Image
-                 src="/ailogo.png"
+                 src="/aihand.svg"
                  alt="Mobile App Preview"
                  layout="fill"
                  objectFit="cover"

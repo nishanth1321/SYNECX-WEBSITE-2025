@@ -127,7 +127,7 @@ export default function Home() {
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end w-full lg:w-[100%]">
             <div className="w-full h-full flex justify-center items-center">
               <img
-                src="/ailogo.png"
+                src="/aihand.svg"
                 alt="Phone preview"
                 className="rounded-lg object-cover h-[650px] w-[900px]"
               />

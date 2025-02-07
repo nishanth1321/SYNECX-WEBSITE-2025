@@ -193,7 +193,7 @@ export default function Logistics() {
       <div className="w-full lg:w-1/2 flex justify-center lg:justify-center mb-12 lg:mb-0 ml-0 sm:ml-20">
         <div className="relative w-[280px] h-[200px] sm:w-[320px] sm:h-[550px] lg:w-[600px] lg:h-[500px] ">
           <Image
-            src="/ailogo.png"
+            src="/aihand.svg"
             alt="Mobile App Preview"
             layout="fill"
             objectFit="cover"
