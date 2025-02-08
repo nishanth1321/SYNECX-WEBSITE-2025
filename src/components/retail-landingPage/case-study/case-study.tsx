@@ -57,7 +57,6 @@ export default function CaseStudyIndividual() {
                       </p>
                     </div>
                     <button
-                      onClick={() => router.push(`/case-study/${casestudy.title}`)}
                       className="text-white bg-red-500 px-3 py-1 rounded-md text-sm mt-2 sm:mt-0 transition hover:scale-105 duration-200 ease-in-out"
                     >
                       Read More
