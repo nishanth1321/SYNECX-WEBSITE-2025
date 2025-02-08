@@ -1,4 +1,5 @@
-import { FaCog, FaStackExchange, FaTruck } from 'react-icons/fa';
+import {  FaStackExchange, FaTruck } from 'react-icons/fa';
+import { FaUserDoctor } from "react-icons/fa6";
 import Link from 'next/link';
 
 // Sub-services data for Enterprise Solutions
@@ -6,22 +7,22 @@ const logisticsSubServices = [
   {
     title: "AI-Powered Tax Invoice",
     description: 
-      "Transform your supply chain with intelligent logistics solutions that optimize routes, reduce costs, and enhance delivery efficiency.",
+      "Our smart Tax Invoice agent captures invoice details, contracts, and receipts, reducing errors and effortlessly syncing data into ERP, SAP, or custom systems. ",
     icon: <FaStackExchange className="text-4xl text-teal-500 mb-4" />,
     href: "/", // example route
   },
   {
     title: "Smart Logicx",
     description: 
-      "Transform your supply chain with intelligent logistics solutions that optimize routes, reduce costs, and enhance delivery efficiency.",
+      "Our Logicx solution automates data entry by scanning and extracting barcodes, addresses, and tracking details, ensuring faster processing and quicker deliveries.",
     icon: <FaTruck className="text-4xl text-teal-500 mb-4" />,
     href: "/", // example route
   },
   {
     title: "HealthCare",
     description: 
-      "Transform your supply chain with intelligent logistics solutions that optimize routes, reduce costs, and enhance delivery efficiency.",
-    icon: <FaStackExchange className="text-4xl text-teal-500 mb-4" />,
+      "Our HealthCare agent scans prescriptions, intelligently extracting medicines, dosages, and patient details, eliminating manual entry and streamlining medication dispensing.",
+    icon: <FaUserDoctor  className="text-4xl text-teal-500 mb-4" />,
     href: "/", // example route
   },
   

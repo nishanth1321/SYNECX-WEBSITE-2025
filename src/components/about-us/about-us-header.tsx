@@ -37,7 +37,7 @@ export default function AboutUs() {
         >
           <SwiperSlide className="">
             <Image
-              src="/aboutus.svg"
+              src="/aboutus33.svg"
               alt="AI Innovation"
               width={1200}
               height={100}

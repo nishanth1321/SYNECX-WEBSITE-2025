@@ -93,7 +93,7 @@ export default function Selfcheckout() {
       {/* Right Side - Content */}
       <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6 mt-8 lg:mt-0">
         <h2 className="text-red-500 text-lg font-semibold">
-          Transform Retail with Smart Self-Checkout!
+          Transform Retail with Smart Self-Checkout
         </h2>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">
           AI-Powered Self-Checkout
@@ -120,10 +120,10 @@ export default function Selfcheckout() {
               </p>
               <div className="flex flex-col sm:flex-row items-center sm:items-start mt-8 sm:mt-8 -ml-10 sm:-ml-0 space-y-4 sm:space-y-0 sm:space-x-4">
                 <span className="text-gray-600 font-semibold">
-                  Step into the Future of Shopping
+                  Step into the Future of Shopping !
                 </span>
                 <Link
-                  className="bg-red-500 text-white py-2 px-4 w-32 rounded-md hover:bg-indigo-600 transition flex items-center justify-center space-x-2"
+                  className="bg-red-500 text-white py-2 px-4 w-32 rounded-md hover:bg-red-600 transition flex items-center justify-center space-x-2"
                   href={"/retail"}
                 >
                   <span>Dive In</span>

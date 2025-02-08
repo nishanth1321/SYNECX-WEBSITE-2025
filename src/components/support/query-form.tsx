@@ -89,7 +89,7 @@ const QueryForm: React.FC = () => {
       </div>
 
       {/* Right Section - Text */}
-      <div className="lg:w-1/2 order-2 lg:order-2 hidden lg:block">
+      <div className="lg:w-1/2 order-2 lg:order-2">
         <div className="h-auto flex justify-center items-center p-6">
           <form
             onSubmit={handleSubmit}
@@ -105,7 +105,7 @@ const QueryForm: React.FC = () => {
                 htmlFor="fullName"
                 className="block text-gray-700 text-sm font-bold mb-2"
               >
-                Full Name
+                Full Name *
               </label>
               <input
                 type="text"
@@ -126,7 +126,7 @@ const QueryForm: React.FC = () => {
                   htmlFor="emailId"
                   className="block text-gray-700 text-sm font-bold mb-2"
                 >
-                  Email Address
+                  Email Address *
                 </label>
                 <input
                   type="email"
@@ -145,7 +145,7 @@ const QueryForm: React.FC = () => {
                   htmlFor="phoneNumber"
                   className="block text-gray-700 text-sm font-bold mb-2"
                 >
-                  Phone Number
+                  Phone Number *
                 </label>
                 <input
                   type="tel"
@@ -167,7 +167,7 @@ const QueryForm: React.FC = () => {
                   htmlFor="companyName"
                   className="block text-gray-700 text-sm font-bold mb-2"
                 >
-                  Company Name
+                  Company Name *
                 </label>
                 <input
                   type="text"
@@ -186,7 +186,7 @@ const QueryForm: React.FC = () => {
                   htmlFor="product"
                   className="block text-gray-700 text-sm font-bold mb-2"
                 >
-                  Product
+                  Product *
                 </label>
                 <select
                   id="product"
@@ -214,7 +214,7 @@ const QueryForm: React.FC = () => {
                 htmlFor="description"
                 className="block text-gray-700 text-sm font-bold mb-2"
               >
-                Description
+                Description *
               </label>
               <textarea
                 id="description"

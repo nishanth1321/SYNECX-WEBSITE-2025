@@ -115,7 +115,7 @@ export default function Logistics() {
       {/* Right Side (Text Content) */}
       <div className="w-full lg:w-1/2 flex flex-col items-start justify-center text-left space-y-6 sm:ml-24 ml-0">
         <h2 className="text-red-500 text-lg font-semibold mb-2">
-          Seamless Data Capture with AI OCR!
+          Seamless Data Capture with AI OCR
         </h2>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">
           AI-OCR
@@ -179,7 +179,7 @@ export default function Logistics() {
 
           <div className="flex flex-col sm:flex-row items-center sm:items-start mt-4 sm:mt-0 ml-0 sm:ml-12 space-y-4 sm:space-y-0 sm:space-x-4">
             <span className="text-gray-600 font-semibold">
-              Enhance Your Workflow
+              Enhance Your Workflow !
             </span>
             <button className="bg-red-500 text-white py-2 px-4 w-32 rounded-md hover:bg-red-600 transition flex items-center justify-center space-x-2">
               <span>Discover</span>

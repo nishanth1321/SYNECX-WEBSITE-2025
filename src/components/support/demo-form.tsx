@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaChartBar } from "react-icons/fa";
 
 const DemoForm: React.FC = () => {
@@ -17,6 +17,24 @@ const DemoForm: React.FC = () => {
   const [message, setMessage] = useState("");
   const [messageColor, setMessageColor] = useState(""); // State for message color
 
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash === "#demo") {
+      const element = document.getElementById("demo");
+      if (element) {
+        const offset = 100; // Adjust this value as needed
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, []);
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -78,7 +96,7 @@ const DemoForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-12 " id="demo">
+    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-12" id="demo">
       {/* Left Section - Form */}
       <div className="lg:w-1/2 order-2 lg:order-1 ">
         <div className="h-auto flex justify-center items-center p-6 ml-4 sm:ml-2">
@@ -94,7 +112,7 @@ const DemoForm: React.FC = () => {
                   htmlFor="firstName"
                   className="block text-gray-700 text-sm font-bold mb-2"
                 >
-                  First Name
+                  First Name *
                 </label>
                 <input
                   type="text"
@@ -119,7 +137,7 @@ const DemoForm: React.FC = () => {
                   htmlFor="email"
                   className="block text-gray-700 text-sm font-bold mb-2"
                 >
-                  Email Address
+                  Email Address *
                 </label>
                 <input
                   type="email"
@@ -136,7 +154,7 @@ const DemoForm: React.FC = () => {
                   htmlFor="phoneNumber"
                   className="block text-gray-700 text-sm font-bold mb-2"
                 >
-                  Phone Number
+                  Phone Number *
                 </label>
                 <input
                   type="tel"
@@ -157,7 +175,7 @@ const DemoForm: React.FC = () => {
                   htmlFor="company"
                   className="block text-gray-700 text-sm font-bold mb-2"
                 >
-                  Company Name
+                  Company Name *
                 </label>
                 <input
                   type="text"
@@ -174,7 +192,7 @@ const DemoForm: React.FC = () => {
                 htmlFor="product"
                 className="block text-gray-700 text-sm font-bold mb-2"
               >
-                Product
+                Product *
               </label>
               <select
                 id="product"
@@ -201,7 +219,7 @@ const DemoForm: React.FC = () => {
                 htmlFor="requirement"
                 className="block text-gray-700 text-sm font-bold mb-2"
               >
-                Requirement
+                Requirement *
               </label>
               <textarea
                 id="requirement"
@@ -251,7 +269,7 @@ const DemoForm: React.FC = () => {
         <div className="text-left sm:mx-0 mx-6">
           <h1 className="text-red-500 font-semibold">Book a Demo</h1>
           <h2 className="text-3xl font-semibold text-gray-900">
-            Experience Our AI Solutions Firsthand
+            Experience Our AI Solutions 
           </h2>
           <p className="mt-4 text-gray-600">
             Schedule a personalized demo with our experts to see how SynecX AI

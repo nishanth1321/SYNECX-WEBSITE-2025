@@ -1,4 +1,3 @@
-
 "use client";
 import Navbar from "@/layouts/navbar";
 import React from "react";
@@ -9,22 +8,25 @@ const Blogs = () => {
     {
       title: "Camera-Based-AI-Self-Checkout",
       displayTitle: "Camera-Based-AI-Self-Checkout",
-      description: "Imagine a world where checkout lines disappear, scanning barcodes becomes a thing of the past, and paying for your items is as simple as placing them on a counter",
+      description:
+        "Imagine a world where checkout lines disappear, scanning barcodes becomes a thing of the past, and paying for your items is as simple as placing them on a counter",
       image: "/blog1.svg",
     },
     {
       title: "Customer-Experience-with-AI-Powered-Self-Checkout-Kiosk",
       displayTitle: "Customer Experience with AI-Powered Self-Checkout Kiosk",
-      description: "AI-powered self-checkout kiosks, fuelled by cutting-edge technologies like AI, deep learning, and computer vision, are revolutionizing the retail experience. ",
+      description:
+        "AI-powered self-checkout kiosks, fuelled by cutting-edge technologies like AI, deep learning, and computer vision, are revolutionizing the retail experience. ",
       image: "/blog3.svg",
     },
     {
-      title: "How AI-Deep-Learning-and-Computer-Vision-Are-Revolutionizing-Retail-Checkout",
+      title:
+        "How-AI-Deep-Learning-and-Computer-Vision-Are-Revolutionizing-Retail-Checkout",
       displayTitle: "How our technologies are Revolutionizing Retail Checkout",
-      description: "The world of AI-driven self-checkout kiosks, where complex algorithms and high-performance computing meet everyday convenience.",
+      description:
+        "The world of AI-driven self-checkout kiosks, where complex algorithms and high-performance computing meet everyday convenience.",
       image: "/blog6.svg",
     },
-   
   ];
 
   return (
@@ -40,7 +42,7 @@ const Blogs = () => {
           {blogs.map((blog) => (
             <div
               key={blog.title}
-              className="bg-white h-[55vh] shadow-lg rounded-lg overflow-hidden transform transition-transform duration-500 hover:scale-105"
+              className="bg-white h-full shadow-lg rounded-lg overflow-hidden transform transition-transform duration-500 hover:scale-105"
             >
               <img
                 src={blog.image}
@@ -52,11 +54,13 @@ const Blogs = () => {
                   {blog.displayTitle}
                 </h2>
                 <p className="text-gray-600 mt-2">{blog.description}</p>
-                <Link href={`/blog/${blog.title}`}>
-                  <button className="absolute bottom-4 right-4 bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-300">
-                    Read More
-                  </button>
-                </Link>
+                <div className="sm:mt-10 mt-10">
+                  <Link href={`/blog/${blog.title}`}>
+                    <button className="absolute bottom-4 right-4 bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-300 ">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

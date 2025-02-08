@@ -1,11 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function FAQSection() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const toggleFAQ = (index : any) => {
+  useEffect(() => {
+    if (window.location.hash === "#faq") {
+      setTimeout(() => {
+        const faqSection = document.getElementById("faq");
+        if (faqSection) {
+          const offset = 100; // Adjust spacing at the top
+          const faqPosition = faqSection.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top: faqPosition, behavior: "smooth" });
+        }
+      }, 500);
+    }
+  }, []);
+
+  const toggleFAQ = (index: number) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
@@ -37,7 +50,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <div className="py-16 bg-white px-2 sm:px-0">
+    <div className="py-16 bg-white px-2 sm:px-0" id="faq">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-semibold text-gray-900">Frequently Asked Questions</h2>
         <p className="mt-4 text-gray-600">

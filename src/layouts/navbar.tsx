@@ -134,11 +134,11 @@ export default function Navbar() {
               href="/contact"
               className="text-gray-600 font-bold hover:text-black transition text-sm duration-200"
             >
-              contact
+              Contact
             </Link>
           </div>
 
-          <Link href="/contact">
+          <Link href="/#lancontact">
             <button
               className={`hidden md:flex px-4 py-2 border border-black rounded-lg shadow-lg transition duration-200 ${
                 isContact ? "bg-white text-black" : "bg-black text-white"
@@ -244,9 +244,9 @@ export default function Navbar() {
             className="block text-gray-600 font-bold hover:text-black text-sm transition duration-200"
             onClick={() => setIsOpen(false)}
           >
-            Support
+            Contact
           </Link>
-          <Link href="/contact">
+          <Link href="#lancontact">
             <button
               className={`block w-full px-4 py-2 border border-black rounded-lg shadow-lg transition duration-200 mt-2 ${
                 isContact ? "bg-white text-black" : "bg-black text-white"

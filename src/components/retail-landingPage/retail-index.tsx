@@ -15,7 +15,7 @@ export default function RetailIndex() {
     <div className="min-h-screen bg-red/70 backdrop-blur-sm px-6 lg:px-28 flex items-center justify-center">
       <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl">
         {/* Image Section */}
-        <div className="flex justify-center lg:w-1/2 mb-8 lg:mb-0 pt-14 sm:pt-0">
+        <div className="flex justify-center lg:w-1/2  lg:mb-0 pt-0 sm:pt-0">
           <Image
             src="/aihand.svg" // Updated to reflect retail-specific image
             alt="AI solutions for retail"
@@ -26,8 +26,8 @@ export default function RetailIndex() {
         </div>
 
         {/* Text Section */}
-        <div className="text-center lg:text-left lg:w-1/2 bg-white/70 p-8">
-          <h2 className="text-lg font-medium text-gray-600 mb-4">
+        <div className="text-center lg:text-left lg:w-1/2 bg-white/70 p-8 ">
+          <h2 className="text-lg font-medium text-gray-600 mb-4 sm:-mt-24 mt-0 ">
             Transforming Retail with AI-Driven Innovation
           </h2>
           <h1 className="text-3xl lg:text-5xl font-semibold text-gray-900 mb-6">

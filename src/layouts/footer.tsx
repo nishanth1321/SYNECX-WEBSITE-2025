@@ -1,9 +1,33 @@
-
 "use client";
 import EmailSubscribe from "@/components/subscribe-newsletter/email-subscribe";
 import Image from "next/image";
+import { useRouter } from "next/navigation"; // Import router for navigation
 
 const Footer = () => {
+  const router = useRouter();
+
+  const handleFAQClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const faqPath = "/#faq"; // Replace with the actual page where FAQ exists
+
+    if (window.location.pathname === faqPath) {
+      // If already on the FAQ page, just scroll
+      scrollToFAQ();
+    } else {
+      // Navigate first, then scroll after the page loads
+      router.push(faqPath);
+      setTimeout(scrollToFAQ, 500); // Delay ensures the page loads first
+    }
+  };
+
+  const scrollToFAQ = () => {
+    const faqSection = document.getElementById("faq");
+    if (faqSection) {
+      const offset = 100; // Adjust this value for proper spacing
+      const faqPosition = faqSection.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: faqPosition, behavior: "smooth" });
+    }
+  };
   return (
     <footer className="bg-white text-gray-700">
       <div>
@@ -25,7 +49,6 @@ const Footer = () => {
             Empowering industries with smart, scalable solutions since 2024,
             turning challenges into opportunities for growth.
           </p>
-         
         </div>
 
         <div className="flex flex-col sm:flex-row flex-wrap gap-8 text-center sm:text-left w-full sm:w-auto sm:space-x-32 items-center sm:items-start">
@@ -61,7 +84,7 @@ const Footer = () => {
                   href="/support"
                   className="hover:text-black transition-colors duration-300"
                 >
-                  Contact Us
+                  Contact
                 </a>
               </li>
             </ul>
@@ -80,7 +103,8 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="#"
+                  onClick={(e) => e.preventDefault()}
                   className="hover:text-black transition-colors duration-300"
                 >
                   Smart OCR
@@ -88,7 +112,8 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="#"
+                  onClick={(e) => e.preventDefault()}
                   className="hover:text-black transition-colors duration-300"
                 >
                   Manufacturing
@@ -101,7 +126,17 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="/retail"
+                   href="https://www.linkedin.com/company/synecx-ai-labs/posts/?feedView=all"
+                   target="_blank"
+                  className="hover:text-black transition-colors duration-300"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   onClick={(e) => e.preventDefault()}
                   className="hover:text-black transition-colors duration-300"
                 >
                   Instagram
@@ -109,18 +144,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="#"
+                  onClick={(e) => e.preventDefault()}
                   className="hover:text-black transition-colors duration-300"
                 >
                   Facebook
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="hover:text-black transition-colors duration-300"
-                >
-                 LinkedIn
                 </a>
               </li>
             </ul>
@@ -131,23 +159,25 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="/contact"
                   className="hover:text-black transition-colors duration-300"
                 >
                   Help Center
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="hover:text-black transition-colors duration-300"
-                >
-                  FAQs
-                </a>
-              </li>
+              <a
+                href="/#faq"
+                onClick={handleFAQClick}
+                className="hover:text-black transition-colors duration-300"
+              >
+                FAQs
+              </a>
+            </li>
               <li>
                 <a
                   href="#"
+                  onClick={(e) => e.preventDefault()}
                   className="hover:text-black transition-colors duration-300"
                 >
                   Privacy Policy
@@ -157,6 +187,7 @@ const Footer = () => {
                 <a
                   href="#"
                   className="hover:text-black transition-colors duration-300"
+                  onClick={(e) => e.preventDefault()}
                 >
                   Terms & Conditions
                 </a>
@@ -169,7 +200,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="text-center py-4 border-t border-gray-200 text-sm w-full mx-auto">
         <p className="transition-colors duration-300 hover:text-black">
-          © {new Date().getFullYear()} SynecX ai Labs. All rights reserved.
+          © {new Date().getFullYear()} SynecX Ai Labs. All rights reserved.
         </p>
       </div>
     </footer>

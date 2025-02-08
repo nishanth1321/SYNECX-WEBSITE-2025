@@ -2,7 +2,16 @@ import { notFound } from "next/navigation";
 import Navbar from "@/layouts/navbar";
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import { Metadata } from "next";
+export function generateMetadata({ params }: BlogPageProps): Metadata {
+  const blog = blogData.find((post) => post.title === decodeURIComponent(params.title));
 
+  if (!blog) {
+    return { title: "SYNECX | BLOGS | Not Found" };
+  }
+
+  return { title: `SYNECX | BLOGS | ${blog.title}` };
+}
 const blogData = [
   {
     title: "Camera-Based-AI-Self-Checkout",
@@ -168,7 +177,7 @@ No scanning—just **shop, pay, and walk out with ease**. 😊
       image: "/blog3.svg",
   },
   {
-    title: "How AI-Deep-Learning-and-Computer-Vision-Are-Revolutionizing-Retail-Checkout",
+    title: "How-AI-Deep-Learning-and-Computer-Vision-Are-Revolutionizing-Retail-Checkout",
     content: `
 # **How AI, Deep Learning, and Computer Vision Are Revolutionizing Retail Checkout** 🛒🤖  
 
