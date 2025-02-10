@@ -14,7 +14,7 @@ export default function ContactInfo() {
           <FaEnvelope className="text-red-500 text-3xl mb-4" />
           <h3 className="text-lg font-semibold mb-2 mt-3 sm:mt-10">Send us a mail</h3>
           <p className="text-gray-600 mb-2">For general </p>
-          <a href="mailto:info@synecxailabs.io" className="text-black font-semibold">info@synecxailabs.io</a>
+          <a href="mailto:info@synecxailabs.io" className="text-black font-semibold">hello@synecxailabs.io</a>
           <p className="text-gray-600 mt-2">For Sales </p>
           <a href="mailto:sales@synecxailabs.io" className="text-black font-semibold ">sales@synecxailabs.io</a>
         </div>
