@@ -20,15 +20,15 @@ export default function FeatureOne() {
                     </div>
           {/* Content */}
           <h6 className="text-red-500 text-2xl font-medium mb-2">
-            Dynamic Cart Updates
+          Instant Item Recognition
           </h6>
           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
-            Seamless AI-Powered Transactions
+          AI-Powered Checkout Efficiency
           </h5>
           <p className="text-gray-600 text-center">
-            Our AI-driven self-checkout system ensures that customers carts update in real-time,
-            providing accurate pricing, discounts, and item availability. Say goodbye to checkout
-            delays and experience smooth, automated shopping.
+          Our advanced AI system recognizes items instantly, eliminating the need for manual scanning.
+            Customers enjoy a frictionless checkout experience, while businesses reduce losses and boost efficiency
+            with accurate, automated recognition.
           </p>
         </div>
 
@@ -45,15 +45,15 @@ export default function FeatureOne() {
                     </div>
           {/* Content */}
           <h6 className="text-red-500 text-2xl font-medium mb-2">
-            Instant Item Recognition
+          Dynamic Cart Updates
           </h6>
           <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
-            AI-Powered Checkout Efficiency
+          Seamless AI-Powered Transactions
           </h5>
           <p className="text-gray-600 text-center">
-            Our advanced AI system recognizes items instantly, eliminating the need for manual scanning.
-            Customers enjoy a frictionless checkout experience, while businesses reduce losses and boost efficiency
-            with accurate, automated recognition.
+          Our AI-driven self-checkout system ensures that customers carts update in real-time,
+            providing accurate pricing, discounts, and item availability. Say goodbye to checkout
+            delays and experience smooth, automated shopping.
           </p>
         </div>
       </div>
