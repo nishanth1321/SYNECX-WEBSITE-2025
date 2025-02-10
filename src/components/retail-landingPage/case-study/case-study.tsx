@@ -1,10 +1,9 @@
-"use client"
+"use client";
 import RetailNavbar from "@/layouts/retailnavbar";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function CaseStudyIndividual() {
-  const router = useRouter();
   const casestudy = [
     {
       studyname: "Revolutionizing Retail",
@@ -13,7 +12,7 @@ export default function CaseStudyIndividual() {
       text: " Cakes and Bakes, a cherished bakery chain renowned for its delectable treats, rose to this challenge by embracing self-checkout technology. ",
       title: "revolutionizing-retail",
     },
-  ]
+  ];
 
   return (
     <div>
@@ -56,11 +55,14 @@ export default function CaseStudyIndividual() {
                         {casestudy.studyon}
                       </p>
                     </div>
-                    <button
-                      className="text-white bg-red-500 px-3 py-1 rounded-md text-sm mt-2 sm:mt-0 transition hover:scale-105 duration-200 ease-in-out"
+                    <Link
+                      href={`/case-study/${casestudy.title}`}
+                      className="w-full flex justify-end sm:pl-4 sm:w-auto"
                     >
-                      Read More
-                    </button>
+                      <button className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-300 w-28 text-sm sm:w-28 sm:static absolute bottom-2 right-2">
+                        Read More
+                      </button>
+                    </Link>
                   </div>
                   <p className="text-black mt-4 text-[15px] bg-gray-100/70 p-3 rounded-md">
                     {casestudy.text}

@@ -94,7 +94,7 @@ export default function RetailNavbar() {
               Industries
             </Link>
             <Link
-              href="/retail/case-study"
+              href="/retail/case-Study"
               className="text-gray-600 font-bold hover:text-black transition text-sm duration-200"
             >
               Case Studies

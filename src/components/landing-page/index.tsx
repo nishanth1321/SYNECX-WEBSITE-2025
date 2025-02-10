@@ -88,7 +88,7 @@ export default function Home() {
         </div>
 
         {/* Main Content */}
-        <div className="relative min-h-screen grid grid-cols-1 lg:grid-cols-[50%_50%] items-center justify-center bg-white/30 backdrop-blur-sm px-6 lg:px-28 p-8 pt-12">
+        <div className="relative min-h-screen grid grid-cols-1 lg:grid-cols-[40%_60%] items-center justify-center bg-white/30 backdrop-blur-sm px-6 lg:px-28 p-8 pt-12">
           {/* Text Section (30% on Desktop) */}
           <div className="order-2 lg:order-1 text-center bg-white/70 lg:text-left max-w-xl lg:max-w-none mb-12 lg:mb-0 lg:mr-8 md:mb-5 mt-6 sm:mt-0 rounded-xl">
             <h2 className="text-lg lg:text-lg font-medium text-gray-600 mb-4 lg:mb-2 py-4 pl-6">

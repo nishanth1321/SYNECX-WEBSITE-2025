@@ -10,12 +10,7 @@ export default function CaseStudyIndividual() {
       image: "/casestudy1.svg",
       text: " Cakes and Bakes, a cherished bakery chain renowned for its delectable treats, rose to this challenge by embracing self-checkout technology. ",
     },
-    {
-      studyname: "SmartMart Express",
-      studyon: "Automated Grocery Checkout",
-      image: "/casestudy2.svg",
-      text: "SynecX AI Labs implemented an AI-driven self-checkout solution for SmartMart, minimizing errors and improving fraud detection by 30%. Customers enjoyed a seamless shopping experience with AI-powered object recognition and real-time billing.",
-    },
+  
   ];
 
   return (
@@ -71,7 +66,7 @@ export default function CaseStudyIndividual() {
           {/* Centered Learn More Button */}
           <div className="flex justify-center mt-12">
             <button className="text-white bg-red-500 px-6 py-3 rounded-md text-lg font-semibold hover:bg-red-600 transition">
-              <Link href={"/retail/case-study"}> Learn More</Link>
+              <Link href={"/retail/case-Study"}> Learn More</Link>
               
             </button>
           </div>
