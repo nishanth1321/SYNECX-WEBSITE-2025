@@ -22,7 +22,7 @@ const DemoForm: React.FC = () => {
     if (hash === "#demo") {
       const element = document.getElementById("demo");
       if (element) {
-        const offset = 100; // Adjust this value as needed
+        const offset = 140; // Adjust this value as needed
         const bodyRect = document.body.getBoundingClientRect().top;
         const elementRect = element.getBoundingClientRect().top;
         const elementPosition = elementRect - bodyRect;

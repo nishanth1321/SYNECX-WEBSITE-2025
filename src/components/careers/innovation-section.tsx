@@ -37,6 +37,19 @@ const Openings = () => {
       text: "We need a Digital Marketing Specialist to enhance our online presence and execute result-driven marketing campaigns.",
     },
   ];
+  const handleApplyNowClick = (e: { preventDefault: () => void; }) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    const target = document.querySelector("#careerform");
+    if (target) {
+      const offset = 150; // Adjust this value based on your navbar height
+      const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: targetPosition - offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="bg-transparent my-12 flex justify-center items-center w-full">
       <div className="w-full mx-0 sm:mx-32 bg-white/70 backdrop-blur-sm p-8 rounded-lg shadow-lg text-center">
@@ -77,6 +90,7 @@ const Openings = () => {
         </div>
         <div className="flex justify-center mt-8">
           <a
+           onClick={handleApplyNowClick}
             href="#careerform"
             className="inline-block bg-transparent border-2 border-gray-900 text-gray-900 text-base md:text-lg font-medium py-2 px-6 rounded-full hover:bg-gray-900 hover:text-white transition duration-300 transform hover:scale-105 hover:shadow-lg"
           >

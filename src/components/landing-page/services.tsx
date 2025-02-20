@@ -44,7 +44,7 @@ export default function Service() {
           Elevate our Digital Presence with Expert Services
         </h1>
         <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mb-4">
-          Elevate our brand with Synecx AI Labs innovative services, crafting standout digital experiences that captivate and convert in a competitive market.
+          Elevate your brand with Synecx AI Labs innovative services, crafting standout digital experiences that captivate and convert in a competitive market.
         </p>
       </div>
       <div className="py-10 flex justify-center items-center">

@@ -47,7 +47,7 @@ export default function RetailPageServices() {
           Elevating  Industrial experience with SynecX AI Retail Solution
         </h1>
         <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl ">
-          Elevate our brand with Synecx AI Labs innovative services, crafting standout digital experiences that captivate and convert in a competitive market.
+          Elevate your brand with Synecx AI Labs innovative services, crafting standout digital experiences that captivate and convert in a competitive market.
         </p>
       </div>
       <div className="py-10 flex justify-center items-center">

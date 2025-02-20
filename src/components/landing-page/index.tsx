@@ -111,8 +111,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 pl-6 pb-4">
               <Link href="/contact#demo" legacyBehavior>
                 <a className="bg-black text-white px-6 py-3 rounded-lg flex items-center justify-center">
-                  <span className="mr-2">Get Your Demo</span>
-                  <FaRocket />
+                  <span className="">Get Your Demo</span>
                 </a>
               </Link>
               <Link href="/contact" legacyBehavior>
